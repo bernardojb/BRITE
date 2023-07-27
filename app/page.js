@@ -93,7 +93,7 @@ const Home = () => {
       </section>
 
       {/* COMPUTERS */}
-      <section className='bg-cream'>
+      <section className='bg-cream py-28'>
         {/* <div className='container mx-auto'>
           <h1 className='text-primary text-xl font-semibold max-w-xl pb-10'>Diferentes computadores para sua demanda.</h1>
 

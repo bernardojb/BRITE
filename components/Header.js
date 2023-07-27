@@ -3,15 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { BtnChev } from './BtnChev'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
 
   const [toggle, setToggle] = useState(false)
-  const [pathname, setPathname] = useState("")
-
-  useEffect(() => {
-      setPathname(window.location.pathname)
-  })
+  const pathname = usePathname()
 
   return (
     <>
@@ -32,13 +29,13 @@ export default function Header() {
           </Link>
 
           <div className='hidden md:flex flex-row justify-center items-center text-primary font-semibold w-full'>
-            <Link href='/computers' className='px-5'>
+            <Link href='/computers' className={`text-md px-5 ${pathname === "/computers" ? "text-primary font-bold":"text-secondary hover:text-brite"}`}>
               Computadores
             </Link>
-            <Link href='/about' className='px-5 '>
+            <Link href='/about' className={`text-md px-5 ${pathname === "/about" ? "text-primary font-bold":"text-secondary hover:text-brite"}`}>
               Sobre
             </Link>
-            <Link href='/contact' className='px-5'>
+            <Link href='/contact' className={`text-md px-5 ${pathname === "/contact" ? "text-primary font-bold":"text-secondary hover:text-brite"}`}>
               Contato
             </Link>
             <div className='ml-auto'>

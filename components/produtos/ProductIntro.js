@@ -5,10 +5,6 @@ import Image from 'next/image'
 import { BtnChev } from '@/components/BtnChev'
 
 const ProductIntro = () => {
-    useEffect(() => {
-        console.log("product list >", productsList[0].products[0].infos)
-    }, [])
-
     return (
         <div className='container'>
             <Link href="/computers" >

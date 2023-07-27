@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function page() {
     return (
-        <section className='bg-cream py-32'>
+        <section className='bg-cream py-40 '>
             <div className='container'>
                 <div className='grid grid-cols-12 gap-4'>
                     <div className='col-span-12 lg:col-span-4 mb-10'>
