@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 
 //Setup & Meta
 const cairo = Cairo({ subsets: ['latin'] })
+
 export const metadata = {
   title: 'hokup - Base Template',
   description: 'Personal template for outstanding projects.',
