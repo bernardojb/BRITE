@@ -7,11 +7,11 @@ import { BtnChev } from './BtnChev'
 export default function Header() {
 
   const [toggle, setToggle] = useState(false)
-  const pathname = window.location.pathname 
+  const [pathname, setPathname] = useState("")
 
-  // useEffect(() => {
-  //     setPathname(window.location.pathname)
-  // })
+  useEffect(() => {
+      setPathname(window.location.pathname)
+  })
 
   return (
     <>
