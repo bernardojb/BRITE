@@ -4,6 +4,7 @@ import * as React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { BtnChev } from '@/components/BtnChev';
+import CardProducts from '@/components/CardProducts';
 
 const Home = () => {
 
@@ -38,16 +39,14 @@ const Home = () => {
             <Image className='absolute bottom-12' src='./assets/lenovo_partner.svg' width={164} height={50} alt='Certified Lenovo Partner' />
           </div>
         </div>
+
         <div
-          className='lg:absolute lg:right-0 lg:top-0 lg:h-screen w-full object-right pointer-events-none'>
+          className='lg:absolute lg:right-0 lg:top-0 lg:w-2/5 w-full h-screen relative  pointer-events-none'>
           <Image
             src="/hero.png"
-            alt="Picture of the author"
+            alt="Hero hokup"
             fill
-            style={{
-              objectFit: 'contain',
-              objectPosition: 'inherit',
-            }}
+            className='object-right-bottom lg:object-cover object-cover w-full'
           />
         </div>
       </section>
@@ -94,8 +93,8 @@ const Home = () => {
       </section>
 
       {/* COMPUTERS */}
-      <section className='bg-cream py-28'>
-        <div className='container mx-auto'>
+      <section className='bg-cream'>
+        {/* <div className='container mx-auto'>
           <h1 className='text-primary text-xl font-semibold max-w-xl pb-10'>Diferentes computadores para sua demanda.</h1>
 
           <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1.5px] after:bg-secondary after:w-full after:-bottom-3 mb-12">
@@ -133,8 +132,10 @@ const Home = () => {
               text="Solicitar cotação"
             />
           </div>
-        </div>
+        </div> */}
+        <CardProducts index={3} />
       </section>
+
 
       {/* BRITE */}
       <section className='bg-dark py-28'>
@@ -201,12 +202,12 @@ const Home = () => {
           <div className='flex flex-col lg:flex-row justify-center items-center'>
             <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
             <BtnChev
-                href="/contact"
-                color="text-white"
-                bg="bg-brite"
-                // brightness="brightness-0"
-                text="Solicitar cotação"
-              />
+              href="/contact"
+              color="text-white"
+              bg="bg-brite"
+              // brightness="brightness-0"
+              text="Solicitar cotação"
+            />
           </div>
         </div>
 

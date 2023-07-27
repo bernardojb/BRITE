@@ -6,7 +6,7 @@ export default function page() {
         <>
             <section className='py-28 bg-white'>
                 <div className='container'>
-                    <CardProducts />
+                    <CardProducts index={10} />
                 </div>
             </section>
         </>
