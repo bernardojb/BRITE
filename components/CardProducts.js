@@ -17,7 +17,7 @@ const CardProducts = (props) => {
                 <h1 className='text-primary text-xl max-w-xl font-semibold pb-10'>Diferentes computadores para sua demanda.</h1>
                 {pathname === "/" && (
                     <div className='flex flex-row w-fit sm:ml-auto'>
-                        <Link href='/computers' className='text-primary text-base font-semibold md:ml-auto'>
+                        <Link href='/computadores' className='text-primary text-base font-semibold md:ml-auto'>
                             <p>Ver tudo</p>
                         </Link>
                         <Image src="./assets/icons/chevron.svg" alt='Chevron Icon' className=' brightness-0' width={24} height={24} />
@@ -177,7 +177,7 @@ const CardProducts = (props) => {
             <div className='flex flex-col lg:flex-row justify-center items-center'>
                 <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
                 <BtnChev
-                    href="/contact"
+                    href="/contato"
                     color="text-white"
                     bg="bg-brite"
                     text="Solicitar cotação"

@@ -6,7 +6,7 @@ const productsList = [
             {
                 id: 1,
                 name: "IdeaPad 3i",
-                href: "computers/notebooks/ideapad-3i",
+                href: "/computadores/notebooks/ideapad-3i",
                 src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
                 linha: "Notebooks para o dia a dia",
                 intro: [

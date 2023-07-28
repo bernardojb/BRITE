@@ -11,22 +11,22 @@ const footerMenuList = [
         },
         {
           id: 2,
-          href: "/computers",
+          href: "/computadores",
           text: "Computadores",
         },
         {
           id: 3,
-          href: "/about",
+          href: "/sobre",
           text: "Sobre",
         },
         {
           id: 4,
-          href: "/about",
+          href: "/sobre",
           text: "Serviço",
         },
         {
           id: 5,
-          href: "/contact",
+          href: "/contato",
           text: "Contato",
         },
       ],
@@ -38,17 +38,17 @@ const footerMenuList = [
       list: [
         {
           id: 1,
-          href: "/computers",
+          href: "/computadores",
           text: "Notebooks",
         },
         {
           id: 2,
-          href: "/computers",
+          href: "/computadores",
           text: "Desktops",
         },
         {
           id: 3,
-          href: "/computers",
+          href: "/computadores",
           text: "Servidores",
         },
   
@@ -61,22 +61,22 @@ const footerMenuList = [
       list: [
         {
           id: 1,
-          href: "/about",
+          href: "/sobre",
           text: "Parceria LENOVO",
         },
         {
           id: 2,
-          href: "/about",
+          href: "/sobre",
           text: "Origem",
         },
         {
           id: 3,
-          href: "/about",
+          href: "/sobre",
           text: "Clientes",
         },
         {
           id: 4,
-          href: "/about",
+          href: "/sobre",
           text: "Números",
         },
       ],
@@ -88,7 +88,7 @@ const footerMenuList = [
       list: [
         {
           id: 1,
-          href: "/contact",
+          href: "/contato",
           text: "Solicitar cotação",
         },
       ],

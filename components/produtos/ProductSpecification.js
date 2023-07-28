@@ -23,7 +23,7 @@ const ProductSpecification = () => {
             <div className='flex flex-col lg:flex-row justify-center items-center'>
                 <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
                 <BtnChev
-                    href="/contact"
+                    href="/contato"
                     color="text-white"
                     bg="bg-brite"
                     text="Solicitar cotação"

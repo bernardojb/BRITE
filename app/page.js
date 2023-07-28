@@ -22,14 +22,14 @@ const Home = () => {
             <div className='flex lg:flex-row flex-col'>
 
               <BtnChev
-                href="/contact"
+                href="/contato"
                 color="text-white"
                 bg="bg-primary mr-6 md:mb-0 mb-4"
                 text="Solicitar cotação"
               />
 
               <BtnChev
-                href="/computers"
+                href="/computadores"
                 color="text-primary"
                 bg=""
                 brightness="brightness-0"
@@ -113,11 +113,8 @@ const Home = () => {
               <p className='text-base text-secondary pb-6'>
                 Há mais de 30 anos no mercado corporativo, a Business Informática atua no segmento de TI, locando e vendendo notebooks, desktops e servidores.
               </p>
-              {/* <Link href='/about'>
-                <p className='text-sm '>Nossa história</p>
-              </Link> */}
               <BtnChev
-              href="/about"
+              href="/sobre"
               color="text-white"
               bg="bg-[transparent] pl-0 mb-12"
               // brightness="brightness-0"
@@ -170,7 +167,7 @@ const Home = () => {
           <div className='flex flex-col lg:flex-row justify-center items-center'>
             <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
             <BtnChev
-              href="/contact"
+              href="/contato"
               color="text-white"
               bg="bg-brite"
               // brightness="brightness-0"
@@ -354,15 +351,15 @@ const Home = () => {
                       <textarea
                         id="message"
                         placeholder='Fale mais sobre os programas que usam na sua empresa, suas necessidades e seu cronograma.'
-                        className='text-md text-primary rounded-md border border-secondary ps-2 pt-1 text-md  h-52 mb-4'
+                        className='text-md text-primary rounded-md border border-secondary ps-2 pt-1 h-52 mb-4'
                         name="message"
                         rows="10"
                         // value={values.message}
                         // onChange={handleChange}
                         required
                       />
-                      <p className='text-xs text-secondary mb-4'>Ao enviar este formulário, você concorda com a nossa <Link href='/contact' className="text-primary hover:text-brite font-bold">Política de Privacidade.</Link></p>
-                      <Link href='/contact' className='px-5 py-1 ml-auto bg-brite rounded-full w-fit flex justify-center items-center'>
+                      <p className='text-xs text-secondary mb-4'>Ao enviar este formulário, você concorda com a nossa <Link href='/contato' className="text-primary hover:text-brite font-bold">Política de Privacidade.</Link></p>
+                      <Link href='/contato' className='px-5 py-1 ml-auto bg-brite rounded-full w-fit flex justify-center items-center'>
                         <span className='text-white text-md'>
                           Solicitar cotação
                         </span>

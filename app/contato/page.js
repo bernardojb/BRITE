@@ -106,8 +106,8 @@ export default function page() {
                                             // onChange={handleChange}
                                             required
                                         />
-                                        <p className='text-xs text-secondary mb-4'>Ao enviar este formulário, você concorda com a nossa <Link href='/politica' className="text-primary hover:text-brite font-bold">Política de Privacidade.</Link></p>
-                                        <Link href='/contact' className='px-5 py-1 ml-auto bg-brite rounded-full w-fit flex justify-center items-center'>
+                                        <p className='text-xs text-secondary mb-4'>Ao enviar este formulário, você concorda com a nossa <Link href='/politica-de-privacidade' className="text-primary hover:text-brite font-bold">Política de Privacidade.</Link></p>
+                                        <Link href='/contato' className='px-5 py-1 ml-auto bg-brite rounded-full w-fit flex justify-center items-center'>
                                             <span className='text-white text-md'>
                                                 Solicitar cotação
                                             </span>

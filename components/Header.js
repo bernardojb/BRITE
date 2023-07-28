@@ -29,18 +29,18 @@ export default function Header() {
           </Link>
 
           <div className='hidden md:flex flex-row justify-center items-center text-primary font-semibold w-full'>
-            <Link href='/computers' className={`text-md px-5 ${pathname === "/computers" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
+            <Link href='/computadores' className={`text-md px-5 ${pathname === "/computadores" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
               Computadores
             </Link>
-            <Link href='/about' className={`text-md px-5 ${pathname === "/about" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
+            <Link href='/sobre' className={`text-md px-5 ${pathname === "/sobre" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
               Sobre
             </Link>
-            <Link href='/contact' className={`text-md px-5 ${pathname === "/contact" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
+            <Link href='/contato' className={`text-md px-5 ${pathname === "/contato" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
               Contato
             </Link>
             <div className='ml-auto'>
               <BtnChev
-                href="/contact"
+                href="/contato"
                 color="text-white"
                 bg="bg-brite"
                 // brightness="brightness-0"
@@ -65,17 +65,14 @@ export default function Header() {
               <Link href="/" onClick={() => setToggle(!toggle)} className='relative'>
                 <li className={`text-baselg ${pathname === "/" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0":"text-secondary font-normal"}`}>Home</li>
               </Link>
-              <Link href="/computers" onClick={() => setToggle(!toggle)} className='relative'>
-                <li className={`text-baselg ${pathname === "/computers" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0":"text-secondary font-normal"}`}>Computadores</li>
+              <Link href="/computadores" onClick={() => setToggle(!toggle)} className='relative'>
+                <li className={`text-baselg ${pathname === "/computadores" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0":"text-secondary font-normal"}`}>Computadores</li>
               </Link>
-              <Link href="/about" onClick={() => setToggle(!toggle)} className='relative'>
-                <li className={`text-baselg ${pathname === "/about" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0":"text-secondary font-normal"}`}>Sobre</li>
+              <Link href="/sobre" onClick={() => setToggle(!toggle)} className='relative'>
+                <li className={`text-baselg ${pathname === "/sobre" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0":"text-secondary font-normal"}`}>Sobre</li>
               </Link>
-              {/* <Link href="/contact" onClick={() => setToggle(!toggle)}>
-                <li className={`text-baselg ${pathname === "/contact" ? "text-primary font-semibold":"text-secondary font-normal"}`}>Contato</li>
-              </Link> */}
-              <Link href="/contact" onClick={() => setToggle(!toggle)} className='relative'>
-                <li className={`text-baselg ${pathname === "/contact" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0":"text-secondary font-normal"}`}>Solicitar cotação</li>
+              <Link href="/contato" onClick={() => setToggle(!toggle)} className='relative'>
+                <li className={`text-baselg ${pathname === "/contato" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0":"text-secondary font-normal"}`}>Solicitar cotação</li>
               </Link>
             </ul>
           </div>

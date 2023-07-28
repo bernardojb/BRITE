@@ -84,7 +84,7 @@ export default function page() {
                     <div className='grid grid-cols-12 gap-4 pb-28'>
                         <div className='lg:col-span-4 col-span-12 '>
                             <h1 className='text-white text-xl text-semibold mb-6 h-[140px]'>Parceiro oficial Lenovo no Brasil.</h1>
-                            <Link href='/computers'>
+                            <Link href='/computadores'>
                                 <p className='text-md text-white'>Nossos produtos</p>
                             </Link>
                         </div>
@@ -104,35 +104,43 @@ export default function page() {
 
                     <div className='grid grid-cols-12'>
 
-                        <div className='col-span-9 lg:col-start-2 flex flex-row mb-20'>
+                        <div className='col-span-9 lg:col-start-2 flex md:flex-row flex-col mb-20'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>1990</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Responsáveis pelo maior numero de vendas de computadores Toshiba no Brasil, além do pioneirismo em alugueis de computadores.</p>
-                                <div className=' w-[80px] h-[12px] bg-placeholder'></div>
+                                <div className=' w-[80px] h-[12px]'>
+                                    <Image className='brightness-[80%]' src="./assets/icons/toshiba.svg" width={80} height={12} />
+                                </div>
                             </div>
                         </div>
 
-                        <div className='col-span-9 lg:col-start-3 flex flex-row mb-20'>
+                        <div className='col-span-9 lg:col-start-3 flex md:flex-row flex-col mb-20'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>2004</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Entre 2003 e 2004 introduzimos em território nacional um conceito completo de locação de computadores.</p>
-                                <div className=' w-[80px] h-[12px] bg-placeholder'></div>
+                                <div className=' w-[80px] h-[12px]'>
+                                    <Image className='brightness-[80%]' src="./assets/icons/itautec.svg" width={80} height={12} />
+                                </div>
                             </div>
                         </div>
 
-                        <div className='col-span-9 lg:col-start-4 flex flex-row mb-20'>
+                        <div className='col-span-9 lg:col-start-4 flex md:flex-row flex-col mb-20'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>2014</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Iniciamos uma parceria única com a maior fabricante de computadores do mundo, a Lenovo. Desde então fazemos parte do seleto grupo de integradores Lenovo, responsáveis por oferecer os serviços de locação para clientes Lenovo.</p>
-                                <div className=' w-[80px] h-[12px] bg-placeholder'></div>
+                                <div className=' w-[80px] h-[12px]'>
+                                    <Image className='brightness-[80%]' src="./assets/icons/lenovo.svg" width={80} height={12} />
+                                </div>
                             </div>
                         </div>
 
-                        <div className='col-span-9 lg:col-start-5 flex flex-row'>
+                        <div className='col-span-9 lg:col-start-5 flex md:flex-row flex-col'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>2023</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Nossa nova identidade simboliza uma era de inovação e crescimento, mas não se engane: continuaremos a fornecer o mesmo nível de experiência e seriedade que você já está acostumado. Este rebranding reflete nossa evolução, nossos valores e, acima de tudo, nosso compromisso contínuo com nossos clientes.</p>
-                                <div className=' w-[80px] h-[12px] bg-placeholder'></div>
+                                <div className=' w-[80px] h-[12px]'>
+                                    <Image className='brightness-[800%] grayscale opacity-20 ' src="./assets/icons/logo-brite.svg" width={80} height={12} />
+                                </div>
                             </div>
                         </div>
 

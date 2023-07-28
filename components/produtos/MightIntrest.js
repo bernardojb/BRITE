@@ -15,7 +15,7 @@ const MightIntrest = (props) => {
             <div className='flex md:flex-row w-full flex-col md:items-end mb-10'>
                 <h1 className='text-primary text-xl max-w-xl font-semibold pb-10'>Conheça também</h1>
                 <div className='flex flex-row w-fit sm:ml-auto'>
-                    <Link href='/computers' className='text-primary text-base font-semibold md:ml-auto'>
+                    <Link href='/computadores' className='text-primary text-base font-semibold md:ml-auto'>
                         <p>Ver tudo</p>
                     </Link>
                     <Image src="./assets/icons/chevron.svg" alt='Chevron Icon' className=' brightness-0' width={24} height={24} />

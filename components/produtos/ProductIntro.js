@@ -7,7 +7,7 @@ import { BtnChev } from '@/components/BtnChev'
 const ProductIntro = () => {
     return (
         <div className='container'>
-            <Link href="/computers" >
+            <Link href="/computadores" >
                 <div className='mb-10'>
                     <p className='text-xs text-secondary'>Nossos produtos</p>
                 </div>
