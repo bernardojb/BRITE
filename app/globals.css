@@ -32,3 +32,21 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(20px);
 -webkit-backdrop-filter: blur(20px);
 }
+
+.card-bg-rent{
+  background: transparent linear-gradient(150deg, #FFFFFF 45%, #B3B1BE 100%) 0% 0% no-repeat padding-box;
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-bg-desk{
+  background-image: url("../public/assets/home/card-01.png");
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-bg-sustentability{
+  background-image: url("../public/assets/home/card-02.png");
+  background-position: right;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

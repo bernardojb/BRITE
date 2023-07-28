@@ -104,7 +104,7 @@ const Home = () => {
           <div className='grid grid-cols-12 gap-4'>
 
             <div className='flex col-span-12 lg:col-span-5 mb-10 lg:mb-0'>
-              <div className='bg-placeholder h-[506px] w-full rounded-lg'></div>
+              <Image className='rounded-lg' alt='Brite Sobre' src='/assets/home/brite-about.png' height={545} width={444} />
             </div>
 
             <div className='flex flex-col justify-center col-span-12 lg:col-span-5 lg:col-start-7'>
@@ -114,12 +114,12 @@ const Home = () => {
                 Há mais de 30 anos no mercado corporativo, a Business Informática atua no segmento de TI, locando e vendendo notebooks, desktops e servidores.
               </p>
               <BtnChev
-              href="/sobre"
-              color="text-white"
-              bg="bg-[transparent] pl-0 mb-12"
-              // brightness="brightness-0"
-              text="Nossa história"
-            />
+                href="/sobre"
+                color="text-white"
+                bg="bg-[transparent] pl-0 mb-12"
+                // brightness="brightness-0"
+                text="Nossa história"
+              />
               <div>
                 <p className='text-sm text-secondary py-2'><span className='font-bold text-white'>+15.000</span> computadores alugados nos últimos 12 meses</p>
                 <p className='text-sm text-secondary py-2'><span className='font-bold text-white'>+100</span> empresas atendidas</p>
@@ -138,13 +138,13 @@ const Home = () => {
           </div>
 
           <div className='grid grid-cols-12 gap-4 mb-16'>
-            <div className='bg-dark h-[568px] w-full rounded-2xl col-span-12 lg:col-span-5 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8'>
-              <p className='text-secondary text-md'>BRITE RENT SERVICE</p>
-              <h1 className='text-white text-xl font-semibold mb-4'>Benefício fiscal no Imposto.</h1>
-              <p className='text-secondary text-md'>Reduza custos e invista no seu negócio. Previsibilidade sem gastos de manutenção , para focar sua equipe de TI na evolução do seu negócio.</p>
+            <div className='card-bg-rent h-[568px] w-full rounded-2xl col-span-12 lg:col-span-5 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8 relative bg '>
+                <p className='text-secondary text-md'>BRITE RENT SERVICE</p>
+                <h1 className='text-primary text-xl font-semibold mb-4'>Benefício fiscal no Imposto.</h1>
+                <p className='text-secondary text-md'>Reduza custos e invista no seu negócio. Previsibilidade sem gastos de manutenção , para focar sua equipe de TI na evolução do seu negócio.</p>
             </div>
 
-            <div className='bg-dark h-[568px] w-full rounded-2xl col-span-12 lg:col-span-5 sm:px-12 sm:py-12 px-6 py-8'>
+            <div className='card-bg-desk h-[568px] w-full rounded-2xl col-span-12 lg:col-span-5 sm:px-12 sm:py-12 px-6 py-8'>
               <div className='flex flex-col justify-between h-full'>
                 <div>
                   <p className='text-secondary text-md'>SERVICE DESK</p>
@@ -157,7 +157,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className='bg-dark min-h-[277px] w-full rounded-2xl col-span-12 lg:col-span-10 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8'>
+            <div className='card-bg-sustentability min-h-[277px] w-full rounded-2xl col-span-12 lg:col-span-10 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8'>
               <p className='text-secondary text-md'>ECO-FRIENDLY</p>
               <h1 className='text-white text-xl font-semibold mb-4'>Descarte ecológico.</h1>
               <p className='text-secondary text-md max-w-[492px]'>Retirada das peças obsoletas e descarte correto do e-lixo para evitar despesas com multas e logística.</p>
