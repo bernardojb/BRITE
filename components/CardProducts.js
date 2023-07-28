@@ -13,8 +13,8 @@ const CardProducts = (props) => {
 
     return (
         <div className='container mx-auto'>
-            <div className='flex md:flex-row w-full flex-col md:items-end mb-10'>
-                <h1 className='text-primary text-xl max-w-xl font-semibold pb-10'>Diferentes computadores para sua demanda.</h1>
+            <div className='flex md:flex-row w-full flex-col md:items-end mb-20'>
+                <h1 className='text-primary text-xl max-w-xl font-semibold'>Diferentes computadores para sua demanda.</h1>
                 {pathname === "/" && (
                     <div className='flex flex-row w-fit sm:ml-auto'>
                         <Link href='/computadores' className='text-primary text-base font-semibold md:ml-auto'>
@@ -25,8 +25,8 @@ const CardProducts = (props) => {
                 )}
             </div>
 
-            <div className="flex flex-row items-center justify-between relative sm:after:content-[''] sm:after:absolute sm:after:h-[1.5px] sm:after:bg-secondary sm:after:w-full sm:after:-bottom-3 mb-12">
-                <div className='text-secondary text-base flex sm:flex-row flex-col flex-wrap'>
+            <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1.5px] after:bg-secondary after:w-full after:-bottom-3 mb-12">
+                <div className='text-secondary text-base flex flex-row flex-wrap'>
                     <button className={`mr-9 w-fit sm:my-0 my-1 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc1" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-3 after:-bottom-1 after:left-0`} onClick={() => setActivePc("pc1")}>
                         <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Notebooks</p>
                     </button>
@@ -44,7 +44,7 @@ const CardProducts = (props) => {
 
             {/* NOTEBOOKS */}
             {activePc === "pc1" && (
-                <div className='grid gap-x-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 mb-28'>
+                <div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-28'>
                     {productsList[0].products.map(
                         (single, index) =>
                             index < props.index && (
@@ -62,10 +62,10 @@ const CardProducts = (props) => {
                                                 position: 'absolute'
                                             }} />
                                         <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] px-8 py-4 w-full'>
+                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
                                             <p className='text-secondary text-xs'>{single.linha}</p>
                                             <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-base'>{single.name}</p>
+                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
                                                 <Image src="./assets/icons/chevron.svg" height={24} width={24} />
                                             </div>
                                         </div>
@@ -77,7 +77,7 @@ const CardProducts = (props) => {
 
             {/* DESKTOPS */}
             {activePc === "pc2" && (
-                <div className='grid gap-x-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 mb-28'>
+                <div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-28'>
                     {productsList[1].products.map(
                         (single, index) =>
                             index < props.index && (
@@ -95,10 +95,10 @@ const CardProducts = (props) => {
                                                 position: 'absolute'
                                             }} />
                                         <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] px-8 py-4 w-full'>
+                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
                                             <p className='text-secondary text-xs'>{single.linha}</p>
                                             <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-base'>{single.name}</p>
+                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
                                                 <Image src="./assets/icons/chevron.svg" height={24} width={24} />
                                             </div>
                                         </div>
@@ -110,7 +110,7 @@ const CardProducts = (props) => {
 
             {/* WORKSTATIONS */}
             {activePc === "pc3" && (
-                <div className='grid gap-x-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 mb-28'>
+                <div className='grid gap-4  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-28'>
                     {productsList[2].products.map(
                         (single, index) =>
                             index < props.index && (
@@ -128,10 +128,10 @@ const CardProducts = (props) => {
                                                 position: 'absolute'
                                             }} />
                                         <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] px-8 py-4 w-full'>
+                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
                                             <p className='text-secondary text-xs'>{single.linha}</p>
                                             <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-base'>{single.name}</p>
+                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
                                                 <Image src="./assets/icons/chevron.svg" height={24} width={24} />
                                             </div>
                                         </div>
@@ -143,7 +143,7 @@ const CardProducts = (props) => {
 
             {/* SERVIDORES */}
             {activePc === "pc4" && (
-                <div className='grid gap-x-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 mb-28'>
+                <div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-28'>
                     {productsList[3].products.map(
                         (single, index) =>
                             index < props.index && (
@@ -161,10 +161,10 @@ const CardProducts = (props) => {
                                                 position: 'absolute'
                                             }} />
                                         <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] px-8 py-4 w-full'>
+                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
                                             <p className='text-secondary text-xs'>{single.linha}</p>
                                             <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-base'>{single.name}</p>
+                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
                                                 <Image src="./assets/icons/chevron.svg" height={24} width={24} />
                                             </div>
                                         </div>

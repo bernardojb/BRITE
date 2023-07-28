@@ -19,23 +19,23 @@ export default function Header() {
         }}
       >
         <div className='container flex items-center flex-row mx-auto'>
-          <Link href='/' className='pr-5' onClick={()=>setToggle(false)}>
+          <Link href='/'  onClick={()=>setToggle(false)} className='mr-5'>
             <Image
               src="/logo-brite.svg"
               alt="Hokup Logo"
-              width={120}
-              height={30}
+              width={140}
+              height={40}
             />
           </Link>
 
           <div className='hidden md:flex flex-row justify-center items-center text-primary font-semibold w-full'>
-            <Link href='/computadores' className={`text-md px-5 ${pathname === "/computadores" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
+            <Link href='/computadores' className={`text-md mx-5 ${pathname === "/computadores" ? "text-brite font-bold":"text-primary hover:text-brite"}`}>
               Computadores
             </Link>
-            <Link href='/sobre' className={`text-md px-5 ${pathname === "/sobre" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
+            <Link href='/sobre' className={`text-md mx-5 ${pathname === "/sobre" ? "text-brite font-bold":"text-primary hover:text-brite"}`}>
               Sobre
             </Link>
-            <Link href='/contato' className={`text-md px-5 ${pathname === "/contato" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
+            <Link href='/contato' className={`text-md mx-5 ${pathname === "/contato" ? "text-brite font-bold":"text-primary hover:text-brite"}`}>
               Contato
             </Link>
             <div className='ml-auto'>

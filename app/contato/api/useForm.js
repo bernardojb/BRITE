@@ -7,6 +7,8 @@ const useForm = validate => {
         site: '',
         mail: '',
         phone: '',
+        service:'',
+        computers:'',
         message: '',
         // where: ''
     });

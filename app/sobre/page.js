@@ -85,7 +85,7 @@ export default function page() {
                     <div className='grid grid-cols-12 gap-4 pb-28'>
                         <div className='lg:col-span-4 col-span-12 '>
                         <Image className='brightness-[80%] ' src="./assets/icons/certified-lenovo-partner-02.svg" height={14} width={164} />
-                            <h1 className='text-white text-xl text-semibold mb-6 h-[140px]'>Parceiro oficial Lenovo no Brasil.</h1>
+                            <h1 className='text-white text-xl text-semibold mb-6'>Parceiro oficial Lenovo no Brasil.</h1>
                             
                             <BtnChev
                                 href="/computadores"
@@ -98,7 +98,7 @@ export default function page() {
                             <div className='h-[140px] bg-placeholder mb-6'>
 
                             </div>
-                            <p className='text-secondary'>
+                            <p className='text-secondary text-base'>
                                 A Lenovo, uma potência multinacional de tecnologia com sede em Pequim, China, tem uma história fascinante que ressoa em suas conquistas atuais. Fundada em 1984, com uma equipe de 11 engenheiros que através de uma filosofia empresarial persistente e um espírito inovador, a Lenovo tornou-se a maior fabricante de computadores do mundo, presente em mais de 160 países.
                             </p>
                         </div>
@@ -110,7 +110,7 @@ export default function page() {
 
                     <div className='grid grid-cols-12'>
 
-                        <div className='col-span-9 lg:col-start-2 flex md:flex-row flex-col mb-20'>
+                        <div className='sm:col-span-9 col-span-12 lg:col-start-1 flex md:flex-row flex-col mb-20'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>1990</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Responsáveis pelo maior numero de vendas de computadores Toshiba no Brasil, além do pioneirismo em alugueis de computadores.</p>
@@ -120,7 +120,7 @@ export default function page() {
                             </div>
                         </div>
 
-                        <div className='col-span-9 lg:col-start-3 flex md:flex-row flex-col mb-20'>
+                        <div className='sm:col-span-9 col-span-12 lg:col-start-2 flex md:flex-row flex-col mb-20'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>2004</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Entre 2003 e 2004 introduzimos em território nacional um conceito completo de locação de computadores.</p>
@@ -130,7 +130,7 @@ export default function page() {
                             </div>
                         </div>
 
-                        <div className='col-span-9 lg:col-start-4 flex md:flex-row flex-col mb-20'>
+                        <div className='sm:col-span-9 col-span-12 lg:col-start-3 flex md:flex-row flex-col mb-20'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>2014</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Iniciamos uma parceria única com a maior fabricante de computadores do mundo, a Lenovo. Desde então fazemos parte do seleto grupo de integradores Lenovo, responsáveis por oferecer os serviços de locação para clientes Lenovo.</p>
@@ -140,7 +140,7 @@ export default function page() {
                             </div>
                         </div>
 
-                        <div className='col-span-9 lg:col-start-5 flex md:flex-row flex-col'>
+                        <div className='sm:col-span-9 col-span-12 lg:col-start-4 flex md:flex-row flex-col'>
                             <h1 className='text-secondary text-lg mr-4 font-semibold'>2023</h1>
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Nossa nova identidade simboliza uma era de inovação e crescimento, mas não se engane: continuaremos a fornecer o mesmo nível de experiência e seriedade que você já está acostumado. Este rebranding reflete nossa evolução, nossos valores e, acima de tudo, nosso compromisso contínuo com nossos clientes.</p>
@@ -156,7 +156,7 @@ export default function page() {
             <section className='py-28 bg-white'>
                 <div className='container'>
                     <h1 className='text-primary text-xl font-semibold mb-28'>Soluções de TI que vão além.</h1>
-                    <div className='grid grid-cols-12 gap-x-4 gap-y-28'>
+                    <div className='grid grid-cols-12 gap-x-4 md:gap-y-28 gap-y-16 '>
                         <AboutCard
                             title="ALUGUEL"
                             text="Computadores, notebooks e servidores para demandas personalizadas."
@@ -190,10 +190,7 @@ export default function page() {
                             title="DESCARTE ECOLÓGICO"
                             text="Retirada das peças obsoletas para evitar despesas com multas ambientais e logística."
                         />
-
-
                     </div>
-
                 </div>
             </section>
 

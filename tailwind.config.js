@@ -25,6 +25,7 @@ module.exports = {
       'dark': '#26262E',
       //components
       'navbar': '#ffffff9e',
+      'validator': "#FF6363",
       //basic colors
       'white': '#ffffff',
       'black': '#000000',

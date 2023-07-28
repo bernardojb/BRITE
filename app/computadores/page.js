@@ -5,9 +5,7 @@ export default function page() {
     return (
         <>
             <section className='py-40 bg-white'>
-                <div className='container'>
-                    <CardProducts index={10} />
-                </div>
+                <CardProducts index={10} />
             </section>
         </>
     )

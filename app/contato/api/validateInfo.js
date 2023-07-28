@@ -5,20 +5,34 @@ export default function validadeInfo(values) {
 
     //Name
     if (!values.name.trim()) {
-        errors.name = "digite seu nome!";
+        errors.name = "focus:";
+    }
+
+    //Site
+    if (!values.site.trim()) {
+        errors.site = "focus:";
     }
 
     //Email
-    if (!values.email) {
-        errors.email = 'digite o seu email!';
-    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-        errors.email = 'email inválido.';
+    if (!values.mail) {
+        errors.mail = 'digite o seu email!';
+    } else if (!/\S+@\S+\.\S+/.test(values.mail)) {
+        errors.mail = 'email inválido.';
     }
 
     //Phone
     if (!values.phone) {
         errors.phone = 'digite seu telefone?';
     }
+
+    if (!values.service) {
+        errors.service = 'digite seu telefone?';
+    }
+
+    if (!values.computers) {
+        errors.computers = 'digite seu telefone?';
+    }
+
     //Message
     if (!values.message) {
         errors.message = 'nos conte um pouco sobre seu projeto!';

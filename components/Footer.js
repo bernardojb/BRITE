@@ -11,7 +11,7 @@ const footer = () => {
 
                     <div className=" col-span-12 lg:col-span-3">
                         {/* <!-- Logo --> */}
-                        <Link href="#" className="">
+                        <Link href="/" className="">
                             <Image
                                 src="./logo-brite.svg"
                                 className="grayscale brightness-[10] mb-5"
