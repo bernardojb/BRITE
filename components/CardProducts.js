@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BtnChev } from './BtnChev';
 import { usePathname } from 'next/navigation'
+import ProductCard from './produtos/ProductCard';
 
 
 const CardProducts = (props) => {
@@ -17,10 +18,13 @@ const CardProducts = (props) => {
                 <h1 className='text-primary text-xl max-w-xl font-semibold'>Diferentes computadores para sua demanda.</h1>
                 {pathname === "/" && (
                     <div className='flex flex-row w-fit sm:ml-auto'>
-                        <Link href='/computadores' className='text-primary text-base font-semibold md:ml-auto'>
-                            <p>Ver tudo</p>
-                        </Link>
-                        <Image src="./assets/icons/chevron.svg" alt='Chevron Icon' className=' brightness-0' width={24} height={24} />
+                        <BtnChev
+                            href="/computadores"
+                            color="text-primary"
+                            bg=""
+                            brightness="brightness-0 my-2"
+                            text="Ver tudo"
+                        />
                     </div>
                 )}
             </div>
@@ -48,29 +52,12 @@ const CardProducts = (props) => {
                     {productsList[0].products.map(
                         (single, index) =>
                             index < props.index && (
-                                <div className='bg-placeholder h-[482px] relative rounded-xl border border-placeholder'>
-                                    <Link href={single.href}>
-                                        <div
-                                            className='rounded-xl'
-                                            style={{
-                                                background: 'linear-gradient(180deg, #80808000 35%, #0F0F0FED 100%)',
-                                                zIndex: '2',
-                                                left: '0px',
-                                                bottom: '0px',
-                                                height: '100%',
-                                                width: '100%',
-                                                position: 'absolute'
-                                            }} />
-                                        <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
-                                            <p className='text-secondary text-xs'>{single.linha}</p>
-                                            <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
-                                                <Image src="./assets/icons/chevron.svg" height={24} width={24} />
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
+                                <ProductCard
+                                    href={single.href}
+                                    src={single.src}
+                                    linha={single.linha}
+                                    name={single.name}
+                                />
                             ))}
                 </div>
             )}
@@ -81,29 +68,12 @@ const CardProducts = (props) => {
                     {productsList[1].products.map(
                         (single, index) =>
                             index < props.index && (
-                                <div className='bg-placeholder h-[482px] relative rounded-xl border border-placeholder'>
-                                    <Link href={single.href}>
-                                        <div
-                                            className='rounded-xl'
-                                            style={{
-                                                background: 'linear-gradient(180deg, #80808000 35%, #0F0F0FED 100%)',
-                                                zIndex: '2',
-                                                left: '0px',
-                                                bottom: '0px',
-                                                height: '100%',
-                                                width: '100%',
-                                                position: 'absolute'
-                                            }} />
-                                        <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
-                                            <p className='text-secondary text-xs'>{single.linha}</p>
-                                            <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
-                                                <Image src="./assets/icons/chevron.svg" height={24} width={24} />
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
+                                <ProductCard
+                                    href={single.href}
+                                    src={single.src}
+                                    linha={single.linha}
+                                    name={single.name}
+                                />
                             ))}
                 </div>
             )}
@@ -114,29 +84,12 @@ const CardProducts = (props) => {
                     {productsList[2].products.map(
                         (single, index) =>
                             index < props.index && (
-                                <div className='bg-placeholder h-[482px] relative rounded-xl border border-placeholder'>
-                                    <Link href={single.href}>
-                                        <div
-                                            className='rounded-xl'
-                                            style={{
-                                                background: 'linear-gradient(180deg, #80808000 35%, #0F0F0FED 100%)',
-                                                zIndex: '2',
-                                                left: '0px',
-                                                bottom: '0px',
-                                                height: '100%',
-                                                width: '100%',
-                                                position: 'absolute'
-                                            }} />
-                                        <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
-                                            <p className='text-secondary text-xs'>{single.linha}</p>
-                                            <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
-                                                <Image src="./assets/icons/chevron.svg" height={24} width={24} />
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
+                                <ProductCard
+                                    href={single.href}
+                                    src={single.src}
+                                    linha={single.linha}
+                                    name={single.name}
+                                />
                             ))}
                 </div>
             )}
@@ -147,29 +100,12 @@ const CardProducts = (props) => {
                     {productsList[3].products.map(
                         (single, index) =>
                             index < props.index && (
-                                <div className='bg-placeholder h-[482px] relative rounded-xl border border-placeholder'>
-                                    <Link href={single.href} as={single.href} >
-                                        <div
-                                            className='rounded-xl'
-                                            style={{
-                                                background: 'linear-gradient(180deg, #80808000 35%, #0F0F0FED 100%)',
-                                                zIndex: '2',
-                                                left: '0px',
-                                                bottom: '0px',
-                                                height: '100%',
-                                                width: '100%',
-                                                position: 'absolute'
-                                            }} />
-                                        <Image src={single.src} fill className='object-cover z-0 rounded-xl' />
-                                        <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
-                                            <p className='text-secondary text-xs'>{single.linha}</p>
-                                            <div className=' flex flex-row justify-between'>
-                                                <p className='text-white text-baselg leading-9'>{single.name}</p>
-                                                <Image src="./assets/icons/chevron.svg" height={24} width={24} />
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
+                                <ProductCard
+                                    href={single.href}
+                                    src={single.src}
+                                    linha={single.linha}
+                                    name={single.name}
+                                />
                             ))}
                 </div>
             )}

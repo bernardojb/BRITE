@@ -23,7 +23,7 @@ const ContactForm = () => {
                         <div className=' flex flex-row justify-between'>
                             <div className='mb-6'>
                                 <p className='text-md text-secondary'>Whatsapp</p>
-                                <a href='https://wa.me/+5511912016426' target='_blank' className='text-primary hover:text-brite'>
+                                <a href='https://wa.me/+5511912016426?text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20computadores%20dispon%C3%ADveis' target='_blank' className='text-primary hover:text-brite'>
                                     <p className='text-base text-primary hover:text-brite font-bold'>(11) 91201-6426</p>
                                 </a>
                             </div>
@@ -61,7 +61,7 @@ const ContactForm = () => {
                                         placeholder='Jhon Doe'
                                     >
                                     </input>
-                                    {errors.name && <div className='h-5 w-5 bg-teste opacity-30 absolute right-3'></div>}
+                                    {errors.name && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
                                 </div>
 
                                 <div className='flex flex-col lg:flex-row mb-4 lg:items-center relative'>
@@ -76,7 +76,7 @@ const ContactForm = () => {
                                         onChange={handleChange}
                                     >
                                     </input>
-                                    {errors.site && <div className='h-5 w-5 bg-teste opacity-30 absolute right-3'></div>}
+                                    {errors.site && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
                                 </div>
 
                                 <div className='flex flex-col lg:flex-row mb-4 lg:items-center relative'>
@@ -90,7 +90,7 @@ const ContactForm = () => {
                                         value={values.mail}
                                         onChange={handleChange}
                                     ></input>
-                                    {errors.mail && <div className='h-5 w-5 bg-teste opacity-30 absolute right-3'></div>}
+                                    {errors.mail && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
                                 </div>
 
                                 <div className='flex flex-col lg:flex-row mb-4 lg:items-center relative'>
@@ -104,7 +104,7 @@ const ContactForm = () => {
                                         value={values.phone}
                                         onChange={handleChange}
                                     ></input>
-                                    {errors.phone && <div className='h-5 w-5 bg-teste opacity-30 absolute right-3'></div>}
+                                    {errors.phone && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
                                 </div>
 
                                 {/* <div className='flex flex-col lg:flex-row mb-4'>

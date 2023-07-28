@@ -37,7 +37,7 @@ const Home = () => {
                 text="Produtos"
               />
             </div>
-            <Image className='absolute bottom-12' src='./assets/lenovo_partner.svg' width={164} height={50} alt='Certified Lenovo Partner' />
+            <Image className='absolute bottom-12' src='./assets/icons/certified-lenovo-partner-01.svg' width={164} height={50} alt='Certified Lenovo Partner' />
           </div>
         </div>
 
@@ -103,8 +103,15 @@ const Home = () => {
         <div className='container'>
           <div className='grid grid-cols-12 gap-4'>
 
-            <div className='flex col-span-12 lg:col-span-5 mb-10 lg:mb-0'>
-              <Image className='rounded-lg' alt='Brite Sobre' src='/assets/home/brite-about.png' height={545} width={444} />
+            <div className='flex col-span-12 lg:col-span-5 mb-10 lg:mb-0 '>
+              <div className='relative'>
+                <Image className='absolute left-8 top-8 brightness-0' alt='Brite Sobre' src='/assets/icons/certified-lenovo-partner-03.svg' height={84} width={84} />
+                <Image className='rounded-lg' alt='Brite Sobre' src='/assets/home/brite-about.png' height={545} width={444} />
+                <div className='absolute bottom-8 grid grid-cols-2 mx-8 gap-4'>
+                  <p className='text-xs text-secondary leading-3 break-words'>Business Informática LTDA 62.547.484/0001-40</p>
+                  <p className='text-xs text-secondary leading-3 break-words'>Rua Doutor Luiz Migliano, 1986 05.711-001 São Paulo/SP</p>
+                </div>
+              </div>
             </div>
 
             <div className='flex flex-col justify-center col-span-12 lg:col-span-5 lg:col-start-7'>
@@ -121,8 +128,8 @@ const Home = () => {
                 text="Nossa história"
               />
               <div>
-                <p className='text-sm text-secondary py-2'><span className='font-bold text-white'>+15.000</span> computadores alugados nos últimos 12 meses</p>
-                <p className='text-sm text-secondary py-2'><span className='font-bold text-white'>+100</span> empresas atendidas</p>
+                <p className='text-sm text-secondary py-2'><span className='text-white'>+15.000</span> computadores alugados nos últimos 12 meses</p>
+                <p className='text-sm text-secondary py-2'><span className='text-white'>+100</span> empresas atendidas</p>
               </div>
             </div>
 
@@ -151,8 +158,14 @@ const Home = () => {
                   <h1 className='text-white text-xl font-semibold mb-4'>Garantia e suporte.</h1>
                 </div>
                 <div>
-                  <p className='text-secondary text-md mb-2'>Técnicos licenciados Lenovo</p>
-                  <p className='text-secondary text-md'>Peças originais de fábrica</p>
+                  <div className='flex flex-row mb-2'>
+                    <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                    <p className='text-white text-md'>Técnicos licenciados Lenovo</p>
+                  </div>
+                  <div className='flex flex-row'>
+                    <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                    <p className='text-white text-md'>Peças originais de fábrica</p>
+                  </div>
                 </div>
               </div>
             </div>
