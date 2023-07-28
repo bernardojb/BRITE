@@ -12,10 +12,13 @@ export default function Header() {
 
   return (
     <>
-      <div className='py-5 fixed md:bg-navbar bg-white z-50 w-screen backdrop-blur-[6px]'
+      <div className='py-5 fixed z-50 w-screen'
         style={{
           top: '0px',
           left: '0px',
+          background:'rgba(255, 255, 255, 0.69)',
+          boxShadow:'0 4px 30px rgba(0, 0, 0, 0.1)',
+          backdropFilter:'blur(20px)'
         }}
       >
         <div className='container flex items-center flex-row mx-auto'>
