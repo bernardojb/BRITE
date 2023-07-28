@@ -16,7 +16,7 @@ const ProductIntro = () => {
             {productsList[0].products[0].intro.map(
                 (info) =>
                     <>
-                        <div className='grid lg:grid-cols-2 md:grid-cols-1 mb-12'>
+                        <div className='grid md:grid-cols-2 grid-cols-1 mb-12'>
                             <div className='pb-4 md:pb-0'>
                                 <h1 className='text-xl text-primary font-semibold'>{info.name}</h1>
                                 <p className='text-baselg text-secondary font-semibold'>{info.resume}</p>

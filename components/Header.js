@@ -18,7 +18,7 @@ export default function Header() {
           left: '0px',
         }}
       >
-        <div className='container flex flex-row mx-auto'>
+        <div className='container flex items-center flex-row mx-auto'>
           <Link href='/' className='pr-5' onClick={()=>setToggle(false)}>
             <Image
               src="/logo-brite.svg"
@@ -29,13 +29,13 @@ export default function Header() {
           </Link>
 
           <div className='hidden md:flex flex-row justify-center items-center text-primary font-semibold w-full'>
-            <Link href='/computers' className={`text-md px-5 ${pathname === "/computers" ? "text-primary font-bold":"text-secondary hover:text-brite"}`}>
+            <Link href='/computers' className={`text-md px-5 ${pathname === "/computers" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
               Computadores
             </Link>
-            <Link href='/about' className={`text-md px-5 ${pathname === "/about" ? "text-primary font-bold":"text-secondary hover:text-brite"}`}>
+            <Link href='/about' className={`text-md px-5 ${pathname === "/about" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
               Sobre
             </Link>
-            <Link href='/contact' className={`text-md px-5 ${pathname === "/contact" ? "text-primary font-bold":"text-secondary hover:text-brite"}`}>
+            <Link href='/contact' className={`text-md px-5 ${pathname === "/contact" ? "text-primary font-bold":"text-primary hover:text-brite"}`}>
               Contato
             </Link>
             <div className='ml-auto'>

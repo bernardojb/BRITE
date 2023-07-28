@@ -29,6 +29,7 @@ const page = () => {
             </section>
             <section className='bg-white py-28'>
                 
+
             </section>
         </>
     )

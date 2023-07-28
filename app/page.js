@@ -16,7 +16,7 @@ const Home = () => {
       {/* INTRO */}
       <section className='bg-cream relative'>
         <div className='container'>
-          <div className='flex min-h-screen justify-center flex-col max-w-md relative'>
+          <div className='flex min-h-[812px] h-screen justify-center flex-col max-w-md relative'>
             <h1 className='text-primary text-xl font-semibold mb-4'>Há mais de 30 anos simplificando o aluguel de notebooks.</h1>
             <p className='text-secondary text-base font-regular mb-16'>Aluguel inteligente de computadores, para você focar no que realmente importa: seus negócios.</p>
             <div className='flex lg:flex-row flex-col'>
@@ -24,7 +24,7 @@ const Home = () => {
               <BtnChev
                 href="/contact"
                 color="text-white"
-                bg="bg-primary mr-6"
+                bg="bg-primary mr-6 md:mb-0 mb-4"
                 text="Solicitar cotação"
               />
 
@@ -41,7 +41,7 @@ const Home = () => {
         </div>
 
         <div
-          className='lg:absolute lg:right-0 lg:top-0 lg:w-2/5 w-full h-screen relative  pointer-events-none'>
+          className='lg:absolute lg:right-0 lg:top-0 lg:w-2/5 w-full min-h-[812px] h-screen relative pointer-events-none'>
           <Image
             src="/hero.png"
             alt="Hero hokup"
@@ -94,45 +94,6 @@ const Home = () => {
 
       {/* COMPUTERS */}
       <section className='bg-cream py-28'>
-        {/* <div className='container mx-auto'>
-          <h1 className='text-primary text-xl font-semibold max-w-xl pb-10'>Diferentes computadores para sua demanda.</h1>
-
-          <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1.5px] after:bg-secondary after:w-full after:-bottom-3 mb-12">
-            <div className='text-secondary text-base flex flex-row flex-wrap'>
-              <button className={`mr-9 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc1" ? "after:bg-brite" : ""} after:w-full after:-bottom-3 after:left-0`} onClick={() => setActivePc("pc1")}>
-                <p className={`text-base hover:text-primary hover:font-bold ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Notebooks</p>
-              </button>
-              <button className={`mr-9 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc2" ? "after:bg-brite" : ""} after:w-full after:-bottom-3 after:left-0`} onClick={() => setActivePc("pc2")}>
-                <p className={`text-base hover:text-primary hover:font-bold ${activePc === "pc2" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Desktops</p>
-              </button>
-              <button className={`mr-9 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc3" ? "after:bg-brite" : ""} after:w-full after:-bottom-3 after:left-0`} onClick={() => setActivePc("pc3")}>
-                <p className={`text-base hover:text-primary hover:font-bold ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Workstations</p>
-              </button>
-              <button className={`relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc4" ? "after:bg-brite" : ""} after:w-full after:-bottom-3 after:left-0`} onClick={() => setActivePc("pc4")}>
-                <p className={`text-base hover:text-primary hover:font-bold ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Servidores</p>
-              </button>
-            </div>
-            <Link href='/computers' className='text-primary text-base font-semibold'>
-              <p>Ver tudo</p>
-            </Link>
-          </div>
-
-          <div className='grid lg:grid-cols-3 gap-4 mb-16'>
-            <div className='bg-placeholder h-[482px] rounded-lg'></div>
-            <div className='bg-placeholder h-[482px] rounded-lg'></div>
-            <div className='bg-placeholder h-[482px] rounded-lg'></div>
-          </div>
-
-          <div className='flex flex-col lg:flex-row justify-center items-center'>
-            <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
-            <BtnChev
-              href="/contact"
-              color="text-white"
-              bg="bg-brite"
-              text="Solicitar cotação"
-            />
-          </div>
-        </div> */}
         <CardProducts index={3} />
       </section>
 
@@ -152,9 +113,16 @@ const Home = () => {
               <p className='text-base text-secondary pb-6'>
                 Há mais de 30 anos no mercado corporativo, a Business Informática atua no segmento de TI, locando e vendendo notebooks, desktops e servidores.
               </p>
-              <Link href='/about'>
-                <p className='text-sm mb-12'>Nossa história</p>
-              </Link>
+              {/* <Link href='/about'>
+                <p className='text-sm '>Nossa história</p>
+              </Link> */}
+              <BtnChev
+              href="/about"
+              color="text-white"
+              bg="bg-[transparent] pl-0 mb-12"
+              // brightness="brightness-0"
+              text="Nossa história"
+            />
               <div>
                 <p className='text-sm text-secondary'><span className='font-bold text-white'>+15.000</span> computadores alugados nos últimos 12 meses</p>
                 <p className='text-sm text-secondary'><span className='font-bold text-white'>+100</span> empresas atendidas</p>

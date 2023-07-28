@@ -13,8 +13,8 @@ import SmoothScroll from '@/components/SmoothScroll';
 const cairo = Cairo({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'hokup - Base Template',
-  description: 'Personal template for outstanding projects.',
+  title: 'BRITE Informática',
+  description: 'Aluguel inteligente de computadores, para você focar no que realmente importa: seus negócios.',
 }
 
 //Scroll
