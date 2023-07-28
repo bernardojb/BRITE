@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { BtnChev } from '@/components/BtnChev';
 
 const AboutCard = (props) => {
     return (
@@ -83,10 +84,15 @@ export default function page() {
                 <div className='container'>
                     <div className='grid grid-cols-12 gap-4 pb-28'>
                         <div className='lg:col-span-4 col-span-12 '>
+                        <Image className='brightness-[80%] ' src="./assets/icons/certified-lenovo-partner-02.svg" height={14} width={164} />
                             <h1 className='text-white text-xl text-semibold mb-6 h-[140px]'>Parceiro oficial Lenovo no Brasil.</h1>
-                            <Link href='/computadores'>
-                                <p className='text-md text-white'>Nossos produtos</p>
-                            </Link>
+                            
+                            <BtnChev
+                                href="/computadores"
+                                color="text-white"
+                                bg="bg-[transparent] pl-0 mr-6"
+                                text="Nossos produtos"
+                            />
                         </div>
                         <div className='lg:col-span-7 lg:col-start-6 col-span-12'>
                             <div className='h-[140px] bg-placeholder mb-6'>
