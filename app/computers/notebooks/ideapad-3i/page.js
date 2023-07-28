@@ -10,6 +10,8 @@ import ProductIntro from '@/components/produtos/ProductIntro'
 import ProductRecomendation from '@/components/produtos/ProductRecomendation'
 import ProductSpecification from '@/components/produtos/ProductSpecification'
 import ProductInfo from '@/components/produtos/ProductInfo'
+import CardProducts from '@/components/CardProducts'
+import MightIntrest from '@/components/produtos/MightIntrest'
 
 const page = () => {
     return (
@@ -28,8 +30,7 @@ const page = () => {
                 <ProductSpecification />
             </section>
             <section className='bg-white py-28'>
-                
-
+                <MightIntrest index={3} />
             </section>
         </>
     )

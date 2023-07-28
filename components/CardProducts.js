@@ -15,7 +15,7 @@ const CardProducts = (props) => {
         <div className='container mx-auto'>
             <div className='flex md:flex-row w-full flex-col md:items-end mb-10'>
                 <h1 className='text-primary text-xl max-w-xl font-semibold pb-10'>Diferentes computadores para sua demanda.</h1>
-                {pathname != "/computers" && (
+                {pathname === "/" && (
                     <div className='flex flex-row w-fit sm:ml-auto'>
                         <Link href='/computers' className='text-primary text-base font-semibold md:ml-auto'>
                             <p>Ver tudo</p>
