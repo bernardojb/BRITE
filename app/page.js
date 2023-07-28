@@ -138,13 +138,13 @@ const Home = () => {
           </div>
 
           <div className='grid grid-cols-12 gap-4 mb-16'>
-            <div className='card-bg-rent h-[568px] w-full rounded-2xl col-span-12 lg:col-span-5 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8 relative bg '>
-                <p className='text-secondary text-md'>BRITE RENT SERVICE</p>
-                <h1 className='text-primary text-xl font-semibold mb-4'>Benefício fiscal no Imposto.</h1>
-                <p className='text-secondary text-md'>Reduza custos e invista no seu negócio. Previsibilidade sem gastos de manutenção , para focar sua equipe de TI na evolução do seu negócio.</p>
+            <div className='card-bg-rent sm:h-[568px] h-[500px] w-full rounded-2xl col-span-12 lg:col-span-5 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8 relative bg '>
+              <p className='text-secondary text-md'>BRITE RENT SERVICE</p>
+              <h1 className='text-primary text-xl font-semibold mb-4'>Benefício fiscal no Imposto.</h1>
+              <p className='text-secondary text-md'>Reduza custos e invista no seu negócio. Previsibilidade sem gastos de manutenção , para focar sua equipe de TI na evolução do seu negócio.</p>
             </div>
 
-            <div className='card-bg-desk h-[568px] w-full rounded-2xl col-span-12 lg:col-span-5 sm:px-12 sm:py-12 px-6 py-8'>
+            <div className='card-bg-desk sm:h-[568px] h-[500px] w-full rounded-2xl col-span-12 lg:col-span-5 sm:px-12 sm:py-12 px-6 py-8'>
               <div className='flex flex-col justify-between h-full'>
                 <div>
                   <p className='text-secondary text-md'>SERVICE DESK</p>
@@ -208,7 +208,10 @@ const Home = () => {
                       Dimensionamento estratégico do projeto através das necessidades e objetivos de cada cliente.
                     </p>
                     <div className='text-sm text-primary'>
-                      <p className='mb-6'>• Escolha dos computadores</p>
+                      <div className='flex flex-row mb-6'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Escolha dos modelos</p>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -218,39 +221,61 @@ const Home = () => {
                       Instalação e implementação dos novos equipamentos seguindo todas as especificações do projeto.
                     </p>
                     <div className='text-sm text-primary'>
-                      <p className='mb-4'>• Configuração dos computadores</p>
-                      <p className='mb-4'>• Atualização e backup</p>
-                      <p className='mb-4'>• Pré-instalação de imagens</p>
+                      <div className='flex flex-row mb-2'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Configuração dos computadores</p>
+                      </div>
+                      <div className='flex flex-row mb-2'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Atualização e backup</p>
+                      </div>
+                      <div className='flex flex-row mb-2'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Pré-instalação de imagens</p>
+                      </div>
                     </div>
                   </div>
                 )}
                 {activeTab === "tab3" && (
                   <div className='text-base text-secondary mb-6'>
                     <p className='mb-8 font-semibold'>
-                      Entrega dos computadores prontos para uso e substituição e logística para retirada do equipamento antigo.
+                      Entrega dos computadores configurados para uso e retirada do equipamento antigo.
                     </p>
                     <div className='text-sm text-primary'>
-                      <p className='mb-4'>• Envio para todo o Brasil</p>
-                      <p className='mb-4'>• Descarte correto do e-lixo</p>
+                      <div className='flex flex-row mb-2'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Envio para todo o Brasil</p>
+                      </div>
+                      <div className='flex flex-row mb-2'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Descarte correto do lixo eletrônico</p>
+                      </div>
                     </div>
                   </div>
                 )}
                 {activeTab === "tab4" && (
                   <div className='text-base text-secondary mb-6'>
                     <p className='mb-8 font-semibold'>
-                      Entrega dos computadores prontos para uso e substituição e logística para retirada do equipamento antigo.
+                      Acompanhamento durante todo o periodo para abertura de chamado e suporte técnico com peças originais de fábrica.
                     </p>
-                    <div className='text-sm text-primary'>
-                      <p className='mb-4'>• Suporte técnico via telefone</p>
-                      <p className='mb-4'>• Garantia com peças originais de fábrica</p>
-                    </div>
                   </div>
                 )}
               </div>
             </div>
 
             <div className='flex justify-center items-center col-span-12 lg:col-span-5 lg:col-start-8'>
-              <div className='bg-placeholder h-[590px] w-[446px] rounded-lg'></div>
+              {activeTab === "tab1" && (
+                <Image className='' alt='Brite Sobre' src='/assets/home/metodologia-01.png' height={508} width={444} />
+              )}
+              {activeTab === "tab2" && (
+                <Image className='' alt='Brite Sobre' src='/assets/home/metodologia-02.png' height={508} width={444} />
+              )}
+              {activeTab === "tab3" && (
+                <Image className='' alt='Brite Sobre' src='/assets/home/metodologia-03.png' height={508} width={444} />
+              )}
+              {activeTab === "tab4" && (
+                <Image className='' alt='Brite Sobre' src='/assets/home/metodologia-04.png' height={508} width={444} />
+              )}
             </div>
           </div>
         </div>
