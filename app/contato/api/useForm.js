@@ -32,7 +32,7 @@ const useForm = validate => {
         console.log(value)
     };
 
-    const handlePress = e => {
+    const handlePress = async (e) => {
         e.preventDefault();
         setErrors(validate(values));
         // setSubmitting(true);
@@ -47,7 +47,7 @@ const useForm = validate => {
         setLoading(true)
         // console.log("RESPONSEEEEE", e )
 
-        fetch(
+        await fetch(
             './send-email',
             {
                 method: 'POST',
