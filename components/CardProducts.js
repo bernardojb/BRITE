@@ -1,27 +1,46 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { productsList } from '../data/products-data'
 import Link from "next/link";
 import Image from "next/image";
 import { BtnChev } from './BtnChev';
-import { usePathname } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import ProductCard from './produtos/ProductCard';
 
 
 const CardProducts = (props) => {
     const [activePc, setActivePc] = React.useState("pc1")
     const pathname = usePathname()
+    const searchParams = useSearchParams()
+
+
+    useEffect(() => {
+        const url = window.location.href
+        
+        if (url === 'http://localhost:3000/computadores#notebooks') {
+            setActivePc('pc1')
+        } else if (url === 'http://localhost:3000/computadores#desktops') {
+            setActivePc('pc2')
+        } else if (url === 'http://localhost:3000/computadores#workstations') {
+            setActivePc('pc3')
+        } else if (url === 'http://localhost:3000/computadores#servidores') {
+            setActivePc('pc4')
+        } else {
+            setActivePc('pc1')
+        }
+
+    }, [])
 
     return (
         <div className='container mx-auto'>
             <div className='flex md:flex-row w-full flex-col md:items-end mb-20'>
-                <h1 className='text-primary text-xl max-w-xl font-semibold'>Diferentes computadores para sua demanda.</h1>
+                <h1 className='text-primary text-xl max-w-xl font-semibold mb-4 md:mb-0'>Diferentes computadores para sua demanda.</h1>
                 {pathname === "/" && (
-                    <div className='flex flex-row w-fit sm:ml-auto'>
+                    <div className='flex flex-row w-fit md:ml-auto'>
                         <BtnChev
                             href="/computadores"
                             color="text-primary"
-                            bg=""
+                            bg="pl-0"
                             brightness="brightness-0 my-2"
                             text="Ver tudo"
                         />
@@ -29,19 +48,19 @@ const CardProducts = (props) => {
                 )}
             </div>
 
-            <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1.5px] after:bg-secondary after:w-full after:-bottom-3 mb-12">
+            <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1.5px] after:bg-secondary after:w-full after:bottom-3 mb-12">
                 <div className='text-secondary text-base flex flex-row flex-wrap'>
-                    <button className={`mr-9 w-fit sm:my-0 my-1 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc1" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-3 after:-bottom-1 after:left-0`} onClick={() => setActivePc("pc1")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Notebooks</p>
+                    <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc1" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc1")}>
+                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Notebooks</p>
                     </button>
-                    <button className={`mr-9 w-fit sm:my-0 my-1 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc2" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-3 after:-bottom-1 after:left-0`} onClick={() => setActivePc("pc2")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc2" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Desktops</p>
+                    <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc2" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc2")}>
+                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Desktops</p>
                     </button>
-                    <button className={`mr-9 w-fit sm:my-0 my-1 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc3" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-3 after:-bottom-1 after:left-0`} onClick={() => setActivePc("pc3")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Workstations</p>
+                    <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc3" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc3")}>
+                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Workstations</p>
                     </button>
-                    <button className={` my-1 w-fit sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc4" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-3 after:-bottom-1 after:left-0`} onClick={() => setActivePc("pc4")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-normal"}`}>Servidores</p>
+                    <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc4" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc4")}>
+                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Servidores</p>
                     </button>
                 </div>
             </div>

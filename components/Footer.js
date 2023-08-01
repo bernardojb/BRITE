@@ -20,11 +20,6 @@ const footer = () => {
                                 width={120}
                             />
                         </Link>
-
-                        <div className="social-media">
-
-                        </div>
-
                         <Link href="#" className="mb-6">
                             {/* <img
                     src="/images/LogoCirsys.svg"
@@ -32,10 +27,51 @@ const footer = () => {
                     alt="CIRSYS Tech"
                   /> */}
                         </Link>
-                        <p className="text-secondary text-md mb-12 ">Há mais de 30 anos simplificando o aluguel de computadores. ©{new Date().getFullYear()}  Brite.</p>
+                        <p className="text-secondary text-xs mb-2 max-w-[260px] ">Há mais de 30 anos simplificando o aluguel de computadores. ©{new Date().getFullYear()}  Brite.</p>
+                        <div className='flex flex-row mb-12'>
+                            <a target='_blank' href='https://www.linkedin.com' className="mr-4">
+                                <Image
+                                    src="/assets/icons/linkedin.svg"
+                                    alt="Hokup Logo"
+                                    width={24}
+                                    height={24}
+                                    className="hover:brightness-200"
+                                />
+                            </a>
+                            <a target='_blank' href='https://www.instagram.com' className="mr-4">
+                                <Image
+                                    src="/assets/icons/instagram.svg"
+                                    alt="Hokup Logo"
+                                    width={24}
+                                    height={24}
+                                    className="hover:brightness-200"
+                                />
+                            </a>
+                            <a target='_blank' href='https://www.facebook.com' className="mr-4">
+                                <Image
+                                    src="/assets/icons/facebook.svg"
+                                    alt="Hokup Logo"
+                                    width={24}
+                                    height={24}
+                                    className="hover:brightness-200"
+                                />
+                            </a>
+                        </div>
+                        <div className="flex flex-row">
+                            <Image
+                                src="/assets/icons/certified-lenovo-partner-03.svg"
+                                alt="Hokup Logo"
+                                width={84}
+                                height={28}
+                                className="mr-2"
+                            />
+                            <p className="text-[10px] text-secondary max-w-[114px]" >Business Informática LTDA 62.547.484/0001-40</p>
+
+                        </div>
+
                     </div>
 
-                    <div className="w-full hidden">
+                    <div className="w-full hidden lg:block">
                     </div>
 
                     {footerMenuList.map((single) => (
@@ -50,8 +86,8 @@ const footer = () => {
                                 {single.list.map((item) => {
                                     const { id, href, text } = item;
                                     return (
-                                        <li key={id} className="my-2 hover:text-brite">
-                                            <Link href={href}>
+                                        <li key={id} className="my-1">
+                                            <Link href={href} className="hover:text-brite">
                                                 {text}
                                             </Link>
                                         </li>
@@ -63,16 +99,12 @@ const footer = () => {
                 </div>
             </div>
 
-
-            {/* <!-- HOKUP footer --> */}
-            {/* <a href="https://hokup.com.br" target="_blank" rel="noopener noreferrer" className="dark:bg-accent bg-accent flex flex-row items-center h-10 w-screen group hover:dark:bg-white ease-out duration-200">
-          <div className="container flex items-center ">
-            <svg className="fill-bg-black h-4 w-4 dark:group-hover:fill-jacarta-1400 group-hover:fill-jacarta-1400 ease-out duration-200">
-              <use xlinkHref={`/icons.svg#icon-hokup`}></use>
-            </svg>
-            <p className="pl-2 dark:text-black text-black text-sm font-semibold">hokup</p>
-          </div>
-        </a> */}
+            <div className="bg-brite">
+                <div className="container flex items-center ">
+                    <p className="pr-2 text-white text-xs">a project by.</p>
+                    <Image src="/assets/icons/hokup-com-br.svg" width={50} height={10} />
+                </div>
+            </div>
         </footer>
     );
 };

@@ -97,7 +97,6 @@ const Home = () => {
         <CardProducts index={3} />
       </section>
 
-
       {/* BRITE */}
       <section className='bg-primary py-28'>
         <div className='container'>

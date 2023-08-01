@@ -4,11 +4,15 @@ import * as React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { BtnChev } from '@/components/BtnChev';
+import { SquaresPlusIcon, ArrowDownOnSquareIcon, ArrowDownOnSquareStackIcon, ShieldCheckIcon, Cog8ToothIcon, ComputerDesktopIcon, CheckBadgeIcon, GlobeAmericasIcon } from '@heroicons/react/20/solid'
+
 
 const AboutCard = (props) => {
     return (
         <div className='flex flex-col col-span-12 sm:col-span-6 lg:col-span-3'>
-            <div className='w-[24px] h-[24px] bg-placeholder mb-4'></div>
+            <div className='w-[24px] h-[24px] bg-[#EFEFEF] mb-4 rounded'>
+                {props.icon}
+            </div>
             <p className='text-xs text-secondary'>{props.title}</p>
             <p className='text-sm text-primary pr-2'>{props.text}</p>
         </div>
@@ -20,13 +24,15 @@ export default function page() {
         <>
             {/* HERO */}
             <section>
-                <div className='bg-placeholder w-full h-96'></div>
+                <div className='bg-placeholder w-full'>
+                    <img className='w-full h-auto min-h-[350px] object-cover ' src="/assets/about/intro-about.png" style={{ objectPosition: 'center' }} />
+                </div>
             </section>
 
             {/* BRITE */}
             <section className='bg-cream py-28'>
                 <div className='container'>
-
+                    
                     <div className='mb-28'>
                         <h1 className='text-xl text-primary font-semibold mb-4'>Business Informática agora é Brite.</h1>
                         <p className='text-secondary max-w-[812px] text-lg font-semibold'>Nosso novo nome simboliza uma nova era de inovação e crescimento, mas não se engane: continuaremos a fornecer o mesmo nível de experiência e seriedade que você já está acostumado.</p>
@@ -51,7 +57,7 @@ export default function page() {
                         <p className='text-secondary max-w-[812px] text-lg font-semibold'>Há mais de 30 anos no mercado corporativo, a Brite atua no segmento de TI, locando e vendendo notebooks, desktops e servidores para empresas.</p>
                     </div>
 
-                    <div className='grid xl:grid-cols-6 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 pb-10 gap-3 '>
+                    <div className='grid gap-8 md:grid-cols-6 sm:grid-cols-3 grid-cols-2 pb-10'>
                         <div className='w-full flex justify-center relative h-[75px]'>
                             <Image className='brightness-[80%] ' src="./assets/icons/btg.svg" fill />
                         </div>
@@ -80,13 +86,12 @@ export default function page() {
             </section>
 
             {/* TIMELINE */}
-            <section className='bg-primary py-28'>
+            <section className='bg-primary py-28' id="sobre-lenovo">
                 <div className='container'>
                     <div className='grid grid-cols-12 gap-4 pb-28'>
-                        <div className='lg:col-span-4 col-span-12 '>
-                        <Image className='brightness-[80%] ' src="./assets/icons/certified-lenovo-partner-02.svg" height={14} width={164} />
+                        <div className='lg:col-span-4 col-span-12 lg:mb-0 mb-12'>
+                            <Image className='brightness-[80%] ' src="./assets/icons/certified-lenovo-partner-02.svg" height={14} width={164} />
                             <h1 className='text-white text-xl text-semibold mb-6'>Parceiro oficial Lenovo no Brasil.</h1>
-                            
                             <BtnChev
                                 href="/computadores"
                                 color="text-white"
@@ -95,8 +100,8 @@ export default function page() {
                             />
                         </div>
                         <div className='lg:col-span-7 lg:col-start-6 col-span-12'>
-                            <div className='h-[140px] bg-placeholder mb-6'>
-
+                            <div className='h-[140px] relative mb-6 rounded-2xl'>
+                                <Image className='mb-6 rounded-2xl object-cover' src="/assets/about/lenovo-about.png" fill />
                             </div>
                             <p className='text-secondary text-base'>
                                 A Lenovo, uma potência multinacional de tecnologia com sede em Pequim, China, tem uma história fascinante que ressoa em suas conquistas atuais. Fundada em 1984, com uma equipe de 11 engenheiros que através de uma filosofia empresarial persistente e um espírito inovador, a Lenovo tornou-se a maior fabricante de computadores do mundo, presente em mais de 160 países.
@@ -153,42 +158,63 @@ export default function page() {
                     </div>
                 </div>
             </section>
-            <section className='py-28 bg-white'>
+
+            {/* SOLUÇÕES */}
+            <section className='py-28 bg-white' id='sobre-solutions'>
                 <div className='container'>
-                    <h1 className='text-primary text-xl font-semibold mb-28'>Soluções de TI que vão além.</h1>
+                    <div className='flex lg:flex-row w-full flex-col lg:items-end mb-28'>
+                        <h1 className='text-primary text-xl max-w-2xl font-semibold mb-4 lg:mb-0'>Soluções de TI que vão além.</h1>
+                        <div className='flex flex-row w-fit lg:ml-auto'>
+                            <BtnChev
+                                href="/contato"
+                                color="text-primary"
+                                bg="pr-0 pl-0"
+                                brightness="brightness-0 my-2"
+                                text="Solicitar cotação"
+                            />
+                        </div>
+                    </div>
                     <div className='grid grid-cols-12 gap-x-4 md:gap-y-28 gap-y-16 '>
                         <AboutCard
                             title="ALUGUEL"
                             text="Computadores, notebooks e servidores para demandas personalizadas."
+                            icon={<SquaresPlusIcon color='#9A9AA0' />}
                         />
                         <AboutCard
                             title="VENDA"
                             text="Aquisição de computadores para obtenção própria."
+                            icon={<ArrowDownOnSquareIcon color='#9A9AA0' />}
                         />
                         <AboutCard
                             title="ALUGUEL + VENDA"
                             text="Modelo personalizável para empresas em expansão."
+                            icon={<ArrowDownOnSquareStackIcon color='#9A9AA0' />}
                         />
                         <AboutCard
                             title="DESK SERVICE"
                             text="Suporte técnico Brite em horário comercial por telefone ou WhatsApp."
+                            icon={<ShieldCheckIcon color='#9A9AA0' />}
                         />
 
                         <AboutCard
                             title="SETUP"
                             text="Instalação e troca de máquinas com todas especificações do projeto"
+                            icon={<Cog8ToothIcon color='#9A9AA0' />}
                         />
                         <AboutCard
                             title="SUPORTE"
                             text="Suporte técnico dos computadores e softwares."
+                            icon={<ComputerDesktopIcon color='#9A9AA0' />}
                         />
                         <AboutCard
                             title="MANUTENÇÃO"
                             text="Técnicos licenciados Lenovo e peças originais de fábrica."
+                            icon={<CheckBadgeIcon color='#9A9AA0' />}
                         />
                         <AboutCard
                             title="DESCARTE ECOLÓGICO"
                             text="Retirada das peças obsoletas para evitar despesas com multas ambientais e logística."
+                            icon={<GlobeAmericasIcon color='#9A9AA0' />}
                         />
                     </div>
                 </div>

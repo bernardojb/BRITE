@@ -30,7 +30,7 @@ module.exports = {
       'white': '#ffffff',
       'black': '#000000',
       'teste': '#ae0000',
-      'placeholder': '#d0d0d0bb',
+      'placeholder': '#e9e9e9bb',
       'brite': '#432AF4',
       
     },

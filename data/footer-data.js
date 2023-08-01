@@ -21,11 +21,6 @@ const footerMenuList = [
         },
         {
           id: 4,
-          href: "/sobre",
-          text: "Serviço",
-        },
-        {
-          id: 5,
           href: "/contato",
           text: "Contato",
         },
@@ -38,17 +33,22 @@ const footerMenuList = [
       list: [
         {
           id: 1,
-          href: "/computadores",
+          href: "/computadores#notebooks",
           text: "Notebooks",
         },
         {
           id: 2,
-          href: "/computadores",
+          href: "/computadores#desktops",
           text: "Desktops",
         },
         {
           id: 3,
-          href: "/computadores",
+          href: "/computadores#workstations",
+          text: "Workstations",
+        },
+        {
+          id: 4,
+          href: "/computadores#servidores",
           text: "Servidores",
         },
   
@@ -61,7 +61,7 @@ const footerMenuList = [
       list: [
         {
           id: 1,
-          href: "/sobre",
+          href: "/sobre#sobre-lenovo",
           text: "Parceria LENOVO",
         },
         {
@@ -76,7 +76,7 @@ const footerMenuList = [
         },
         {
           id: 4,
-          href: "/sobre",
+          href: "/sobre#sobre-solutions",
           text: "Números",
         },
       ],

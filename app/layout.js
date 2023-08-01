@@ -13,14 +13,39 @@ import SmoothScroll from '@/components/SmoothScroll';
 const cairo = Cairo({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'BRITE Informática',
-  description: 'Aluguel inteligente de computadores, para você focar no que realmente importa: seus negócios.',
+  title: 'Brite Informática',
+  description: 'Aluguel e venda simplificada de notebooks, desktops e servidores para empresas. Oferecemos mais do que computadores, a Brite informática é uma solução completa de TI para você focar no que realmente importa: seus negócios.',
+  //Basic
+  generator: 'Brite Informática',
+  applicationName: 'Brite Informática',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Brite Informática', 'Aluguel', 'Notebook', 'Desktop', 'Servidores', 'Workstation', 'hokup'],
+  authors: [{name: 'Bernardo Braga'}, {name: 'Pedro H. Alencar'}, { name: 'hokup', url: 'https://hokup.com.br' }],
+  creator: 'hokup',
+  publisher: 'hokup',
+  //Open Graph
+  openGraph: {
+    title: 'Brite Informática',
+    description: 'Aluguel e venda simplificada de notebooks, desktops e servidores para empresas. Oferecemos mais do que computadores, a Brite informática é uma solução completa de TI para você focar no que realmente importa: seus negócios.',
+    url: 'https://briteinformatica.com.br',
+    siteName: 'Há mais de 30 anos simplificando o aluguel de notebooks',
+    images: [
+      {
+        url: 'https://i.imgur.com/fXMSx9i.png',
+        width: 800,
+        height: 600,
+      },
+      // {
+      //   url: 'https://nextjs.org/og-alt.png',
+      //   width: 1800,
+      //   height: 1600,
+      //   alt: 'My custom alt',
+      // },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
 }
-
-//Scroll
-import Lenis from '@studio-freight/lenis';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export default function RootLayout({ children }) {
   return (
