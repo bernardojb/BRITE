@@ -11,12 +11,10 @@ import ProductCard from './produtos/ProductCard';
 const CardProducts = (props) => {
     const [activePc, setActivePc] = React.useState("pc1")
     const pathname = usePathname()
-    const searchParams = useSearchParams()
 
 
     useEffect(() => {
         const url = window.location.href
-        
         if (url === 'http://localhost:3000/computadores#notebooks') {
             setActivePc('pc1')
         } else if (url === 'http://localhost:3000/computadores#desktops') {
