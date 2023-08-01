@@ -47,7 +47,7 @@ const footer = () => {
                                     className="hover:brightness-200"
                                 />
                             </a>
-                            <a target='_blank' href='https://www.facebook.com' className="mr-4">
+                            <a target='_blank' href='https://www.facebook.com/profile.php?id=100093501758299' className="mr-4">
                                 <Image
                                     src="/assets/icons/facebook.svg"
                                     alt="Hokup Logo"

@@ -79,7 +79,7 @@ export default function Header() {
 
           <div className=' pb-5 absolute bottom-[75px] '>
             <div className='flex flex-row mb-1'>
-              <a target='_blank' href='https://www.linkedin.com' className='mr-4'>
+              <a target='_blank' href='https://www.linkedin.com/company/brite-inform%C3%A1tica/' className='mr-4'>
                 <Image
                   src="/assets/icons/linkedin.svg"
                   alt="Hokup Logo"
@@ -87,7 +87,7 @@ export default function Header() {
                   height={24}
                 />
               </a>
-              <a target='_blank' href='https://www.instagram.com' className='mr-4'>
+              <a target='_blank' href='https://www.instagram.com/brite.informatica/' className='mr-4'>
                 <Image
                   src="/assets/icons/instagram.svg"
                   alt="Hokup Logo"
@@ -95,7 +95,7 @@ export default function Header() {
                   height={24}
                 />
               </a>
-              <a target='_blank' href='https://www.facebook.com' className='mr-4'>
+              <a target='_blank' href='https://www.facebook.com/profile.php?id=100093501758299' className='mr-4'>
                 <Image
                   src="/assets/icons/facebook.svg"
                   alt="Hokup Logo"

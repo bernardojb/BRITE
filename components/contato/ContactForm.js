@@ -97,7 +97,7 @@ const ContactForm = () => {
                                     <label className='text-md text-primary font-bold lg:w-[50%] pr-4'>Telefone comercial</label>
                                     <input
                                         className={`text-md text-primary rounded-md border bg-cream border-secondary h-10 ps-2 w-full ${errors.phone && "border-validator"}`}
-                                        type='number'
+                                        type='phone'
                                         placeholder='+55 (11) 91234-5678'
                                         name='phone'
                                         id='phone'
