@@ -1,7 +1,7 @@
 const footerMenuList = [
     {
       id: 1,
-      title: "LINKS",
+      title: "Links",
       diffClass: "lg:col-start-5",
       list: [
         {
@@ -56,7 +56,7 @@ const footerMenuList = [
     },
     {
       id: 3,
-      title: "História",
+      title: "Sobre",
       diffClass: "",
       list: [
         {

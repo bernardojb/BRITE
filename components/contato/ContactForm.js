@@ -4,8 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { BtnChev } from '@/components/BtnChev';
 import CardProducts from '@/components/CardProducts';
-import validate from '@/app/contato/api/validateInfo';
-import useForm from '@/app/contato/api/useForm';
+import validate from '@/app/contato/send/validateInfo';
+import useForm from '@/app/contato/send/useForm';
 
 const ContactForm = () => {
 
