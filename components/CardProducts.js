@@ -15,13 +15,13 @@ const CardProducts = (props) => {
 
     useEffect(() => {
         const url = window.location.href
-        if (url === 'http://localhost:3000/computadores#notebooks') {
+        if (url === 'https://brite-five.vercel.app/computadores#notebooks') {
             setActivePc('pc1')
-        } else if (url === 'http://localhost:3000/computadores#desktops') {
+        } else if (url === 'https://brite-five.vercel.app/computadores#desktops') {
             setActivePc('pc2')
-        } else if (url === 'http://localhost:3000/computadores#workstations') {
+        } else if (url === 'https://brite-five.vercel.app/computadores#workstations') {
             setActivePc('pc3')
-        } else if (url === 'http://localhost:3000/computadores#servidores') {
+        } else if (url === 'https://brite-five.vercel.app/computadores#servidores') {
             setActivePc('pc4')
         } else {
             setActivePc('pc1')
