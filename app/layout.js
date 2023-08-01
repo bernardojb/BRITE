@@ -23,6 +23,7 @@ export const metadata = {
   authors: [{name: 'Bernardo Braga'}, {name: 'Pedro H. Alencar'}, { name: 'hokup', url: 'https://hokup.com.br' }],
   creator: 'hokup',
   publisher: 'hokup',
+  themeColor: '#432AF4',
   //Open Graph
   openGraph: {
     title: 'Brite Informática',
@@ -32,7 +33,7 @@ export const metadata = {
     images: [
       {
         url: 'https://i.imgur.com/fXMSx9i.png',
-        width: 800,
+        width: 1200,
         height: 600,
       },
       // {

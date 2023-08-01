@@ -29,7 +29,7 @@ const footer = () => {
                         </Link>
                         <p className="text-secondary text-xs mb-2 max-w-[260px] ">Há mais de 30 anos simplificando o aluguel de computadores. ©{new Date().getFullYear()}  Brite.</p>
                         <div className='flex flex-row mb-12'>
-                            <a target='_blank' href='https://www.linkedin.com' className="mr-4">
+                            <a target='_blank' href='https://www.linkedin.com/company/brite-inform%C3%A1tica/' className="mr-4">
                                 <Image
                                     src="/assets/icons/linkedin.svg"
                                     alt="Hokup Logo"
@@ -38,7 +38,7 @@ const footer = () => {
                                     className="hover:brightness-200"
                                 />
                             </a>
-                            <a target='_blank' href='https://www.instagram.com' className="mr-4">
+                            <a target='_blank' href='https://www.instagram.com/brite.informatica/' className="mr-4">
                                 <Image
                                     src="/assets/icons/instagram.svg"
                                     alt="Hokup Logo"
