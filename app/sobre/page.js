@@ -1,11 +1,12 @@
 'use client'
 import * as React from 'react';
-
 import Image from 'next/image'
 import Link from 'next/link'
-import { BtnChev } from '@/components/BtnChev';
+import { BtnChev } from '@/components/buttons/BtnChev';
+import { Btn } from '@/components/buttons/Btn';
+import { BtnFill } from '@/components/buttons/BtnFill';
 import { SquaresPlusIcon, ArrowDownOnSquareIcon, ArrowDownOnSquareStackIcon, ShieldCheckIcon, Cog8ToothIcon, ComputerDesktopIcon, CheckBadgeIcon, GlobeAmericasIcon } from '@heroicons/react/20/solid'
-
+import Animation from '@/components/structure/Animation';
 
 const AboutCard = (props) => {
     return (
@@ -21,7 +22,8 @@ const AboutCard = (props) => {
 
 export default function page() {
     return (
-        <>
+        <Animation>
+
             {/* HERO */}
             <section>
                 <div className='bg-placeholder w-full'>
@@ -30,9 +32,8 @@ export default function page() {
             </section>
 
             {/* BRITE */}
-            <section className='bg-cream py-28'>
+            <section className='bg-cream py-28' id='sobre-origem'>
                 <div className='container'>
-                    
                     <div className='mb-28'>
                         <h1 className='text-xl text-primary font-semibold mb-4'>Business Informática agora é Brite.</h1>
                         <p className='text-secondary max-w-[812px] text-lg font-semibold'>Nosso novo nome simboliza uma nova era de inovação e crescimento, mas não se engane: continuaremos a fornecer o mesmo nível de experiência e seriedade que você já está acostumado.</p>
@@ -57,29 +58,29 @@ export default function page() {
                         <p className='text-secondary max-w-[812px] text-lg font-semibold'>Há mais de 30 anos no mercado corporativo, a Brite atua no segmento de TI, locando e vendendo notebooks, desktops e servidores para empresas.</p>
                     </div>
 
-                    <div className='grid gap-8 md:grid-cols-6 sm:grid-cols-3 grid-cols-2 pb-10'>
+                    <div className='grid gap-8 md:grid-cols-6 sm:grid-cols-3 grid-cols-2 pb-10 opacity-50'>
                         <div className='w-full flex justify-center relative h-[75px]'>
-                            <Image className='brightness-[80%] ' src="./assets/icons/btg.svg" fill />
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/btg.svg" fill />
                         </div>
 
                         <div className='w-full flex justify-center relative h-[75px]'>
-                            <Image className='brightness-[80%] ' src="./assets/icons/vw.svg" fill />
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/vw.svg" fill />
                         </div>
 
                         <div className='w-full flex justify-center relative h-[75px]'>
-                            <Image className='brightness-[80%]' src="./assets/icons/eurobike.svg" fill />
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/eurobike.svg" fill />
                         </div>
 
                         <div className='w-full flex justify-center relative h-[75px]'>
-                            <Image className='brightness-[80%] ' src="./assets/icons/wps.svg" fill />
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/wps.svg" fill />
                         </div>
 
                         <div className='w-full flex justify-center relative h-[75px]'>
-                            <Image className='brightness-[80%] ' src="./assets/icons/bayer.svg" fill />
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/bayer.svg" fill />
                         </div>
 
                         <div className='w-full flex justify-center relative h-[75px]'>
-                            <Image className='brightness-[80%] ' src="./assets/icons/bunge.svg" fill />
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/bunge.svg" fill />
                         </div>
                     </div>
                 </div>
@@ -88,14 +89,20 @@ export default function page() {
             {/* TIMELINE */}
             <section className='bg-primary py-28' id="sobre-lenovo">
                 <div className='container'>
-                    <div className='grid grid-cols-12 gap-4 pb-28'>
+                    <div className='grid grid-cols-12 gap-4'>
                         <div className='lg:col-span-4 col-span-12 lg:mb-0 mb-12'>
-                            <Image className='brightness-[80%] ' src="./assets/icons/certified-lenovo-partner-02.svg" height={14} width={164} />
+                            <Image className='brightness-[80%] ' src="/assets/icons/certified-lenovo-partner-02.svg" height={14} width={164} />
                             <h1 className='text-white text-xl text-semibold mb-6'>Parceiro oficial Lenovo no Brasil.</h1>
-                            <BtnChev
+                            {/* <BtnChev
                                 href="/computadores"
                                 color="text-white"
                                 bg="bg-[transparent] pl-0 mr-6"
+                            /> */}
+                            <Btn
+                                href="/computadores"
+                                color="text-white"
+                                bg="mb-12"
+                                // brightness="brightness-0"
                                 text="Nossos produtos"
                             />
                         </div>
@@ -109,7 +116,7 @@ export default function page() {
                         </div>
                     </div>
 
-                    <div className='pb-28'>
+                    <div className='py-28' id="sobre-history">
                         <h1 className='text-lg text-white font-semibold max-w-[720px] text-right ml-auto'>Atuamos há mais de 30 anos no mercado corporativo no segmento de TI, locando e vendendo notebooks, desktops e servidores para empresas.</h1>
                     </div>
 
@@ -120,7 +127,7 @@ export default function page() {
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Responsáveis pelo maior numero de vendas de computadores Toshiba no Brasil, além do pioneirismo em alugueis de computadores.</p>
                                 <div className=' w-[80px] h-[12px]'>
-                                    <Image className='brightness-[80%]' src="./assets/icons/toshiba.svg" width={80} height={12} />
+                                    <Image className='brightness-[80%]' src="/assets/icons/toshiba.svg" width={80} height={12} />
                                 </div>
                             </div>
                         </div>
@@ -130,7 +137,7 @@ export default function page() {
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Entre 2003 e 2004 introduzimos em território nacional um conceito completo de locação de computadores.</p>
                                 <div className=' w-[80px] h-[12px]'>
-                                    <Image className='brightness-[80%]' src="./assets/icons/itautec.svg" width={80} height={12} />
+                                    <Image className='brightness-[80%]' src="/assets/icons/itautec.svg" width={80} height={12} />
                                 </div>
                             </div>
                         </div>
@@ -140,7 +147,7 @@ export default function page() {
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Iniciamos uma parceria única com a maior fabricante de computadores do mundo, a Lenovo. Desde então fazemos parte do seleto grupo de integradores Lenovo, responsáveis por oferecer os serviços de locação para clientes Lenovo.</p>
                                 <div className=' w-[80px] h-[12px]'>
-                                    <Image className='brightness-[80%]' src="./assets/icons/lenovo.svg" width={80} height={12} />
+                                    <Image className='brightness-[80%]' src="/assets/icons/lenovo.svg" width={80} height={12} />
                                 </div>
                             </div>
                         </div>
@@ -150,7 +157,7 @@ export default function page() {
                             <div className='flex flex-col'>
                                 <p className='text-baselg text-white mb-4 font-semibold'>Nossa nova identidade simboliza uma era de inovação e crescimento, mas não se engane: continuaremos a fornecer o mesmo nível de experiência e seriedade que você já está acostumado. Este rebranding reflete nossa evolução, nossos valores e, acima de tudo, nosso compromisso contínuo com nossos clientes.</p>
                                 <div className=' w-[80px] h-[12px]'>
-                                    <Image className='brightness-[800%] grayscale opacity-20 ' src="./assets/icons/logo-brite.svg" width={80} height={12} />
+                                    <Image className='brightness-[800%] grayscale opacity-20 ' src="/assets/icons/logo-brite.svg" width={80} height={12} />
                                 </div>
                             </div>
                         </div>
@@ -165,11 +172,25 @@ export default function page() {
                     <div className='flex lg:flex-row w-full flex-col lg:items-end mb-28'>
                         <h1 className='text-primary text-xl max-w-2xl font-semibold mb-4 lg:mb-0'>Soluções de TI que vão além.</h1>
                         <div className='flex flex-row w-fit lg:ml-auto'>
-                            <BtnChev
+                            {/* <BtnChev
                                 href="/contato"
                                 color="text-primary"
                                 bg="pr-0 pl-0"
                                 brightness="brightness-0 my-2"
+                                text="Solicitar cotação"
+                            /> */}
+                            {/* <Btn
+                                href="/contato"
+                                color="text-primary"
+                                bg=""
+                                brightness="brightness-0"
+                                text="Solicitar cotação"
+                            /> */}
+                            <BtnFill
+                                href="/contato"
+                                color="text-primary hover:text-black"
+                                bg="md:hover:bg-transparent-white-hover"
+                                brightness="brightness-0"
                                 text="Solicitar cotação"
                             />
                         </div>
@@ -195,7 +216,6 @@ export default function page() {
                             text="Suporte técnico Brite em horário comercial por telefone ou WhatsApp."
                             icon={<ShieldCheckIcon color='#9A9AA0' />}
                         />
-
                         <AboutCard
                             title="SETUP"
                             text="Instalação e troca de máquinas com todas especificações do projeto"
@@ -220,6 +240,6 @@ export default function page() {
                 </div>
             </section>
 
-        </>
+        </Animation>
     )
 }

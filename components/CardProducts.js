@@ -3,7 +3,8 @@ import React, { useEffect } from 'react'
 import { productsList } from '../data/products-data'
 import Link from "next/link";
 import Image from "next/image";
-import { BtnChev } from './BtnChev';
+import { BtnChev } from './buttons/BtnChev';
+import { BtnFill } from './buttons/BtnFill';
 import { usePathname, useSearchParams } from 'next/navigation'
 import ProductCard from './produtos/ProductCard';
 
@@ -11,6 +12,8 @@ import ProductCard from './produtos/ProductCard';
 const CardProducts = (props) => {
     const [activePc, setActivePc] = React.useState("pc1")
     const pathname = usePathname()
+
+    const path = "http://localhost:3000/"
 
 
     useEffect(() => {
@@ -35,11 +38,11 @@ const CardProducts = (props) => {
                 <h1 className='text-primary text-xl max-w-xl font-semibold mb-4 md:mb-0'>Diferentes computadores para sua demanda.</h1>
                 {pathname === "/" && (
                     <div className='flex flex-row w-fit md:ml-auto'>
-                        <BtnChev
+                        <BtnFill
                             href="/computadores"
-                            color="text-primary"
-                            bg="pl-0"
-                            brightness="brightness-0 my-2"
+                            color="text-primary hover:text-black"
+                            bg="md:hover:bg-transparent-white-hover my-2"
+                            brightness="brightness-0"
                             text="Ver tudo"
                         />
                     </div>
@@ -49,16 +52,16 @@ const CardProducts = (props) => {
             <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1.5px] after:bg-secondary after:w-full after:bottom-3 mb-12">
                 <div className='text-secondary text-base flex flex-row flex-wrap'>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc1" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc1")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Notebooks</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Notebooks</p>
                     </button>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc2" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc2")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Desktops</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Desktops</p>
                     </button>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc3" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc3")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Workstations</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Workstations</p>
                     </button>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc4" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc4")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary hover:font-bold ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Servidores</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Servidores</p>
                     </button>
                 </div>
             </div>
@@ -130,11 +133,11 @@ const CardProducts = (props) => {
             <div className='flex flex-col lg:flex-row justify-center items-center'>
                 <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
                 <BtnChev
-                    href="/contato"
-                    color="text-white"
-                    bg="bg-brite"
-                    text="Solicitar cotação"
-                />
+                href="/contato"
+                color="text-cream hover:text-white"
+                bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg"
+                text="Solicitar cotação"
+              />
             </div>
         </div>
     )

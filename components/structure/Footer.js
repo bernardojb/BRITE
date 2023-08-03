@@ -1,7 +1,7 @@
 // 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import { footerMenuList } from "../data/footer-data";
+import { footerMenuList } from "../../data/footer-data";
 
 const footer = () => {
     return (
@@ -13,7 +13,7 @@ const footer = () => {
                         {/* <!-- Logo --> */}
                         <Link href="/" className="">
                             <Image
-                                src="./logo-brite.svg"
+                                src="/logo-brite.svg"
                                 className="grayscale brightness-[10] mb-5"
                                 alt="BRITE Informática"
                                 height={30}
@@ -99,11 +99,13 @@ const footer = () => {
                 </div>
             </div>
 
-            <div className="bg-brite">
+            <div className="bg-brite hover:bg-white group transition-colors duration-300 ease-out">
+                <a className="" href="https://hokup.com.br" target="_blank">
                 <div className="container flex items-center ">
-                    <p className="pr-2 text-white text-xs">a project by.</p>
-                    <Image src="/assets/icons/hokup-com-br.svg" width={50} height={10} />
+                    <p className="pr-2 text-white text-xs group-hover:text-primary group-hover:font-bold">a project by.</p>
+                    <Image className="brightness-[2000%] group-hover:brightness-[100%] " src="/assets/icons/hokup-inverted.svg" width={50} height={10} />
                 </div>
+                </a>
             </div>
         </footer>
     );

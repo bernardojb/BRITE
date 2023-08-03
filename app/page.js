@@ -1,19 +1,33 @@
 'use client'
 import * as React from 'react';
-
 import Image from 'next/image'
 import Link from 'next/link'
-import { BtnChev } from '@/components/BtnChev';
+
+// Components
+import { BtnChev } from '@/components/buttons/BtnChev';
 import CardProducts from '@/components/CardProducts';
 import ContactForm from '@/components/contato/ContactForm';
+import Animation from '@/components/structure/Animation';
 
-const Home = () => {
+//Anim
+import { useSpring, animated } from '@react-spring/web'
+import { BtnFill } from '@/components/buttons/BtnFill';
+import { Btn } from '@/components/buttons/Btn';
+
+
+export default function home() {
 
   const [activeTab, setActiveTab] = React.useState("tab1")
   const [activePc, setActivePc] = React.useState("pc1")
 
+  //Animation
+  const springs = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  })
+
   return (
-    <>
+    <Animation>
       {/* INTRO */}
       <section className='bg-cream relative'>
         <div className='container'>
@@ -21,36 +35,48 @@ const Home = () => {
             <h1 className='text-primary text-xl font-semibold mb-4'>Há mais de 30 anos simplificando o aluguel de notebooks.</h1>
             <p className='text-secondary text-base font-regular mb-16'>Aluguel inteligente de computadores, para você focar no que realmente importa: seus negócios.</p>
             <div className='flex sm:flex-row flex-wrap'>
-
               <BtnChev
                 href="/contato"
                 color="text-white"
-                bg="bg-primary mr-6 my-2"
+                bg="bg-primary drop-shadow-2xl hover:drop-shadow-lg mr-6 my-2 hover:bg-black "
                 text="Solicitar cotação"
               />
-
-              <BtnChev
+              <BtnFill
                 href="/computadores"
-                color="text-primary"
-                bg=""
-                brightness="brightness-0 my-2"
+                color="text-primary hover:text-black"
+                bg="md:hover:bg-transparent-white-hover px-4 my-2"
+                brightness="brightness-0"
                 text="Produtos"
               />
             </div>
-            <Image className='absolute bottom-12' src='./assets/icons/certified-lenovo-partner-01.svg' width={164} height={50} alt='Certified Lenovo Partner' />
+            <Image className='absolute bottom-12' src='/assets/icons/certified-lenovo-partner-01.svg' width={164} height={50} alt='Certified Lenovo Partner' />
           </div>
         </div>
 
-        <div
+        <div className='
+        lg:absolute lg:right-0 lg:top-0 lg:w-1/2 lg:h-screen lg:min-h-[812px]
+        w-full relative pointer-events-none
+        '>
+          <div className='w-full h-full relative ml-0 lg:w-fit lg:ml-auto'>
+            <img src="/assets/home/hero.png" alt='Brite Informática Hero' className='lg:ml-auto lg:h-full lg:w-auto lg:object-cover w-full object-cover object-right-bottom relative' />
+            <div className='absolute bottom-4 left-4 sm:bottom-8 sm:left-16'>
+              <p className='text-xs text-secondary'>Notebooks</p>
+              <h1 className='text-baselg text-white'>ThinkPad X1 Carbon</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OLD HERO IMG BACKUP */}
+      {/* <div
           className='lg:absolute lg:right-0 lg:top-0 lg:w-2/5 w-full min-h-[812px] h-screen relative pointer-events-none'>
           <Image
             src="/hero.png"
-            alt="Hero hokup"
+            alt="Hero Brite"
             fill
             className='object-right-bottom lg:object-cover object-cover w-full'
           />
-        </div>
-      </section>
+        </div> */}
 
       {/* PARTNERS */}
       <section className='py-16 flex flex-row justify-center items-center '
@@ -59,34 +85,32 @@ const Home = () => {
         }}
       >
         <div className='container mx-auto'>
-          <div className='grid gap-8 md:grid-cols-6 sm:grid-cols-3  grid-cols-2 pb-10'>
+          <div className='grid gap-8 md:grid-cols-6 sm:grid-cols-3 grid-cols-2 pb-10'>
+
             <div className='w-full flex justify-center relative h-[75px]'>
-              <Image className="mix-blend-overlay" src="./assets/icons/btg.svg" width={174} height={74} />
+              <Image className="" src="/assets/icons/btg.svg" width={174} height={74} />
+            </div>
+            <div className='w-full flex justify-center relative h-[75px]'>
+              <Image className="" src="/assets/icons/vw.svg" width={174} height={74} />
             </div>
 
             <div className='w-full flex justify-center relative h-[75px]'>
-              <Image className="mix-blend-overlay" src="./assets/icons/vw.svg" width={174} height={74} />
+              <Image className="" src="/assets/icons/eurobike.svg" width={174} height={74} />
             </div>
 
             <div className='w-full flex justify-center relative h-[75px]'>
-              <Image className="mix-blend-overlay" src="./assets/icons/eurobike.svg" width={174} height={74} />
+              <Image className="" src="/assets/icons/wps.svg" width={174} height={74} />
             </div>
 
             <div className='w-full flex justify-center relative h-[75px]'>
-              <Image className="mix-blend-overlay" src="./assets/icons/wps.svg" width={174} height={74} />
+              <Image className="" src="/assets/icons/bayer.svg" width={174} height={74} />
             </div>
 
             <div className='w-full flex justify-center relative h-[75px]'>
-              <Image className="mix-blend-overlay" src="./assets/icons/bayer.svg" width={174} height={74} />
-            </div>
-
-            <div className='w-full flex justify-center relative h-[75px]'>
-              <Image className="mix-blend-overlay" src="./assets/icons/bunge.svg" width={174} height={74} />
+              <Image className="" src="/assets/icons/bunge.svg" width={174} height={74} />
             </div>
           </div>
-          <p
-            className=' text-center text-base max-w-[425px] mx-auto'
-          >
+          <p className='text-center text-base text-white max-w-[425px] mx-auto'>
             Empresas de todo o Brasil que acreditam na Brite para gestão de seu TI.
           </p>
         </div>
@@ -104,9 +128,9 @@ const Home = () => {
 
             <div className='flex col-span-12 lg:col-span-5 mb-10 lg:mb-0 '>
               <div className='relative'>
-                <Image className='absolute left-8 top-8 brightness-0' alt='Brite Sobre' src='/assets/icons/certified-lenovo-partner-03.svg' height={84} width={84} />
+                <Image className='absolute left-4 top-4 sm:left-8 sm:top-8 brightness-0' alt='Brite Sobre' src='/assets/icons/certified-lenovo-partner-03.svg' height={84} width={84} />
                 <Image className='rounded-lg' alt='Brite Sobre' src='/assets/home/brite-about.png' height={545} width={444} />
-                <div className='absolute bottom-8 grid grid-cols-2 mx-8 gap-4'>
+                <div className='absolute bottom-4 mx-4 grid grid-cols-2 gap-4 sm:mx-8 sm:bottom-8'>
                   <p className='text-xs text-secondary leading-3 break-words'>Business Informática LTDA 62.547.484/0001-40</p>
                   <p className='text-xs text-secondary leading-3 break-words'>Rua Doutor Luiz Migliano, 1986 05.711-001 São Paulo/SP</p>
                 </div>
@@ -115,18 +139,18 @@ const Home = () => {
 
             <div className='flex flex-col justify-center col-span-12 lg:col-span-5 lg:col-start-7'>
               {/* <p className='text-secondary'>Certified <span className='font-bold'>Lenovo</span> partner</p> */}
-              <h1 className='text-white text-xl font-semibold mb-4'>Business informática agora é Brite.</h1>
+              <h1 className='text-white text-xl font-semibold  mb-4'>Business informática agora é Brite.</h1>
               <p className='text-base text-secondary pb-6'>
                 Há mais de 30 anos no mercado corporativo, a Business Informática atua no segmento de TI, locando e vendendo notebooks, desktops e servidores.
               </p>
-              <BtnChev
+              <Btn
                 href="/sobre"
                 color="text-white"
-                bg="bg-[transparent] pl-0 mb-12"
+                bg="mb-12"
                 // brightness="brightness-0"
                 text="Nossa história"
               />
-              <div>
+              <div className=''>
                 <p className='text-sm text-secondary py-2'><span className='text-white'>+15.000</span> computadores alugados nos últimos 12 meses</p>
                 <p className='text-sm text-secondary py-2'><span className='text-white'>+100</span> empresas atendidas</p>
               </div>
@@ -179,12 +203,11 @@ const Home = () => {
           <div className='flex flex-col lg:flex-row justify-center items-center'>
             <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
             <BtnChev
-              href="/contato"
-              color="text-white"
-              bg="bg-brite"
-              // brightness="brightness-0"
-              text="Solicitar cotação"
-            />
+                href="/contato"
+                color="text-cream hover:text-white"
+                bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg"
+                text="Solicitar cotação"
+              />
           </div>
         </div>
 
@@ -198,19 +221,37 @@ const Home = () => {
             <div className='col-span-12 lg:col-span-6 flex flex-col justify-center'>
               <h1 className='text-primary text-xl font-semibold max-w-xl mb-10'>Nossa metodologia.</h1>
               <div className="flex flex-row items-center relative mb-10">
-                <div className="text-primary w-full text-base flex flex-col sm:flex-row sm:justify-between items-start relative sm:after:content-[''] sm:after:absolute sm:after:h-[1px] sm:after:bg-secondary sm:after:w-full sm:after:-bottom-3">
+
+                {/* <div className="text-primary w-full text-base flex flex-col sm:flex-row sm:justify-between items-start relative sm:after:content-[''] sm:after:absolute sm:after:h-[1px] sm:after:bg-secondary sm:after:w-full sm:after:-bottom-3">
                   <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab1" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab1")}>
-                    <p className={`text-base hover:text-primary hover:font-bold ${activeTab === "tab1" ? "text-black font-bold" : "text-secondary font-normal"}`}>01. Definição</p>
+                    <p className={`text-base hover:text-primary  ${activeTab === "tab1" ? "text-black font-bold" : "text-secondary font-semibold"}`}>01. Definição</p>
                   </button>
                   <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab2" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab2")}>
-                    <p className={`text-base hover:text-primary hover:font-bold ${activeTab === "tab2" ? "text-black font-bold" : "text-secondary font-normal"}`}>02. Configuração</p>
+                    <p className={`text-base hover:text-primary  ${activeTab === "tab2" ? "text-black font-bold" : "text-secondary font-semibold"}`}>02. Configuração</p>
                   </button>
                   <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab3" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab3")}>
-                    <p className={`text-base hover:text-primary hover:font-bold ${activeTab === "tab3" ? "text-black font-bold" : "text-secondary font-normal"}`}>03. Entrega</p>
+                    <p className={`text-base hover:text-primary  ${activeTab === "tab3" ? "text-black font-bold" : "text-secondary font-semibold"}`}>03. Entrega</p>
                   </button>
                   <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab4" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab4")}>
-                    <p className={`text-base hover:text-primary hover:font-bold ${activeTab === "tab4" ? "text-black font-bold" : "text-secondary font-normal"}`}>04. Suporte</p>
+                    <p className={`text-base hover:text-primary  ${activeTab === "tab4" ? "text-black font-bold" : "text-secondary font-semibold"}`}>04. Suporte</p>
                   </button>
+                </div> */}
+
+                <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1px] after:bg-secondary after:w-full after:bottom-3 w-full">
+                  <div className='text-secondary text-base flex flex-row flex-wrap'>
+                    <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab1" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab1")}>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>01. Definição</p>
+                    </button>
+                    <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab2" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab2")}>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>02. Configuração</p>
+                    </button>
+                    <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab3" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab3")}>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>03. Entrega</p>
+                    </button>
+                    <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab4" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab4")}>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>04. Suporte</p>
+                    </button>
+                  </div>
                 </div>
               </div>
               <div className='lg:min-h-[275px] '>
@@ -295,8 +336,8 @@ const Home = () => {
 
       {/* CONTATO */}
       <ContactForm />
-    </>
+    </Animation>
   )
 }
 
-export default Home
+// export default home;

@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-import { BtnChev } from './BtnChev'
+import { BtnChev } from '../buttons/BtnChev'
 import { usePathname } from 'next/navigation'
 
 export default function Header() {

@@ -1,4 +1,4 @@
-import { BtnChev } from '@/components/BtnChev'
+import { BtnChev } from '@/components/buttons/BtnChev'
 import Image from 'next/image'
 import React from 'react'
 

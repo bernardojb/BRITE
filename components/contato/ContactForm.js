@@ -2,7 +2,7 @@
 import * as React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
-import { BtnChev } from '@/components/BtnChev';
+import { BtnChev } from '@/components/buttons/BtnChev';
 import CardProducts from '@/components/CardProducts';
 import validate from '@/app/contato/send/validateInfo';
 import useForm from '@/app/contato/send/useForm';

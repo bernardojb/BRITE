@@ -48,7 +48,7 @@ const useForm = validate => {
         // console.log("RESPONSEEEEE", e )
 
         await fetch(
-            '/api/send-email',
+            '/api/route',
             {
                 method: 'POST',
                 body: JSON.stringify(values),

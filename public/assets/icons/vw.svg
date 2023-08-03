@@ -1,14 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="174" height="74" viewBox="0 0 174 74">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="174" height="74" viewBox="0 0 174 74">
   <defs>
     <style>
-      .cls-1, .cls-2 {
-        fill: #fff;
-      }
-
       .cls-1 {
+        fill: #fff;
         opacity: 0;
       }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
     </style>
+    <linearGradient id="linear-gradient" x1="86.62954" y1="7.39463" x2="87.42954" y2="71.39463" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#827aff"/>
+      <stop offset="1" stop-color="#7ca3ff"/>
+    </linearGradient>
   </defs>
   <title>vw</title>
   <g id="Layer_2" data-name="Layer 2">

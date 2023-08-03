@@ -5,9 +5,11 @@ import { Cairo } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 
 //Components
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import SmoothScroll from '@/components/SmoothScroll';
+import Header from '../components/structure/Header';
+import Footer from '../components/structure/Footer';
+import SmoothScroll from '@/components/structure/SmoothScroll';
+import Animation from '@/components/structure/Animation';
+import Navbar from '@/components/structure/Navbar';
 
 //Setup & Meta
 const cairo = Cairo({ subsets: ['latin'] })
@@ -20,7 +22,7 @@ export const metadata = {
   applicationName: 'Brite Informática',
   referrer: 'origin-when-cross-origin',
   keywords: ['Brite Informática', 'Aluguel', 'Notebook', 'Desktop', 'Servidores', 'Workstation', 'hokup', 'business info', 'business informática', 'lenovo', 'parceiro oficial lenovo', 'brite info'],
-  authors: [{name: 'Bernardo Braga'}, {name: 'Pedro H. Alencar'}, { name: 'hokup', url: 'https://hokup.com.br' }],
+  authors: [{ name: 'Bernardo Braga' }, { name: 'Pedro H. Alencar' }, { name: 'hokup', url: 'https://hokup.com.br' }],
   creator: 'hokup',
   publisher: 'hokup',
   themeColor: '#432AF4',
@@ -51,7 +53,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={cairo.className}>
-        <Header />
+        {/* <Header /> */}
+        <Navbar />
         <SmoothScroll>
           {children}
         </SmoothScroll>

@@ -3,7 +3,7 @@ import React from 'react'
 import { productsList } from '@/data/products-data';
 import Link from "next/link";
 import Image from "next/image";
-import { BtnChev } from '../BtnChev';
+import { BtnChev } from '../buttons/BtnChev';
 import { usePathname } from 'next/navigation'
 
 const MightIntrest = (props) => {
@@ -18,7 +18,7 @@ const MightIntrest = (props) => {
                     <Link href='/computadores' className='text-primary text-base font-semibold md:ml-auto'>
                         <p>Ver tudo</p>
                     </Link>
-                    <Image src="./assets/icons/chevron.svg" alt='Chevron Icon' className=' brightness-0' width={24} height={24} />
+                    <Image src="/assets/icons/chevron.svg" alt='Chevron Icon' className=' brightness-0' width={24} height={24} />
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ const MightIntrest = (props) => {
                                         <p className='text-secondary text-xs'>{single.linha}</p>
                                         <div className=' flex flex-row justify-between'>
                                             <p className='text-white text-base'>{single.name}</p>
-                                            <Image src="./assets/icons/chevron.svg" height={24} width={24} />
+                                            <Image src="/assets/icons/chevron.svg" height={24} width={24} />
                                         </div>
                                     </div>
                                 </Link>

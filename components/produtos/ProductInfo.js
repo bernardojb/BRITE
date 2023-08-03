@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { productsList } from '@/data/products-data'
 import Link from 'next/link'
 import Image from 'next/image'
-import { BtnChev } from '@/components/BtnChev'
+import { BtnChev } from '@/components/buttons/BtnChev'
 
 const ProductInfo = () => {
     return (
