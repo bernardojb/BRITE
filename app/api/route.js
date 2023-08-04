@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey(process.env.SG_API);
+sgMail.setApiKey(process.env.REACT_APP_SG_API);
 
 class LepyValidator {
     constructor() {
