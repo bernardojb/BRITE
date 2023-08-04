@@ -1,31 +1,20 @@
-'use client'
-import React, { useEffect } from 'react'
-// import { useSpring, animated } from '@react-spring/web'
-import { AnimatePresence, motion } from "framer-motion"
+"use client";
+import React from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Animation = ({ children }) => {
+  return (
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
+  );
+};
 
-    // const animation = useSpring({
-    //     from: { opacity: 0 },
-    //     to: { opacity: 1 },
-    //     delay: 250,
-    //     config: {
-    //         duration: 500
-    //     }
-    // })
-
-    return (
-        <AnimatePresence>
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 1 }}
-            >
-                {children}
-            </motion.div>
-        </AnimatePresence>
-    )
-}
-
-export default Animation
+export default Animation;
