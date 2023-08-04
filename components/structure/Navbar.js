@@ -16,25 +16,25 @@ export default function Navbar() {
     const pathname = usePathname()
 
     //event listener
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    useEffect(() => {
-      const handleWindowResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
+    // useEffect(() => {
+    //   const handleWindowResize = () => {
+    //     setWindowWidth(window.innerWidth);
+    //   };
 
-      console.log(">>>>>>>>>>>>",windowWidth)
+    //   console.log(">>>>>>>>>>>>",windowWidth)
   
-      window.addEventListener('resize', handleWindowResize);
+    //   window.addEventListener('resize', handleWindowResize);
   
-      if( windowWidth > 767){
-        setToggle(false)
-      }
+    //   if( windowWidth > 767){
+    //     setToggle(false)
+    //   }
 
-      return () => {
-        window.removeEventListener('resize', handleWindowResize);
-      };
-    });
+    //   return () => {
+    //     window.removeEventListener('resize', handleWindowResize);
+    //   };
+    // });
 
     //anim
     const openNav = {
