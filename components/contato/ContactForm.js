@@ -24,14 +24,14 @@ const ContactForm = () => {
                             <div className='mb-6'>
                                 <p className='text-md text-secondary'>Whatsapp</p>
                                 <a href='https://wa.me/+5511912016426?text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20computadores%20dispon%C3%ADveis' target='_blank' className='text-primary hover:text-brite'>
-                                    <p className='text-base text-primary hover:text-brite font-bold'>(11) 91201-6426</p>
+                                    <p className='text-base text-primary hover:text-brite font-bold ease-out transition duration-200'>(11) 91201-6426</p>
                                 </a>
                             </div>
 
                             <div className='mb-6'>
                                 <p className='text-md text-secondary'>Telefone</p>
                                 <a href='tel:+551143280030' className='text-primary hover:text-brite w-fit'>
-                                    <p className='text-base text-primary hover:text-brite font-bold '>(11) 4328-0030</p>
+                                    <p className='text-base text-primary hover:text-brite font-bold ease-out transition duration-200'>(11) 4328-0030</p>
                                 </a>
                             </div>
                         </div>
@@ -39,9 +39,9 @@ const ContactForm = () => {
                         <div className=''>
                             <p className='text-md text-secondary'>Email</p>
                             <div className='w-fit'>
-                            <a href='mailto:contato@briteinformatica.com.br' className='text-primary hover:text-brite w-fit'>
-                                <p className='text-base font-bold w-fit'>contato@briteinformatica.com.br</p>
-                            </a>
+                                <a href='mailto:contato@briteinformatica.com.br' className='text-primary hover:text-brite w-fit'>
+                                    <p className='text-base font-bold w-fit ease-out transition duration-200'>contato@briteinformatica.com.br</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const ContactForm = () => {
                                         placeholder='Jhon Doe'
                                     >
                                     </input>
-                                    {errors.name && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
+                                    {errors.name && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error' /> </div>}
                                 </div>
 
                                 <div className='flex flex-col lg:flex-row mb-4 lg:items-center relative'>
@@ -76,7 +76,7 @@ const ContactForm = () => {
                                         onChange={handleChange}
                                     >
                                     </input>
-                                    {errors.site && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
+                                    {errors.site && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error' /> </div>}
                                 </div>
 
                                 <div className='flex flex-col lg:flex-row mb-4 lg:items-center relative'>
@@ -90,7 +90,7 @@ const ContactForm = () => {
                                         value={values.mail}
                                         onChange={handleChange}
                                     ></input>
-                                    {errors.mail && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
+                                    {errors.mail && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error' /> </div>}
                                 </div>
 
                                 <div className='flex flex-col lg:flex-row mb-4 lg:items-center relative'>
@@ -104,7 +104,7 @@ const ContactForm = () => {
                                         value={values.phone}
                                         onChange={handleChange}
                                     ></input>
-                                    {errors.phone && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error'/> </div>}
+                                    {errors.phone && <div className='absolute right-3'><Image src="/assets/icons/warning.svg" width={16} height={16} alt='Error' /> </div>}
                                 </div>
 
                                 {/* <div className='flex flex-col lg:flex-row mb-4'>
@@ -183,13 +183,16 @@ const ContactForm = () => {
                                             value={values.message}
                                             onChange={handleChange}
                                         />
-                                        <p className='text-xs text-secondary mb-4'>Ao enviar este formulário, você concorda com a nossa <Link href='/politica-de-privacidade' className="text-primary hover:text-brite font-bold">Política de Privacidade.</Link></p>
+                                        <p className='text-xs text-secondary mb-4 '>Ao enviar este formulário, você concorda com a nossa <Link href='/politica-de-privacidade' className="text-primary hover:text-brite font-bold ease-out transition duration-200">Política de Privacidade.</Link></p>
                                         <button
                                             onClick={handlePress}
-                                            className='px-5 py-1 ml-auto bg-brite rounded-full w-fit flex justify-center items-center'>
-                                            <span className='text-white text-md'>
+                                            className='px-5 py-1 ml-auto bg-brite rounded-full w-fit flex justify-center items-center hover:drop-shadow-lg hover:bg-brite-hover ease-out transition duration-200'>
+                                            <p className='text-white text-md mr-4'>
                                                 Solicitar cotação
-                                            </span>
+                                            </p>
+                                            <div className={`w-[8px] h-[16px] relative font-semibold`}>
+                                                <Image src="/assets/icons/chevron.svg" fill />
+                                            </div>
                                         </button>
                                     </div>
                                 </div>

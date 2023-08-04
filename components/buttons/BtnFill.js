@@ -6,7 +6,7 @@ export const BtnFill = (props) => {
     return (
         <Link 
         href={props.href} 
-        className={`${props.bg} md:px-4 py-[2px] rounded-full w-fit flex justify-center items-center ease-out transition duration-500`}>
+        className={`${props.bg} md:px-4 py-[2px] rounded-full w-fit flex justify-center items-center ease-out transition duration-200`}>
             <p className={` ${props.color} text-md whitespace-nowrap font-semibold mr-4`}>
                 {props.text}
             </p>

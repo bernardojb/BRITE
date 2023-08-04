@@ -145,7 +145,7 @@ export default function home() {
               </p>
               <Btn
                 href="/sobre"
-                color="text-white"
+                color="text-white group-hover:text-secondary"
                 bg="mb-12"
                 // brightness="brightness-0"
                 text="Nossa história"
@@ -205,7 +205,7 @@ export default function home() {
             <BtnChev
                 href="/contato"
                 color="text-cream hover:text-white"
-                bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg"
+                bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg hover:bg-brite-hover"
                 text="Solicitar cotação"
               />
           </div>
@@ -221,35 +221,19 @@ export default function home() {
             <div className='col-span-12 lg:col-span-6 flex flex-col justify-center'>
               <h1 className='text-primary text-xl font-semibold max-w-xl mb-10'>Nossa metodologia.</h1>
               <div className="flex flex-row items-center relative mb-10">
-
-                {/* <div className="text-primary w-full text-base flex flex-col sm:flex-row sm:justify-between items-start relative sm:after:content-[''] sm:after:absolute sm:after:h-[1px] sm:after:bg-secondary sm:after:w-full sm:after:-bottom-3">
-                  <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab1" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab1")}>
-                    <p className={`text-base hover:text-primary  ${activeTab === "tab1" ? "text-black font-bold" : "text-secondary font-semibold"}`}>01. Definição</p>
-                  </button>
-                  <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab2" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab2")}>
-                    <p className={`text-base hover:text-primary  ${activeTab === "tab2" ? "text-black font-bold" : "text-secondary font-semibold"}`}>02. Configuração</p>
-                  </button>
-                  <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab3" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab3")}>
-                    <p className={`text-base hover:text-primary  ${activeTab === "tab3" ? "text-black font-bold" : "text-secondary font-semibold"}`}>03. Entrega</p>
-                  </button>
-                  <button className={`my-2 sm:my-0 relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab4" ? "after:bg-brite" : ""} after:w-full sm:after:-bottom-2 -bottom-1 after:left-0`} onClick={() => setActiveTab("tab4")}>
-                    <p className={`text-base hover:text-primary  ${activeTab === "tab4" ? "text-black font-bold" : "text-secondary font-semibold"}`}>04. Suporte</p>
-                  </button>
-                </div> */}
-
                 <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1px] after:bg-secondary after:w-full after:bottom-3 w-full">
                   <div className='text-secondary text-base flex flex-row flex-wrap'>
                     <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab1" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab1")}>
-                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>01. Definição</p>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activeTab === "tab1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>01. Definição</p>
                     </button>
                     <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab2" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab2")}>
-                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>02. Configuração</p>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activeTab === "tab2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>02. Configuração</p>
                     </button>
                     <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab3" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab3")}>
-                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>03. Entrega</p>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activeTab === "tab3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>03. Entrega</p>
                     </button>
                     <button className={`mb-3 px-2 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activeTab === "tab4" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActiveTab("tab4")}>
-                      <p className={`text-base text-start sm:text-center hover:text-primary ${activeTab === "tab4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>04. Suporte</p>
+                      <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activeTab === "tab4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>04. Suporte</p>
                     </button>
                   </div>
                 </div>

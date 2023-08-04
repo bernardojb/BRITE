@@ -34,7 +34,7 @@ module.exports = {
       'brite': '#432AF4',
       //hovers
       'primary-hover': '#373a42',
-      'brite-hover': '#3824cf',
+      'brite-hover': '#4233b5',
       'transparent-white-hover': '#00000010',
       'transparent-dark-hover': '#ffffff10',
     },

@@ -35,7 +35,7 @@ const footer = () => {
                                     alt="Hokup Logo"
                                     width={24}
                                     height={24}
-                                    className="hover:brightness-200"
+                                    className="hover:brightness-200 ease-out transition duration-200"
                                 />
                             </a>
                             <a target='_blank' href='https://www.instagram.com/brite.informatica/' className="mr-4">
@@ -44,7 +44,7 @@ const footer = () => {
                                     alt="Hokup Logo"
                                     width={24}
                                     height={24}
-                                    className="hover:brightness-200"
+                                    className="hover:brightness-200 ease-out transition duration-200"
                                 />
                             </a>
                             <a target='_blank' href='https://www.facebook.com/profile.php?id=100093501758299' className="mr-4">
@@ -53,7 +53,7 @@ const footer = () => {
                                     alt="Hokup Logo"
                                     width={24}
                                     height={24}
-                                    className="hover:brightness-200"
+                                    className="hover:brightness-200 ease-out transition duration-200"
                                 />
                             </a>
                         </div>
@@ -87,7 +87,7 @@ const footer = () => {
                                     const { id, href, text } = item;
                                     return (
                                         <li key={id} className="my-1">
-                                            <Link href={href} className="hover:text-brite">
+                                            <Link href={href} className="hover:text-brite ease-out transition duration-200">
                                                 {text}
                                             </Link>
                                         </li>
@@ -99,7 +99,7 @@ const footer = () => {
                 </div>
             </div>
 
-            <div className="bg-brite hover:bg-white group transition-colors duration-300 ease-out">
+            <div className="bg-brite hover:bg-white group transition duration-500 ease-out">
                 <a className="" href="https://hokup.com.br" target="_blank">
                 <div className="container flex items-center ">
                     <p className="pr-2 text-white text-xs group-hover:text-primary group-hover:font-bold">a project by.</p>

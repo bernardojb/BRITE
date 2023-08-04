@@ -6,76 +6,104 @@ import { BtnChev } from '../buttons/BtnChev'
 import { usePathname } from 'next/navigation'
 import { useSpring, animated, config } from '@react-spring/web'
 import { easings } from '@react-spring/web'
+import { motion, AnimatePresence } from 'framer-motion'
+import MenuToggle from './Toggle'
 
 export default function Navbar() {
 
     const [toggle, setToggle] = useState(false)
     const [display, setDisplay] = useState(false)
-
     const pathname = usePathname()
 
-    const { height } = useSpring({
-        height: toggle ? '100vh' : '0vh',
-        config: {
-            easing: easings.easeOutQuad,
-            duration: 1000
-        },
-        onRest: () => {
-            setDisplay(true)
-        }
-    })
+    //event listener
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    const { opacity } = useSpring({
-        opacity: toggle ? 1 : 0,
-        delay: 500,
-        config: {
-            duration: 300
-        },
-        onRest: {
-            cancelled: true,
-        }
-    })
+    useEffect(() => {
+      const handleWindowResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
 
-    const { socialmedia } = useSpring({
-        socialmedia: toggle ? 1 : 0,
-        delay: 800,
-        config: {
-            duration: 300
-        },
-        
-    })
-
-
-
-
-    const [springs, api] = useSpring(() => ({
-        from: { x: 0 },
-      }))
-    
-      const handleClick = () => {
-        api.start({
-          from: {
-            x: 0,
-          },
-          to: {
-            x: 100,
-          },
-        })
+      console.log(">>>>>>>>>>>>",windowWidth)
+  
+      window.addEventListener('resize', handleWindowResize);
+  
+      if( windowWidth > 767){
+        setToggle(false)
       }
 
+      return () => {
+        window.removeEventListener('resize', handleWindowResize);
+      };
+    });
+
+    //anim
+    const openNav = {
+        open: {
+            height: '100vh',
+            transition: {
+                type: 'spring',
+                bounce: 0.2,
+                duration: 1
+            }
+        },
+        closed: {
+            height: '80px',
+            transition: {
+                type: 'spring',
+                bounce: 0.2,
+                duration: 0.3
+            }
+        }
+    }
+
+    const openLinks = {
+        open: {
+            opacity: 1,
+            transition: {
+                // type: 'spring',
+                duration: 0.5,
+                delay: 0.3
+            },
+        },
+        closed: {
+            opacity: 0,
+            transition: {
+                duration: 0.2,
+                delay: 0
+            }
+        }
+    }
+
+    const openSocial = {
+        open: {
+            opacity: 1,
+            transition: {
+                // type: 'spring',
+                duration: 0.5,
+                delay: 0.6
+            },
+        },
+        closed: {
+            opacity: 0,
+            transition: {
+                // type: 'spring',
+                // bounce: 0.2,
+                duration: 0.2,
+                delay: 0
+            }
+        }
+    }
 
 
     return (
         <>
-            <animated.div
-                className='py-5 z-50 w-screen header fixed'
-                style={{
-                    height: height,
-                    minHeight: '80px'
-                }}>
-
-                <div className='container flex items-center flex-row mx-auto h-fit'>
-
+            <motion.div
+                className='z-50 w-screen header fixed flex flex-col min-h-[80px]'
+                animate={toggle ? "open" : "closed"}
+                variants={openNav}
+                initial={false}
+            >
+                <div className='container flex items-center flex-row mx-auto min-h-[80px] h-[80px]'>
                     {/* Logo */}
                     <Link href='/' onClick={() => setToggle(false)} >
                         <Image
@@ -101,7 +129,7 @@ export default function Navbar() {
                             <BtnChev
                                 href="/contato"
                                 color="text-white"
-                                bg="bg-brite"
+                                bg="bg-brite hover:drop-shadow-lg hover:bg-brite-hover ease-out transition duration-200"
                                 brightness=""
                                 text="Solicitar cotação"
                                 className="mr-0"
@@ -110,22 +138,27 @@ export default function Navbar() {
                     </div>
 
                     {/* Hamburger */}
-                    <div className='block md:hidden ml-auto'>
-                        <button className='h-9 flex justify-center items-center' onClick={() => setToggle(!toggle)} data-collapse-toggle="navbar-default" type="button">
-                            <Image
-                                src="/assets/icons/menu.svg"
-                                alt="Hokup Logo"
-                                width={35}
-                                height={35}
-                            />
-                        </button>
-                    </div>
-
+                    <motion.nav
+                        initial={false}
+                        animate={toggle ? "open" : "closed"}
+                        className='block md:hidden ml-auto'
+                    >
+                        <MenuToggle
+                            toggle={() => {
+                                setToggle(!toggle)
+                            }}
+                        />
+                    </motion.nav>
                 </div>
 
-                <div className={`container md:hidden flex flex-col justify-between h-full`} >
-                    <animated.div style={{ opacity: opacity }} className=''>
-                        <ul className={`${ toggle ? "" : "hidden"} mt-10`}>
+                <div className={`${toggle ? "" : "hidden"} container md:hidden flex flex-col justify-between h-full`} >
+                    <motion.div
+                        initial={false}
+                        animate={toggle ? "open" : "closed"}
+                        variants={openLinks}
+                        style={{}}
+                        className='block'>
+                        <ul>
                             <Link href="/" onClick={() => setToggle(!toggle)} className='relative'>
                                 <li className={`my-5 text-baselg ${pathname === "/" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0" : "text-secondary font-normal"}`}>Home</li>
                             </Link>
@@ -139,9 +172,15 @@ export default function Navbar() {
                                 <li className={`my-5 text-baselg ${pathname === "/contato" ? "text-primary ml-5 font-bold before:content-[''] before:absolute before:h-full before:w-[2px] before:bg-brite before:left-0" : "text-secondary font-normal"}`}>Solicitar cotação</li>
                             </Link>
                         </ul>
-                    </animated.div>
+                    </motion.div>
 
-                    <animated.div style={{ ...springs  }} className={`${toggle && display ? "mb-5 pb-5" : "hidden"}`}>
+                    <motion.div
+                        style={{}}
+                        className={`block pb-4`}
+                        initial={false}
+                        animate={toggle ? "open" : "closed"}
+                        variants={openSocial}
+                    >
                         <div className='flex flex-row mb-1'>
                             <a target='_blank' href='https://www.linkedin.com/company/brite-inform%C3%A1tica/' className='mr-4'>
                                 <Image
@@ -169,12 +208,10 @@ export default function Navbar() {
                             </a>
                         </div>
                         <a href='mailto:contato@briteinformatica.com.br' className='text-secondary hover:text-brite'>contato@briteinformatica.com.br</a>
-                    </animated.div>
+                    </motion.div>
                 </div>
 
-
-
-            </animated.div>
+            </motion.div>
         </>
     )
 }

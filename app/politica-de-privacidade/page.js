@@ -51,7 +51,7 @@ const Politica = () => {
                         paragraph1=""
                         paragraph2=""
                     >
-                        <p className='text-secondary text-sm mb-6'>Se você tiver alguma dúvida, preocupação ou sugestão relacionada à nossa Política de Privacidade, entre em contato conosco pelo e-mail <a href='mailto:contato@briteinformatica.com.br' className='text-brite'>contato@briteinformatica.com.br</a></p>
+                        <p className='text-secondary text-sm mb-6'>Se você tiver alguma dúvida, preocupação ou sugestão relacionada à nossa Política de Privacidade, entre em contato conosco pelo e-mail <a href='mailto:contato@briteinformatica.com.br' className='text-brite font-semibold hover:text-brite-hover'>contato@briteinformatica.com.br</a></p>
                         <p className='text-secondary text-sm'>Ao utilizar nosso website, você concorda com os termos desta Política de Privacidade.</p>
 
                     </Paragraph>

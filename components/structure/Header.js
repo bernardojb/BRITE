@@ -38,7 +38,7 @@ export default function Header() {
               <BtnChev
                 href="/contato"
                 color="text-white"
-                bg="bg-brite"
+                bg="bg-brite hover:drop-shadow-lg hover:bg-brite-hover ease-out transition duration-200"
                 brightness=""
                 text="Solicitar cotação"
                 className="mr-0"

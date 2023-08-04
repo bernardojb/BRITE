@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export const BtnChev = (props) => {
     return (
-        <Link href={props.href} className={`px-4 py-[2px] rounded-full w-fit flex justify-center items-center ease-in-out transition duration-300 ${props.bg}`}>
+        <Link href={props.href} className={`px-4 py-[2px] rounded-full w-fit flex justify-center items-center ease-in-out transition duration-200 ${props.bg}`}>
             <p className={`text-md whitespace-nowrap font-semibold mr-4 ${props.color}`}>
                 {props.text}
             </p>

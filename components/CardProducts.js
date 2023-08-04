@@ -52,16 +52,16 @@ const CardProducts = (props) => {
             <div className="flex flex-row items-center justify-between relative after:content-[''] after:absolute after:h-[1.5px] after:bg-secondary after:w-full after:bottom-3 mb-12">
                 <div className='text-secondary text-base flex flex-row flex-wrap'>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc1" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc1")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Notebooks</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activePc === "pc1" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Notebooks</p>
                     </button>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc2" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc2")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Desktops</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activePc === "pc2" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Desktops</p>
                     </button>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc3" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc3")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Workstations</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Workstations</p>
                     </button>
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc4" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc4")}>
-                        <p className={`text-base text-start sm:text-center hover:text-primary ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Servidores</p>
+                        <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Servidores</p>
                     </button>
                 </div>
             </div>
@@ -135,7 +135,7 @@ const CardProducts = (props) => {
                 <BtnChev
                 href="/contato"
                 color="text-cream hover:text-white"
-                bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg"
+                bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg hover:bg-brite-hover"
                 text="Solicitar cotação"
               />
             </div>

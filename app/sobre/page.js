@@ -100,7 +100,7 @@ export default function page() {
                             /> */}
                             <Btn
                                 href="/computadores"
-                                color="text-white"
+                                color="text-white group-hover:text-secondary"
                                 bg="mb-12"
                                 // brightness="brightness-0"
                                 text="Nossos produtos"

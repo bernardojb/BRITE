@@ -2,18 +2,38 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const ProductCard = (props) => {
 
-    const [hovered, setHovered] = useState(false)
+    const hoverCard = {
+        hover: {
+            scale: 0.95,
+            transition: {
+                ease: "easeOut",
+                duration: 0.3,
+            },
+        }
+    }
+
+    const hoverText = {
+        hover: {
+            paddingBottom: "20px",
+            paddingTop: "50px",
+            background:'linear-gradient(0deg, rgba(0, 8, 27, 1) 0%, rgba(255,255,255,0) 100%)',
+            transition: {
+                ease: "easeOut",
+                duration: 0.3,
+            },
+        }
+    }
 
     return (
-        <div className='bg-white h-[482px] relative rounded-xl border border-placeholder hover:drop-shadow-xl ease-in-out transition-all duration-300 overflow-hidden group'
-            onMouseOver={() => { setHovered(true) }}
-            onMouseOut={() => { setHovered(false) }}
+        <motion.div className='bg-white h-[482px] relative rounded-xl border border-placeholder overflow-hidden group transition-shadow hover:drop-shadow-lg'
+            whileHover="hover"
+            variants={hoverCard}
         >
             <Link href={props.href} className='overflow-hidden'>
-
                 <div
                     className='rounded-xl'
                     style={{
@@ -26,26 +46,23 @@ const ProductCard = (props) => {
                         position: 'absolute'
                     }} />
 
-                <Image src={props.src} fill className='object-cover z-0 rounded-xl group-hover:scale-110 ease-out transition-all duration-500' />
+                <Image
+                    src={props.src}
+                    fill
+                    className='object-cover z-0 rounded-xl transition ease-out duration-300 group-hover:scale-[1.15]'
+                />
 
-                <div className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full group-hover:bg-black'>
-                    <p className='text-secondary text-xs'>{props.linha}</p>
+                <motion.div variants={hoverText} className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>
+                    <p className='text-secondary group-hover:text-white text-xs transition ease-out duration-300'>{props.linha}</p>
                     <div className=' flex flex-row justify-between items-center'>
                         <p className='text-white text-baselg leading-9'>{props.name}</p>
                         <div className={`w-[8px] h-[16px] relative font-semibold ${props.brightness}`}>
                             <Image src="/assets/icons/chevron.svg" fill />
                         </div>
                     </div>
-                    {hovered && (
-                        <div>
-                            <p className='text-white text-base font-semibold'>{props.tech1}</p>
-                            <p className='text-white text-base font-semibold'>{props.tech2}</p>
-                            <p className='text-white text-base font-semibold'>{props.tech3}</p>
-                        </div>
-                    )}
-                </div>
+                </motion.div>
             </Link>
-        </div>
+        </motion.div >
     )
 }
 

@@ -33,7 +33,7 @@ const footerMenuList = [
     list: [
       {
         id: 1,
-        href: "/sobre#sobre-origem",
+        href: "/sobre",
         text: "Origem",
       },
       {
