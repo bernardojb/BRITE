@@ -55,13 +55,15 @@ export default function home() {
 
         <div className='
         lg:absolute lg:right-0 lg:top-0 lg:w-1/2 lg:h-screen lg:min-h-[812px]
-        w-full relative pointer-events-none
+        w-full relative
         '>
           <div className='w-full h-full relative ml-0 lg:w-fit lg:ml-auto'>
             <img src="/assets/home/hero.png" alt='Brite Informática Hero' className='lg:ml-auto lg:h-full lg:w-auto lg:object-cover w-full object-cover object-right-bottom relative' />
             <div className='absolute bottom-4 left-4 sm:bottom-8 sm:left-16'>
               <p className='text-xs text-secondary'>Notebooks</p>
-              <h1 className='text-baselg text-white'>ThinkPad X1 Carbon</h1>
+              <Link href="/thinkpad-x1-carbon">
+                <h1 className='text-baselg text-white hover:text-brite ease-out transition duration-200'>ThinkPad X1 Carbon</h1>
+              </Link>
             </div>
           </div>
         </div>
@@ -168,13 +170,14 @@ export default function home() {
           </div>
 
           <div className='grid grid-cols-12 gap-4 mb-16'>
-            <div className='card-bg-rent sm:h-[568px] h-[500px] w-full rounded-2xl col-span-12 lg:col-span-5 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8 relative bg '>
+
+            <div className='hover:drop-shadow-xl ease-out transition duration-200 card-bg-rent sm:h-[568px] h-[500px] w-full rounded-2xl col-span-12 lg:col-span-5 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8 relative bg '>
               <p className='text-secondary text-md'>BRITE RENT SERVICE</p>
               <h1 className='text-primary text-xl font-semibold mb-4'>Benefício fiscal no Imposto.</h1>
               <p className='text-secondary text-md'>Reduza custos e invista no seu negócio. Previsibilidade sem gastos de manutenção , para focar sua equipe de TI na evolução do seu negócio.</p>
             </div>
 
-            <div className='card-bg-desk sm:h-[568px] h-[500px] w-full rounded-2xl col-span-12 lg:col-span-5 sm:px-12 sm:py-12 px-6 py-8'>
+            <div className='hover:drop-shadow-xl ease-out transition duration-200 card-bg-desk sm:h-[568px] h-[500px] w-full rounded-2xl col-span-12 lg:col-span-5 sm:px-12 sm:py-12 px-6 py-8'>
               <div className='flex flex-col justify-between h-full'>
                 <div>
                   <p className='text-secondary text-md'>SERVICE DESK</p>
@@ -193,13 +196,14 @@ export default function home() {
               </div>
             </div>
 
-            <div className='card-bg-sustentability min-h-[277px] w-full rounded-2xl col-span-12 lg:col-span-10 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8'>
+            <div className='hover:drop-shadow-xl ease-out transition duration-200 card-bg-sustentability min-h-[277px] w-full rounded-2xl col-span-12 lg:col-span-10 lg:col-start-2 sm:px-12 sm:py-12 px-6 py-8'>
               <p className='text-secondary text-md'>ECO-FRIENDLY</p>
               <h1 className='text-white text-xl font-semibold mb-4'>Descarte ecológico.</h1>
               <p className='text-secondary text-md max-w-[492px]'>Retirada das peças obsoletas e descarte correto do e-lixo para evitar despesas com multas e logística.</p>
             </div>
 
           </div>
+
           <div className='flex flex-col lg:flex-row justify-center items-center'>
             <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
             <BtnChev

@@ -1,7 +1,7 @@
 const footerMenuList = [
   {
     id: 1,
-    title: "Rotas",
+    title: "Brite",
     diffClass: "lg:col-start-5",
     list: [
       {
@@ -39,7 +39,7 @@ const footerMenuList = [
       {
         id: 2,
         href: "/sobre#sobre-lenovo",
-        text: "LENOVO",
+        text: "Lenovo",
       },
       {
         id: 3,

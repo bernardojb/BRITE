@@ -8,7 +8,7 @@ export const Btn = (props) => {
             <p className={`text-md whitespace-nowrap font-semibold mr-4 ${props.color}`}>
                 {props.text}
             </p>
-            <div className={`w-[8px] h-[16px] relative font-semibold group-hover:translate-x-2 transition ${props.brightness}`}>
+            <div className={`w-[8px] h-[16px] relative font-semibold group-hover:translate-x-2 transition duration-200 ${props.brightness}`}>
                 <Image src="/assets/icons/chevron.svg" fill />
             </div>
         </Link>

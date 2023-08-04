@@ -8,10 +8,11 @@ const ProductCard = (props) => {
 
     const hoverCard = {
         hover: {
-            scale: 0.95,
+            // scale: 0.99,
+            borderRadius: 0,
             transition: {
                 ease: "easeOut",
-                duration: 0.3,
+                duration: 0.5,
             },
         }
     }
@@ -23,7 +24,7 @@ const ProductCard = (props) => {
             background:'linear-gradient(0deg, rgba(0, 8, 27, 1) 0%, rgba(255,255,255,0) 100%)',
             transition: {
                 ease: "easeOut",
-                duration: 0.3,
+                duration: .8,
             },
         }
     }
@@ -49,7 +50,7 @@ const ProductCard = (props) => {
                 <Image
                     src={props.src}
                     fill
-                    className='object-cover z-0 rounded-xl transition ease-out duration-300 group-hover:scale-[1.15]'
+                    className='object-cover z-0 rounded-xl transition ease-out duration-300 group-hover:scale-[1.05]'
                 />
 
                 <motion.div variants={hoverText} className='absolute bottom-0 left-0 z-[3] sm:px-8 px-4 py-4 w-full'>

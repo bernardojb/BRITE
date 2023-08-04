@@ -185,7 +185,7 @@ const productsList = [
             {
                 id: 7,
                 name: "ThinkPad X1 Carbon",
-                href: "/ideapad-3",
+                href: "/thinkpad-x1-carbon",
                 src: "/assets/notebooks/ThinkPad X1 Carbon/lenovo-notebook-thinkpad-x1-carbon-00.webp",
                 linha: "Notebook executivos",
             },
