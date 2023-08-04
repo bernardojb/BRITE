@@ -1,4 +1,3 @@
-// 'use client'
 import './globals.css'
 import * as React from 'react';
 import { Cairo } from 'next/font/google'
