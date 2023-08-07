@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { productsList } from '@/data/products-data'
-import Link from 'next/link'
-import Image from 'next/image'
 import { BtnChev } from '@/components/buttons/BtnChev'
 
-const ProductRecomendation = () => {
+const ProductRecomendation = (props) => {
     return (
         <div className='container'>
-            {productsList[0].products[0].tech.map(
+            {productsList[props.list].products[props.product].tech.map(
                 (single) =>
                     <>
                         <p className='text-xs text-secondary'>Pra quem é indicado?</p>
@@ -19,9 +17,9 @@ const ProductRecomendation = () => {
                                     <>
                                         {index < 4 && (
                                             <div className='bg-white px-10 py-8 relative rounded-xl border border-placeholder col-span-full sm:col-span-6'>
-                                                <div className='flex flex-col' key={id}>
-                                                    <p className='text-secondary text-xs font-semibold mb-2'>{name}</p>
-                                                    <p className='text-primary text-md font-semibold'>{description}</p>
+                                                <div className='flex flex-col whitespace-pre-wrap' key={id}>
+                                                    <p className='text-secondary text-xs font-semibold mb-2 whitespace-pre-wrap'>{name}</p>
+                                                    <p className='text-primary text-md font-semibold whitespace-pre-wrap'>{description}</p>
                                                 </div>
                                             </div>
                                         )}
@@ -33,8 +31,8 @@ const ProductRecomendation = () => {
                                     <p className='text-center text-md text-secondary mr-4 mb-4 lg:mb-0'>{single.price}</p>
                                     <BtnChev
                                         href="/contato"
-                                        color="text-white"
-                                        bg="bg-brite"
+                                        color="text-cream hover:text-white"
+                                        bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg hover:bg-brite-hover"
                                         text="Solicitar cotação"
                                     />
                                 </div>

@@ -73,12 +73,11 @@ const footerMenuList = [
         href: "/computadores#workstations",
         text: "Workstations",
       },
-      {
-        id: 4,
-        href: "/computadores#servidores",
-        text: "Servidores",
-      },
-
+      // {
+      //   id: 4,
+      //   href: "/computadores#servidores",
+      //   text: "Servidores",
+      // },
     ],
   },
   {

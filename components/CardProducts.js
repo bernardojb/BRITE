@@ -60,9 +60,9 @@ const CardProducts = (props) => {
                     <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc3" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc3")}>
                         <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activePc === "pc3" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Workstations</p>
                     </button>
-                    <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc4" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc4")}>
+                    {/* <button className={`mb-3 px-5 py-3 w-fit relative after:content-[''] after:absolute after:h-[5px] ${activePc === "pc4" ? "after:bg-brite sm:bg-[transparent] bg-placeholder rounded-t-lg" : ""} after:w-full after:-bottom-0 after:left-0`} onClick={() => setActivePc("pc4")}>
                         <p className={`text-base text-start sm:text-center hover:text-primary ease-out transition duration-200 ${activePc === "pc4" ? "text-primary font-bold" : "text-secondary font-semibold"}`}>Servidores</p>
-                    </button>
+                    </button> */}
                 </div>
             </div>
 
@@ -115,7 +115,7 @@ const CardProducts = (props) => {
             )}
 
             {/* SERVIDORES */}
-            {activePc === "pc4" && (
+            {/* {activePc === "pc4" && (
                 <div className='grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-28'>
                     {productsList[3].products.map(
                         (single, index) =>
@@ -128,7 +128,7 @@ const CardProducts = (props) => {
                                 />
                             ))}
                 </div>
-            )}
+            )} */}
 
             <div className='flex flex-col lg:flex-row justify-center items-center'>
                 <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>

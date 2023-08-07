@@ -11,25 +11,25 @@ const page = () => {
         <>
             <section className='bg-white py-28'>
                 <ProductIntro
-                    list={0}
+                    list={1}
                     product={0}
                 />
             </section>
             <section className='bg-cream py-28'>
                 <ProductRecomendation
-                    list={0}
+                    list={1}
                     product={0}
                 />
             </section>
             <section className='bg-white py-28'>
                 <ProductInfo
-                    list={0}
+                    list={1}
                     product={0}
                 />
             </section>
             <section className='bg-cream py-28'>
                 <ProductSpecification
-                    list={0}
+                    list={1}
                     product={0}
                 />
             </section>
