@@ -1183,7 +1183,7 @@ const productsList = [
                 id: 1,
                 name: "ThinkCentre M70q Tiny",
                 href: "/computadores/desktops/thinkcentre-m70q-tiny",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                src: "/assets/desktops/ThinkCentre M70q Tiny/lenovo-desktop-thinkcentre-m70q-00.webp",
                 linha: "Desktop ultra compactos",
                 intro: [
                     {
@@ -1200,7 +1200,7 @@ const productsList = [
                                 tag: "Perfeito para o trabalho do dia a dia"
                             },
                         ],
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                        src: "/assets/desktops/ThinkCentre M70q Tiny/lenovo-desktop-thinkcentre-m70q-00.webp",
                         text: 'O desktop ThinkCentre M70q Tiny de 1L é poderoso o suficiente para lidar com as cargas de trabalho de PCs maiores, ocupando muito menos espaço. Também é configurável, expansível e seguro, com baixo consumo de energia e uma série de outros recursos que o tornarão o favorito no escritório.'
                     }
                 ],
@@ -1306,7 +1306,7 @@ const productsList = [
                 infos: [
                     {
                         id: 1,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M70q Tiny/lenovo-desktop-thinkcentre-m70q-01.webp",
                         title: "O equilíbrio certo entre desempenho e tamanho",
                         text: "Equipado com processador Intel® Core™ de 10ª Geração e a rápida memória DDR4 oferecem a energia necessária para você fazer o trabalho, o ThinkCentre M70q proporciona ótimo equilíbrio entre espaço ocupado e desempenho poderoso. Junte-o a um monitor modular Tiny-in-One para criar seu próprio All-in-One modular.",
                         title2: "Segurança do ThinkShield",
@@ -1314,7 +1314,7 @@ const productsList = [
                     },
                     {
                         id: 2,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M70q Tiny/lenovo-desktop-thinkcentre-m70q-02.webp",
                         title: "Construído e testado para confiabilidade",
                         text: "Os PCs ThinkCentre são testados em 10 requisitos de nível militar e mais de 200 verificações de qualidade para garantir que funcionem em condições extremas. Da natureza selvagem do Ártico às tempestades de poeira do deserto, de temperaturas extremas a vibrações e choques, você pode confiar em seu M70q para lidar com o que for necessário.",
                         title2: "Conveniente e configurável",
@@ -1322,7 +1322,7 @@ const productsList = [
                     },
                     {
                         id: 3,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M70q Tiny/lenovo-desktop-thinkcentre-m70q-03.webp",
                         title: "Cabe em qualquer lugar",
                         text: "O M70q se encaixa em praticamente qualquer lugar e é fácil de instalar. Você pode o deixar em uma prateleira ou mesa, na horizontal ou vertical. Seu chassi moderno ficará ótimo onde quer que você o coloque.",
                         title2: "Design e uso sustentável",
@@ -1334,7 +1334,7 @@ const productsList = [
                 id: 2,
                 name: "ThinkCentre M80s",
                 href: "/computadores/desktops/thinkcentre-m80s",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                src: "/assets/desktops/ThinkCentre M80s/lenovo-desktop-thinkcentre-m80s-00.webp",
                 linha: "Desktops executivos",
                 intro: [
                     {
@@ -1351,7 +1351,7 @@ const productsList = [
                                 tag: "Perfeito performance e durabilidade"
                             },
                         ],
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                        src: "/assets/desktops/ThinkCentre M80s/lenovo-desktop-thinkcentre-m80s-00.webp",
                         text: 'O desktop compacto ThinkCentre M80s SFF economiza espaço e oferece o desempenho de uma unidade torre com gabinete maior. Melhore a produtividade e a experiência dos funcionários com seu poder e capacidade de gerenciamento, enquanto seu design sustentável mantém sua empresa amiga do meio ambiente.'
                     }
                 ],
@@ -1462,7 +1462,7 @@ const productsList = [
                 infos: [
                     {
                         id: 1,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M80s/lenovo-desktop-thinkcentre-m80s-01.webp",
                         title: "Segurança para dados e dispositivos",
                         text: "Com as soluções de segurança ThinkShield da Lenovo, hardware e software trabalham juntos para proteger seu sistema e dados. O chip dTPM 2.0 criptografa suas senhas e dados, enquanto o Smart USB Protection baseado em BIOS impede o acesso não autorizado via periférico. Proteja fisicamente o próprio dispositivo com vários recursos e conte com a proteção avançada de dados da plataforma Intel® vPro™.",
                         title2: "Fácil de usar e gerenciar",
@@ -1470,7 +1470,7 @@ const productsList = [
                     },
                     {
                         id: 2,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M80s/lenovo-desktop-thinkcentre-m80s-02.webp",
                         title: "Economiza espaço e parece ótimo",
                         text: "O gabinete do M80s além de compacto (8,2L) é fácil de instalar. Seu chassi possui um design moderno que se adapta à necessidade de seu espaço de trabalho. Este PC ficará ótimo em qualquer escritório, onde quer que você o coloque.",
                         title2: "Design verde, uso confortável",
@@ -1478,7 +1478,7 @@ const productsList = [
                     },
                     {
                         id: 3,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M80s/lenovo-desktop-thinkcentre-m80s-03.webp",
                         title: "Eficiência e potência",
                         text: "O ThinkCentre M80s SFF foi projetado para lidar com todas as suas tarefas de maneira eficiente. Os Processadores Intel® Core™ de 10ª Geração e a rápida memória DDR4, permitem realizar várias tarefas com facilidade, lidando com tudo, desde email a operações complexas de dados.",
                         title2: "Armazenamento rápido e confiável",
@@ -1490,7 +1490,7 @@ const productsList = [
                 id: 3,
                 name: "Lenovo V50",
                 href: "/computadores/desktops/lenovo-v50",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                src: "/assets/desktops/Lenovo V50/lenovo-desktop-v50s-00.webp",
                 linha: "Desktops para o dia a dia",
                 intro: [
                     {
@@ -1507,7 +1507,7 @@ const productsList = [
                                 tag: "Perfeito para o uso básico do dia a dia"
                             },
                         ],
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                        src: "/assets/desktops/Lenovo V50/lenovo-desktop-v50s-00.webp",
                         text: 'O desktop compacto Lenovo V50s é rápido, responsivo e eficiente. Combina a potência dos mais recentes processadores Intel® de 10ª geração com a velocidade da memória DDR4 para maximizar a produtividade. Versátil e seguro, o equipamento também oferece opções gráficas dedicadas e praticidade com portas USB frontais.'
                     }
                 ],
@@ -1592,7 +1592,7 @@ const productsList = [
                 infos: [
                     {
                         id: 1,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/Lenovo V50/lenovo-desktop-v50s-01.webp",
                         title: "Desempenho dinâmico",
                         text: "O desktop V50s é compacto com apenas 7.4L de gabinete e possui a potência e desempenho que você precisa para manter sua empresa produtiva. Com os processadores Intel® Core™ de 10ª geração, permitem que os usuários realizem multitarefas e lidem com projetos de multimídia extensos com eficiência. Alguns modelos possuem placa de vídeo dedicada que entregam visuais realistas e fornecem detalhes nítidos para suas apresentações de negócios.",
                         title2: "Memória e armazenamento rápidos",
@@ -1600,7 +1600,7 @@ const productsList = [
                     },
                     {
                         id: 2,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/Lenovo V50/lenovo-desktop-v50s-02.webp",
                         title: "Controle de custos",
                         text: "Projetado para reduzir o consumo de energia e proporcionar uma operação silenciosa, o Lenovo V50s permite reduzir os custos de energia e barulho - é certificado para baixo ruído e eficiência energética. As saídas de ar frontais melhoram a circulação do ar, enquanto um sistema de resfriamento atualizado permite aumentar o desempenho ou operar silenciosamente, dependendo do modo de utilização.",
                         title2: "Controle de dados",
@@ -1612,7 +1612,7 @@ const productsList = [
                 id: 4,
                 name: "ThinkCentre M75q Tiny",
                 href: "/computadores/desktops/thinkcentre-m75q-tiny",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                src: "/assets/desktops/ThinkCentre M75q Tiny/lenovo-desktop-thinkcentre-m75q-00.webp",
                 linha: "Desktop ultra compactos",
                 intro: [
                     {
@@ -1629,7 +1629,7 @@ const productsList = [
                                 tag: "Perfeito para o trabalho do dia a dia"
                             },
                         ],
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                        src: "/assets/desktops/ThinkCentre M75q Tiny/lenovo-desktop-thinkcentre-m75q-00.webp",
                         text: 'Projetado para impulsionar a produtividade, o Thinkcentre M75q Tiny possui componentes de excelente qualidade além de recursos de segurança aprimorados que fazem dele uma opção fundamental para escritórios modernos. Conta com um processador AMD Ryzen™ PRO, memória DDR4, armazenamento SSD mais recente e ampla conectividade, tudo em um chassi de apenas 1L de volume.'
                     }
                 ],
@@ -1730,7 +1730,7 @@ const productsList = [
                 infos: [
                     {
                         id: 1,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M75q Tiny/lenovo-desktop-thinkcentre-m75q-01.webp",
                         title: "Desempenho em tamanho real",
                         text: "O ThinkCentre M75q Tiny 2ª Geração pode ser guardado em qualquer lugar, enquanto fornece desempenho de nível empresarial com seu processador AMD Ryzen™ PRO. Este desktop foi projetado para multitarefa, criação de conteúdo, processamento de dados e muito mais - tudo em uma unidade compacta. Equipado com a inovadora memória RAM DDR4, SSD PCIe M.2 com velocidade 2x maior e um processador AMD Ryzen™ Pro com os poderosos gráficos Radeon™ Vega, não há nada que poderá atrasar a sua produtividade.",
                         title2: "Seguro por dentro e por fora",
@@ -1738,7 +1738,7 @@ const productsList = [
                     },
                     {
                         id: 2,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M75q Tiny/lenovo-desktop-thinkcentre-m75q-02.webp",
                         title: "Experiência aprimorada",
                         text: "O M75q Gen 2 foi projetado para crescer com seus negócios. Ele se conecta a equipamentos específicos da indústria, bem como a periféricos legados e é construído para fácil expansão. Ele se adapta facilmente a qualquer ambiente, conecta-se a até três monitores e permite carregamento rápido e compartilhamento de dados por meio de sua porta USB-C no painel frontal.",
                         title2: "Capacidade de gerenciamento e confiabilidade abrangentes",
@@ -1746,7 +1746,7 @@ const productsList = [
                     },
                     {
                         id: 3,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/desktops/ThinkCentre M75q Tiny/lenovo-desktop-thinkcentre-m75q-03.webp",
                         title: "Sustentabilidade",
                         text: "O M75q Tiny é energeticamente eficiente e possui certificações ecológicas como ENERGY STAR® 7.1*, EPEAT™ Silver, RoHS-compliant que resulta em contas de luz mais baixas.",
                         title2: "Tamanho menor, maiores possibilidades",
@@ -1765,7 +1765,7 @@ const productsList = [
                 id: 1,
                 name: "ThinkPad P15v",
                 href: "/computadores/workstations/thinkpad-p15v",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                src: "/assets/workstations/ThinkPad P15v/lenovo-workstation-thinkpad-p15v-00.webp",
                 linha: "Workstation notebooks",
                 intro: [
                     {
@@ -1782,7 +1782,7 @@ const productsList = [
                                 tag: "Perfeito para alta performance gráfica"
                             },
                         ],
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                        src: "/assets/workstations/ThinkPad P15v/lenovo-workstation-thinkpad-p15v-00.webp",
                         text: 'Poderoso Thinkpad com certificação ISV com preço acessível conta com desempenho Intel® Core™ de até 12ª geração, com gráficos até NVIDIA® RTX™ e impressionante tela UHD disponível com calibração de cores de fábrica, muita memória, armazenamento e conectividade extremamente rápidos.'
                     }
                 ],
@@ -1893,7 +1893,7 @@ const productsList = [
                 infos: [
                     {
                         id: 1,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/workstations/ThinkPad P15v/lenovo-workstation-thinkpad-p15v-01.webp",
                         title: "Energia em movimento sem quebrar o banco",
                         text: "Você não está mais preso em uma mesa. E agora, nem sua estação de trabalho. O ThinkPad P15v Gen 3 preenche a lacuna entre workstations móveis de nível básico e high-end, sem sacrificar o desempenho. Ele é equipado com processadores Intel® Core™ H Series de até 12ª geração com gráficos NVIDIA® RTX opcionais e um modo de desempenho ultra para ajudá-lo a executar as tarefas mais exigentes.",
                         title2: "Certificação ISV e rápido em todos os lugares",
@@ -1901,7 +1901,7 @@ const productsList = [
                     },
                     {
                         id: 2,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/workstations/ThinkPad P15v/lenovo-workstation-thinkpad-p15v-02.webp",
                         title: "Dê vida ao seu trabalho",
                         text: "Experimente cores brilhantes com quatro opções de tela antirreflexo de 15,6″ - de FHD a UHD, todas com escurecimento DC para aliviar a cintilação da tela. Quer mais? As estações de trabalho móveis ThinkPad P15v estão disponíveis com telas sensíveis ao toque, calibração de exibição de fábrica da X-Rite e gama de cores 100% da Adobe para realmente dar vida ao seu trabalho.",
                         title2: "",
@@ -1909,7 +1909,7 @@ const productsList = [
                     },
                     {
                         id: 3,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/workstations/ThinkPad P15v/lenovo-workstation-thinkpad-p15v-03.webp",
                         title: "Seguro de fora para dentro",
                         text: "A workstation ThinkPad P15v vem com segurança Lenovo ThinkShield para ajudar a proteger seu dispositivo e dados. Além do leitor de impressão digital opcional, há o Trusted Platform Module (dTPM) discreto para criptografar seus dados, um BIOS de recuperação automática para restaurar as configurações do sistema, se necessário, e um obturador de privacidade da webcam para desligar a câmera.",
                         title2: "Pronto para o que o dia trouxer",
@@ -1921,7 +1921,7 @@ const productsList = [
                 id: 2,
                 name: "ThinkStation P348",
                 href: "/computadores/workstations/thinkstation-p348",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                src: "/assets/workstations/ThinkStation P348/lenovo-workstation-thinkstation-p348-00.webp",
                 linha: "Workstation desktops",
                 intro: [
                     {
@@ -1938,7 +1938,7 @@ const productsList = [
                                 tag: "Perfeito para alta performance gráfica e potência"
                             },
                         ],
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                        src: "/assets/workstations/ThinkStation P348/lenovo-workstation-thinkstation-p348-00.webp",
                         text: 'A solução ideal para CAD de nível básico e educadores e alunos de STEM, além de profissionais, a ThinkStation P348 em Torre fornece valor sem comprometer a confiabilidade. Criado para tarefas de missão crítica que exigem alto desempenho, esse sistema apresenta um valor excepcional em todos os aspectos – e conta com certificação de ISV, os mais recentes processadores Intel® Core™ e suporte para placa de vídeo NVIDIA®.'
                     }
                 ],
@@ -2028,7 +2028,7 @@ const productsList = [
                 infos: [
                     {
                         id: 1,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/workstations/ThinkStation P348/lenovo-workstation-thinkstation-p348-01.webp",
                         title: "Trata do seu fluxo de trabalho",
                         text: "A ThinkStation P348 em Torre oferece a escolha dos sistemas operacionais Windows ou Linux®. Além disso, processadores Intel® Core™ i5, i7 e i9 de 11ª Geração, combinados com opções de placa de vídeo NVIDIA® RTX™ e GeForce™, aumentam o desempenho, fornecendo a potência para tratar do seu fluxo de trabalho.",
                         title2: "Testada para extremos",
@@ -2036,7 +2036,7 @@ const productsList = [
                     },
                     {
                         id: 2,
-                        src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-01.webp",
+                        src: "/assets/workstations/ThinkStation P348/lenovo-workstation-thinkstation-p348-02.webp",
                         title: "Soluções de segurança que trabalham para você",
                         text: "A ThinkStation P348 em Torre é protegida por nossas soluções de segurança ThinkShield – um pacote de hardwares e softwares que funcionam juntos para proteger tanto seu dispositivo quanto seus dados. Do Trusted Platform Module (TPM) 2.0 que criptografa suas senhas, à detecção de invasão do chassi, a um BIOS de autorreparo com BIOS Guard e Boot Guard, cuidamos da segurança para que você possa cuidar dos negócios.",
                         title2: "Deixe-nos lidar com seus desafios de TI",

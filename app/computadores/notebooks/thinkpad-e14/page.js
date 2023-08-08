@@ -34,9 +34,9 @@ const page = () => {
                 />
             </section>
             <section className='bg-white py-28'>
-                <MightIntrest
-                 min={0}
-                 max={3}
+            <MightIntrest
+            index={0}
+                    i={6}
                 />
             </section>
         </>

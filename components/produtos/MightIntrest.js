@@ -27,10 +27,10 @@ const MightIntrest = (props) => {
             </div>
 
             {/* NOTEBOOKS */}
-            <div className='grid gap-x-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-10 mb-28'>
-                {productsList[0].products.map(
+            <div className='grid gap-x-4 grid-cols-1 gap-y-10 mb-28'>
+                {productsList[props.index].products.map(
                     (single, index) =>
-                        index >= props.min && index < props.max && (
+                        index === props.i && (
                             <ProductCard
                                 href={single.href}
                                 src={single.src}
