@@ -33,9 +33,12 @@ const page = () => {
                     product={5}
                 />
             </section>
-            {/* <section className='bg-white py-28'>
-                <MightIntrest index={3} />
-            </section> */}
+            <section className='bg-white py-28'>
+                <MightIntrest
+                 min={0}
+                 max={3}
+                />
+            </section>
         </>
     )
 }
