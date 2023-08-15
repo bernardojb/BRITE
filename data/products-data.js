@@ -2053,37 +2053,539 @@ const productsList = [
             {
                 id: 1,
                 name: "ThinkSystem SR550",
-                href: "/",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                href: "/computadores/servidores/thinksystem-sr550",
+                src: "/assets/servidores/ThinkSystem SR550/lenovo-server-thinksystem-sr550-00.webp",
                 linha: "Servidor de rack",
+                intro: [
+                    {
+                        id: 1,
+                        name: "ThinkSystem SR550",
+                        resume: "Com preço acessível, servidores para todas as finalidades em rack para escritórios locais/remotos",
+                        tags: [
+                            {
+                                id: 1,
+                                tag: "Servidor de rack"
+                            },
+                            {
+                                id: 2,
+                                tag: "Perfeito para todas as finalidades"
+                            },
+                        ],
+                        src: "/assets/servidores/ThinkSystem SR550/lenovo-server-thinksystem-sr550-00.webp",
+                        text: 'O versátil servidor ThinkSystem SR550 2P combina desempenho, flexibilidade e capacidade de expansão e de gerenciamento em um pacote extremamente acessível. O design de qualidade empresarial oferece flexibilidade e escalabilidade necessárias para as variadas demandas de implantações de rack 2U para cargas de trabalho em pequenas e médias empresas e em escritórios remotos/filiais. Este servidor resiliente é ideal para infraestrutura, colaboração, armazenamento a frio, aplicativos de linha de negócios e hospedagem.'
+                    }
+                ],
+                tech: [
+                    {
+                        text: "O ThinkStation SR550 é indicado para empresas que precisem de um servidor em modelo rack para o dia a dia.",
+                        price: "",
+                        infos: [
+                            {
+                                id: 1,
+                                name: "FORMATO/ALTURA",
+                                description: "Servidor em rack 2U"
+                            },
+                            {
+                                id: 2,
+                                name: "PROCESSADORES",
+                                description: "Até 2 processadores de segunda geração do Intel® Xeon® Platinum, até 125 W"
+                            },
+                            {
+                                id: 3,
+                                name: "MEMÓRIA",
+                                description: "Até 768 GB em 12 slots, usando DIMMs de 64 GB; TruDDR4 de 2.666 MHz/2.933 MHz"
+                            },
+                            {
+                                id: 4,
+                                name: "SUPORTE A SISTEMAS OPERACIONAIS",
+                                description: 'Microsoft, SUSE, Red Hat, VMware. Veja mais informações no site lenovopress.com/osig.'
+                            },
+                            {
+                                id: 5,
+                                name: "SLOTS DE EXPANSÃO",
+                                description: "Até seis PCIe 3.0 (com dois processadores) por meio de múltiplas opções de riser (somente PCIe ou PCIe e ML2)"
+                            },
+                            {
+                                id: 6,
+                                name: "COMPARTIMENTOS",
+                                description: 'Até 16x hot-swap 2.5" ou 12x hot-swap 3.5” ou 8x simple-swap 3.5"; e até 2x mirror M.2 boot (RAID 1 opcional)'
+                            },
+                            {
+                                id: 7,
+                                name: "SUPORTE A HBA/RAID",
+                                description: "RAID de software padrão. (até oito portas); HBAs de até 16 portas/ou RAID de hardware com cache em flash"
+                            },
+                            {
+                                id: 8,
+                                name: "RECURSOS DE SEGURANÇA E DISPONIBILIDADE",
+                                description: "Lenovo ThinkShield, TPM 1.2/2.0; PFA; unidades e PSUs hot-swap/redundantes; diagnóstico de acesso frontal via porta USB dedicada; resfriamento redundante opcional"
+                            },
+                            {
+                                id: 9,
+                                name: "INTERFACE DE REDE",
+                                description: 'Duas portas 1GbE mais uma porta de gerenciamento 1GbE dedicada (padrão); uma LOM 10GbE opcional'
+                            },
+                            {
+                                id: 10,
+                                name: "ENERGIA",
+                                description: 'Duas hot-swaps/redundantes (Energy Star 2.1): 80 PLUS Platinum de 550 W/750 W ou 80 PLUS Titanium de 750 W'
+                            },
+                            {
+                                id: 11,
+                                name: "GERENCIAMENTO DE SISTEMAS",
+                                description: 'XClarity Controller, XClarity Administrator, plugins XClarity Integrator e XClarity Energy Manager'
+                            },
+                        ]
+                    },
+                ],
+                infos: [
+                    {
+                        id: 1,
+                        src: "",
+                        title: "Benefícios",
+                        text: "Ele incorpora as mais recentes tecnologias de processador, memória, armazenamento, E/S e rede.\r\nConfiabilidade líder de mercado e satisfação do cliente (de acordo com pesquisas independentes do setor).\r\nRecursos equilibrados e escalabilidade para oferecer maior valor.\r\nComponentes comuns em todo o portfólio ThinkSystem para reduzir o estoque de peças, acelerar o serviço e aumentar a disponibilidade.\r\nGerenciamento de sistema XClarity fácil de usar e de classe empresarial que utiliza os padrões do setor, como o RedFish.\r\nAltamente eficiente em termos de energia, em conformidade com ASHRAE A2 e A4 (com limitações) para operação contínua a 45°C.",
+                        title2: "Essencial e a um preço ao alcance de todos",
+                        text2: "O Lenovo ThinkSystem SR550 Dual Socket 2U Rackmount Server é ideal para pequenas e grandes organizações que precisam de desempenho, capacidade de armazenamento, E/S flexível e resiliência. Com confiabilidade† líder do setor e satisfação do cliente‡, e projetado para lidar com uma ampla variedade de cargas de trabalho, o SR550 realiza análises complexas de dados estruturados e não estruturados de forma econômica, acelera os sistemas de transações e, por meio da colaboração, alimenta cargas de trabalho com dados cada vez maiores conjuntos e arquivos grandes dentro de uma organização."
+                    },
+                    {
+                        id: 2,
+                        src: "/assets/servidores/ThinkSystem SR550/lenovo-server-thinksystem-sr550-01.webp",
+                        title: "Flexível para crescer com sua empresa",
+                        text: "O SR550 oferece vários recursos para aumentar o desempenho e a flexibilidade. Possui duas CPUs da família Intel® Xeon® Scalable, com 43% mais núcleos, memória mais rápida, I/O superior e mais armazenamento do que a geração anterior.* O SR550 vem com até 120 TB de armazenamento, um aumento de 50%. O RAID de software e hardware, com discos rígidos de fácil troca, facilita o gerenciamento das necessidades de armazenamento. O SR550 oferece suporte a duas unidades de inicialização M.2 internas, liberando baias de unidade adicionais para maior capacidade de armazenamento. Portas USB 3.0 e VGA opcionais simplificam a implantação e o serviço. Além disso, até seis slots de adaptador PCIe e várias opções de 1GbE/10GbE NIC e LOM, 80 PLUS Platinum e Titanium PSUs e operação contínua de 45°C fornecem mais flexibilidade e economia de custos.\r\n\r\n* Em comparação com a geração anterior Lenovo ThinkServer RD450.",
+                        title2: "Fácil administração",
+                        text2: "O XClarity Controller da Lenovo é um novo mecanismo de gerenciamento incorporado comum a todos os servidores ThinkSystem. O XClarity Controller apresenta uma interface de usuário gráfica limpa, APIs REST compatíveis com RedFish padrão do setor e permite a inicialização na metade do tempo dos servidores da geração anterior, com atualizações de firmware até 6x mais rápidas.\r\n\r\nO Lenovo XClarity Administrator é um aplicativo virtualizado que gerencia centralmente servidores, armazenamento e rede ThinkSystem. Usando padrões e políticas reutilizáveis, aumente e dimensione o provisionamento e a manutenção da infraestrutura. Serve como um ponto de integração central para estender seus processos de gerenciamento de data center para a TI física. A execução de Integradores XClarity em aplicativos externos de TI ou a integração por meio de APIs REST permite acelerar ainda mais o provisionamento de serviços, simplificar o gerenciamento de TI e limitar os custos."
+                    },
+                ]
             },
             {
                 id: 2,
                 name: "ThinkSystem SR630",
-                href: "/",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                href: "/computadores/servidores/thinksystem-sr630",
+                src: "/assets/servidores/ThinkSystem SR630/lenovo-server-thinksystem-sr630-00.webp",
                 linha: "Servidor de rack",
+                intro: [
+                    {
+                        id: 1,
+                        name: "ThinkSystem SR630",
+                        resume: "Construído para negócios, com versatilidade essencial aos negócios",
+                        tags: [
+                            {
+                                id: 1,
+                                tag: "Servidor de rack"
+                            },
+                            {
+                                id: 2,
+                                tag: "Perfeito para quem precisa de adaptabilidade"
+                            },
+                        ],
+                        src: "/assets/servidores/ThinkSystem SR630/lenovo-server-thinksystem-sr630-00.webp",
+                        text: 'O servidor em rack 1U ThinkSystem SR630 2P versátil e altamente confiável foi desenvolvido para lidar com a maioria das cargas de trabalho do data center, da infraestrutura de TI e HPC à nuvem e hiperconvergência.'
+                    }
+                ],
+                tech: [
+                    {
+                        text: "O ThinkStation SR550 é indicado para empresas que precisem de um servidor em modelo rack para o dia a dia.",
+                        price: "",
+                        infos: [
+                            {
+                                id: 1,
+                                name: "FORMATO/ALTURA",
+                                description: "Servidor em rack 1U"
+                            },
+                            {
+                                id: 2,
+                                name: "PROCESSADORES",
+                                description: "Até 2 processadores de segunda geração do Intel® Xeon® Platinum, até 205 W"
+                            },
+                            {
+                                id: 3,
+                                name: "MEMÓRIA",
+                                description: "Até 9 TB em 24 slots, usando DIMMs de 128 GB; TruDDR4 de 2.666 MHz/2.933 MHz"
+                            },
+                            {
+                                id: 4,
+                                name: "SUPORTE A SISTEMAS OPERACIONAIS",
+                                description: 'Microsoft, SUSE, Red Hat, VMware vSphere.'
+                            },
+                            {
+                                id: 5,
+                                name: "SLOTS DE EXPANSÃO",
+                                description: "Até 4 slots PCIe 3.0 (com 2 CPUs), inclusive um PCIe dedicado para adaptador RAID"
+                            },
+                            {
+                                id: 6,
+                                name: "COMPARTIMENTOS",
+                                description: 'Até 12 compartimentos (inclui 4 AnyBay): 3,5": 4 SAS/SATA hot-swap; 2,5": 4 AnyBay hot-swap + 6 SAS/SATA hot-swap + 2 traseiros ou 8 SAS/SATA hot-swap ou 10 U.2 hot-swap mais até 2 boots M.2 espelhados'
+                            },
+                            {
+                                id: 7,
+                                name: "SUPORTE A HBA/RAID",
+                                description: "HW RAID (até 16 portas) com cache em flash; HBAs de até 16 portas"
+                            },
+                            {
+                                id: 8,
+                                name: "RECURSOS DE SEGURANÇA E DISPONIBILIDADE",
+                                description: "TPM 1.2/2.0; PFA; unidades hot-swap/redundantes, ventoinhas e PSUs; operação contínua de 45°C; LEDs de diagnóstico por indicadores luminosos; acesso frontal via porta USB dedicada para diagnóstico"
+                            },
+                            {
+                                id: 9,
+                                name: "INTERFACE DE REDE",
+                                description: 'LOM 1GbE de duas a quatro portas; LOM 10GbE de duas a quatro portas com Base-T ou SFP+; uma porta de gerenciamento 1GbE dedicada'
+                            },
+                            {
+                                id: 10,
+                                name: "ENERGIA",
+                                description: '2 hot-swap/redundantes: 80 PLUS Platinum de 550 W/750 W/1.100 W CA ou 80 PLUS Titanium de 750 W CA'
+                            },
+                            {
+                                id: 11,
+                                name: "GERENCIAMENTO DE SISTEMAS",
+                                description: 'Gerenciamento embutido XClarity Controller, entrega de infraestrutura centralizada XClarity Administrator, plugins XClarity Integrator e gerenciamento centralizado de energia do servidor XClarity Energy Manager'
+                            },
+                        ]
+                    },
+                ],
+                infos: [
+                    {
+                        id: 1,
+                        src: "/assets/servidores/ThinkSystem SR630/lenovo-server-thinksystem-sr630-01.webp",
+                        title: "Data center definido pelo futuro",
+                        text: "A Lenovo oferece soluções econômicas, confiáveis e escalonáveis, combinando a tecnologia líder do setor e as melhores ofertas definidas por software do mundo com o Lenovo ThinkShield, XClarity e TruScale Infrastructure Services para gerenciar o ciclo de vida das necessidades do seu data center. O ThinkSystem SR630 oferece suporte a análise de dados, nuvem híbrida, infraestrutura hiperconvergente, vigilância por vídeo, computação de alto desempenho e muito mais.",
+                        title2: "Suporte otimizado para carga de trabalho",
+                        text2: "O Intel® Optane™ DC Persistent Memory oferece um novo e flexível nível de memória desenvolvido especificamente para cargas de trabalho de data center que oferece uma combinação sem precedentes de alta capacidade, acessibilidade e persistência. Essa tecnologia terá um impacto significativo nas operações do data center no mundo real: redução dos tempos de reinicialização de minutos para segundos, 1,2 vez a densidade de máquina virtual, recuperação de dados significativamente melhorada com latência 14 vezes menor e IOPS 14 vezes maior e mais segurança para dados persistentes construídos em hardware."
+                    },
+                    {
+                        id: 2,
+                        src: "/assets/servidores/ThinkSystem SR630/lenovo-server-thinksystem-sr630-03.webp",
+                        title: "Armazenamento flexível",
+                        text: "O design do Lenovo AnyBay apresenta opções de tipo de interface de unidade no mesmo compartimento: unidades SAS, unidades SATA ou unidades U.2 NVMe PCIe. Com a liberdade de configurar alguns dos compartimentos com SSDs PCIe e ainda usar os restantes para unidades SAS de capacidade, você pode fazer um upgrade para mais SSDs PCIe no futuro, conforme necessário.",
+                        title2: "Capacitação do gerenciamento de TI",
+                        text2: "O Lenovo XClarity Controller é o mecanismo de gerenciamento integrado em todos os servidores ThinkSystem desenvolvido para padronizar, simplificar e automatizar as tarefas de gerenciamento do servidor da base. O Lenovo XClarity Administrator é um aplicativo virtualizado que gerencia centralmente os servidores, o armazenamento e a rede do ThinkSystem, o que pode reduzir o tempo de provisionamento em até 95% em relação à operação manual. A execução do XClarity Integrator ajuda a simplificar o gerenciamento de TI, agilizar o provisionamento e conter custos integrando perfeitamente o XClarity em um ambiente de TI existente."
+                    },
+                ]
             },
             {
                 id: 3,
                 name: "ThinkSystem SR650",
-                href: "/",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                href: "/computadores/servidores/thinksystem-sr650",
+                src: "/assets/servidores/ThinkSystem SR650/lenovo-server-thinksystem-sr650-00.webp",
                 linha: "Servidor de rack",
+                intro: [
+                    {
+                        id: 1,
+                        name: "ThinkSystem SR650",
+                        resume: "Servidor de alto desempenho para data centers que precisam de escalabilidade",
+                        tags: [
+                            {
+                                id: 1,
+                                tag: "Servidor de rack"
+                            },
+                            {
+                                id: 2,
+                                tag: "Perfeito para data centers que precisam de escalabilidade "
+                            },
+                        ],
+                        src: "/assets/servidores/ThinkSystem SR650/lenovo-server-thinksystem-sr650-00.webp",
+                        text: 'O Lenovo ThinkSystem SR650 é um servidor em rack de dois soquetes desenvolvido para oferecer velocidade e expansão, com armazenamento e E/S flexíveis e a maior confiabilidade do mercado para cargas de trabalho críticas para o negócio.'
+                    }
+                ],
+                tech: [
+                    {
+                        text: "O ThinkStation SR550 é indicado para empresas que precisem de um servidor em modelo rack para o dia a dia.",
+                        price: "",
+                        infos: [
+                            {
+                                id: 1,
+                                name: "FORMATO/ALTURA",
+                                description: "Servidor em rack 2U"
+                            },
+                            {
+                                id: 2,
+                                name: "PROCESSADORES",
+                                description: "Até 2 processadores de segunda geração do Intel® Xeon® Platinum, até 205 W"
+                            },
+                            {
+                                id: 3,
+                                name: "MEMÓRIA",
+                                description: "Até 9 TB em 24 slots DIMM usando DIMMs de 128 GB e Intel® Optane™ DC Persistent Memory; TruDDR4 de 2.666 MHz/2.933 MHZ"
+                            },
+                            {
+                                id: 4,
+                                name: "SUPORTE A SISTEMAS OPERACIONAIS",
+                                description: 'Microsoft, Red Hat, SUSE, VMware.'
+                            },
+                            {
+                                id: 5,
+                                name: "SLOTS DE EXPANSÃO",
+                                description: "Até sete PCIe 3.0 via múltiplas opções de riser, com um slot PCIe dedicado para adaptador RAID"
+                            },
+                            {
+                                id: 6,
+                                name: "COMPARTIMENTOS",
+                                description: 'Aumento do compartimentos hot-swap de 14x de 3,5" ou até 24x de 2,5" (crescimento de até 12 tipos - AnyBay ou crescimento de até 24 tipos - NVMe); Aumenta até 2 unidades de inicialização M.2 (RAID 1)'
+                            },
+                            {
+                                id: 7,
+                                name: "SUPORTE A HBA/RAID",
+                                description: "HW RAID (até 24 portas) com cache em flash; HBAs de até 16 portas"
+                            },
+                            {
+                                id: 8,
+                                name: "RECURSOS DE SEGURANÇA E DISPONIBILIDADE",
+                                description: "TPM 1.2/2.0; PFA; unidades hot-swap/redundantes, ventoinhas e PSUs; operação contínua de 45°C; LEDs de diagnóstico por indicadores luminosos; acesso frontal via porta USB dedicada para diagnóstico"
+                            },
+                            {
+                                id: 9,
+                                name: "INTERFACE DE REDE",
+                                description: 'LOM 1GbE de duas a quatro portas; LOM 10GbE de duas a quatro portas (Base-T ou SFP+); uma porta de gerenciamento 1GbE dedicada'
+                            },
+                            {
+                                id: 10,
+                                name: "ENERGIA",
+                                description: 'Dois hot-swap/redundantes: 80 PLUS Platinum de 550 W/750 W/1.100 W/1.600 W ou 80 PLUS Titanium de 750 W ou 80 PLUS Platinum de -48 V CC'
+                            },
+                            {
+                                id: 11,
+                                name: "GERENCIAMENTO DE SISTEMAS",
+                                description: 'Gerenciamento embutido XClarity Controller, entrega de infraestrutura centralizada XClarity Administrator, plugins XClarity Integrator e gerenciamento centralizado de energia do servidor XClarity Energy Manager'
+                            },
+                        ]
+                    },
+                ],
+                infos: [
+                    {
+                        id: 1,
+                        src: "/assets/servidores/ThinkSystem SR650/lenovo-server-thinksystem-sr650-01.webp",
+                        title: "Data center definido pelo futuro",
+                        text: "A Lenovo oferece soluções econômicas, confiáveis e escalonáveis, combinando a tecnologia líder do setor e as melhores ofertas definidas por software do mundo com o Lenovo ThinkShield, XClarity e TruScale Infrastructure Services para gerenciar o ciclo de vida das necessidades do seu data center. O ThinkSystem SR650 oferece suporte a análise de dados, nuvem híbrida, infraestrutura hiperconvergente, vigilância por vídeo, computação de alto desempenho e muito mais.",
+                        title2: "Suporte otimizado para carga de trabalho",
+                        text2: "O Intel® Optane™ DC Persistent Memory oferece um novo e flexível nível de memória desenvolvido especificamente para cargas de trabalho de data center que oferece uma combinação sem precedentes de alta capacidade, acessibilidade e persistência. Essa tecnologia terá um impacto significativo nas operações do data center no mundo real: redução dos tempos de reinicialização de minutos para segundos, 1,2 vez a densidade de máquina virtual, recuperação de dados significativamente melhorada com latência 14 vezes menor e IOPS 14 vezes maior e mais segurança para dados persistentes construídos em hardware."
+                    },
+                    {
+                        id: 2,
+                        src: "/assets/servidores/ThinkSystem SR650/lenovo-server-thinksystem-sr650-02.webp",
+                        title: "Armazenamento flexível",
+                        text: "O design do Lenovo AnyBay apresenta opções de tipo de interface de unidade no mesmo compartimento: unidades SAS, unidades SATA ou unidades U.2 NVMe PCIe. Com a liberdade de configurar alguns dos compartimentos com SSDs PCIe e ainda usar os restantes para unidades SAS de capacidade, você pode fazer um upgrade para mais SSDs PCIe no futuro, conforme necessário.",
+                        title2: "Capacitação do gerenciamento de TI",
+                        text2: "O Lenovo XClarity Controller é o mecanismo de gerenciamento integrado em todos os servidores ThinkSystem desenvolvido para padronizar, simplificar e automatizar as tarefas de gerenciamento do servidor da base. O Lenovo XClarity Administrator é um aplicativo virtualizado que gerencia centralmente os servidores, o armazenamento e a rede do ThinkSystem, o que pode reduzir o tempo de provisionamento em até 95% em relação à operação manual. A execução do XClarity Integrator ajuda a simplificar o gerenciamento de TI, agilizar o provisionamento e conter custos integrando perfeitamente o XClarity em um ambiente de TI existente."
+                    },
+                ]
             },
             {
                 id: 4,
                 name: "ThinkSystem ST50",
-                href: "/",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                href: "/computadores/servidores/thinksystem-st50",
+                src: "/assets/servidores/ThinkSystem ST50/lenovo-server-thinksystem-st50-00.webp",
                 linha: "Servidor de torre",
+                intro: [
+                    {
+                        id: 1,
+                        name: "ThinkSystem ST50",
+                        resume: "Primeiro servidor poderoso, compacto e acessível",
+                        tags: [
+                            {
+                                id: 1,
+                                tag: "Servidor de torre"
+                            },
+                            {
+                                id: 2,
+                                tag: "Perfeito para o dia a dia da empresa"
+                            },
+                        ],
+                        src: "/assets/servidores/ThinkSystem ST50/lenovo-server-thinksystem-st50-00.webp",
+                        text: 'Um servidor em torre de entrada otimizado para desempenho. Um servidor poderoso, compacto e silencioso, ideal para colocação discreta ao lado da mesa ou sob a mesa em qualquer empresa, varejo, local remoto/filial ou home office. O ThinkSystem ST50 V2 oferece armazenamento de nível profissional, confiabilidade e facilidade de manutenção. Pensado para ser o seu primeiro servidor, e crescer com o seu negócio.'
+                    }
+                ],
+                tech: [
+                    {
+                        text: "O ThinkStation ST50 é indicado para pequenas empresas, escritórios remotos e filiais",
+                        price: "",
+                        infos: [
+                            {
+                                id: 1,
+                                name: "FORMATO/ALTURA",
+                                description: "Torre pequena; kit opcional de montagem em rack; altura (com suporte): 376 mm (14,8 polegadas), largura: 169 mm (6,7 polegadas), profundidade 299 mm (11,8 polegadas)"
+                            },
+                            {
+                                id: 2,
+                                name: "PROCESSADORES",
+                                description: "1 processador Intel® Xeon® E-2300 ou 1 processador Intel® Pentium®, até 8 núcleos a 95 W"
+                            },
+                            {
+                                id: 3,
+                                name: "MEMÓRIA",
+                                description: "Até 64 GB em 4 slots DIMM usando UDIMMs de 16 GB TruDDR4 de 3.200 MHz (suporte planejado para UDIMM de 32 GB)"
+                            },
+                            {
+                                id: 4,
+                                name: "SUPORTE A SISTEMAS OPERACIONAIS",
+                                description: 'Microsoft, SUSE, Red Hat, VMware vSphere, CentOS;'
+                            },
+                            {
+                                id: 4,
+                                name: "PORTAS",
+                                description: 'Frente: 2 portas USB 3.2 G2 (10 Gb), 2 portas USB 3.2 G1 (5 Gb), 1 porta USB 3.2 G2 Tipo C (10 Gb) Traseira: 4 portas USB 3.2 G1 (5 Gb); 1 porta serial; 2 portas DisplayPort; 1 saída de linha de áudio (somente para SO cliente Microsoft)'
+                            },
+                            {
+                                id: 5,
+                                name: "SLOTS DE EXPANSÃO",
+                                description: "Slot PCIe x16 com pistas Gen4 x16 Slot PCIe x1 com pistas Gen3 x1 Slot PCIe x16 com pistas Gen3 x4"
+                            },
+                            {
+                                id: 6,
+                                name: "COMPARTIMENTOS",
+                                description: '2 HDDs ou SSDs de 3,5 polegadas (1 padrão; 1 opcional) 1 SSD de 2,5 polegadas 1 Módulo SSD NVMe M.2 1 compartimento de unidade óptica slim'
+                            },
+                            {
+                                id: 7,
+                                name: "SUPORTE A HBA/RAID",
+                                description: "Suporte a RAID de software Intel® VROC; configurações RAID de hardware adicionais também com suporte"
+                            },
+                            {
+                                id: 8,
+                                name: "GERENCIAMENTO E SEGURANÇA DE SISTEMAS",
+                                description: "Intel® AMT; Lenovo XClarity Provisioning Manager (LXPM) Lite – versão USB; TPM 2.0 incorporado com um TCM opcional"
+                            },
+                            {
+                                id: 8,
+                                name: "INTERFACE DE REDE",
+                                description: "1 GbE incorporado (Intel® i219-LM)"
+                            },
+                            {
+                                id: 8,
+                                name: "ENERGIA",
+                                description: "1 fonte de alimentação fixa de até 500 W com economia de energia nível Platinum"
+                            },
+                            
+                        ]
+                    },
+                ],
+                infos: [
+                    {
+                        id: 1,
+                        src: "/assets/servidores/ThinkSystem ST50/lenovo-server-thinksystem-st50-01.webp",
+                        title: "Potente e altamente vantajoso",
+                        text: "Ideal como o primeiro servidor da sua empresa em crescimento, escritório remoto/filial ou varejo, o maior desempenho do Lenovo ThinkSystem ST50 V2 aumenta a produtividade. O ThinkSystem ST50 V2 tem a operação aprimorada do mais recente processador Intel® Xeon® E-2300. Com um aumento de 17% no desempenho, o ThinkSystem ST50 V2 oferece recursos de nível profissional a um preço básico. Muitas vantagens em relação a uma estação de trabalho com os benefícios de um servidor resiliente.",
+                        title2: "Potente, mas silencioso e sem consumir muita energia",
+                        text2: "Por ser discreto e compacto, ter diversas opções de montagem e ser silencioso, o ST50 V2 pode ser colocado em escritório sem causar incômodo. Ele consome pouca energia, com um TDP de até 95 W e desempenho de até 8 núcleos. O desempenho é ideal, aumentando a produtividade e economizando gastos com energia."
+                    },
+                    {
+                        id: 2,
+                        src: "/assets/servidores/ThinkSystem ST50/lenovo-server-thinksystem-st50-02.webp",
+                        title: "Flexível",
+                        text: "O ThinkSystem ST50 V2 agrega valor e flexibilidade ao seu negócio em crescimento, fornecendo suporte para três slots PCIe com suporte para uma única GPU NVIDIA e vários adaptadores de rede de alta largura de banda, juntamente com uma variedade de unidades de armazenamento compatíveis. Ele pode ser dimensionado para atender às necessidades da sua empresa em crescimento, oferecendo alta confiabilidade e usando componentes comuns para reduzir custos. O gerenciador de provisionamento XClarity (USB) da Lenovo permite fácil configuração e atualizações de firmware, enquanto a Intel Active Management Technology (AMT) economiza tempo e reduz custos ao monitorar a integridade do sistema e evitar a interrupção de dados.",
+                        title2: "",
+                        text2: ""
+                    },
+                ]
             },
             {
                 id: 5,
                 name: "ThinkSystem ST250",
-                href: "/",
-                src: "/assets/notebooks/ideapad 3i/lenovo-notebook-ideapad-3i-00.webp",
+                href: "/computadores/servidores/thinksystem-st250",
+                src: "/assets/servidores/ThinkSystem ST250/lenovo-server-thinksystem-st250-00.webp",
                 linha: "Servidor de torre",
+                intro: [
+                    {
+                        id: 1,
+                        name: "ThinkSystem ST250",
+                        resume: "O poder de um servidor empresarial para o seu negócio em crescimento",
+                        tags: [
+                            {
+                                id: 1,
+                                tag: "Servidor de torre"
+                            },
+                            {
+                                id: 2,
+                                tag: "Perfeito para negocios em crescimento."
+                            },
+                        ],
+                        src: "/assets/servidores/ThinkSystem ST250/lenovo-server-thinksystem-st250-00.webp",
+                        text: 'Servidor em torre 1S com o mais recente processador Intel® Xeon® E-2300, o ThinkSystem ST250 V2 oferece computação de nível empresarial para negócios em crescimento.'
+                    }
+                ],
+                tech: [
+                    {
+                        text: "O ThinkStation ST250 é indicado para empresas pequenas que esperam um crescimento no curto prazo",
+                        price: "",
+                        infos: [
+                            {
+                                id: 1,
+                                name: "FORMATO/ALTURA",
+                                description: "Chassi 4U: Altura: 430 mm (16,9 polegadas), largura: 175 mm (6,9 polegadas), profundidade: 566 mm (22,3 polegadas). Conversão opcional para um chassi de montagem em rack"
+                            },
+                            {
+                                id: 2,
+                                name: "PROCESSADOR",
+                                description: "1 processador Intel® Xeon® E-2300 ou 1 processador Intel® Pentium®, até 8 núcleos a 95 W"
+                            },
+                            {
+                                id: 3,
+                                name: "MEMÓRIA",
+                                description: "Até 128 GB em 4 slots DIMM usando UDIMMs de 32 GB TruDDR4 de 3.200 MHz"
+                            },
+                            {
+                                id: 4,
+                                name: "SUPORTE A SISTEMAS OPERACIONAIS",
+                                description: 'Microsoft Windows Server 2022, SUSE, Red Hat, VMware vSphere.'
+                            },
+                            {
+                                id: 4,
+                                name: "PORTAS",
+                                description: 'Frente: 1 porta USB 3.2 G2 (10Gb), 1 porta USB 2.0 para gerenciamento local usando o aplicativo XCC Mobile Traseira: 4 portas USB 3.2 G2 (10 Gb), 2 portas RJ45 Gigabit Ethernet, 1 porta XCC dedicada de 1 GbE para gerenciamento remoto, 1 porta serial e 1 porta VGA'
+                            },
+                            {
+                                id: 5,
+                                name: "SLOTS DE EXPANSÃO",
+                                description: "Slot 1: Slot PCIe x4 com pistas PCIe Gen3 x4 Slot 2: Slot PCIe x16 com pistas PCIe Gen4 x16 Slot 3: Slot PCIe x4 com pistas PCIe Gen3 x4 Slot 4: Slot PCIe x8 com pistas PCIe Gen3 x4"
+                            },
+                            {
+                                id: 6,
+                                name: "COMPARTIMENTOS",
+                                description: '8 unidades SATA de troca simples de 3,5 polegadas 7 unidades SATA de troca simples de 3,5 polegadas mais 1 unidade NVMe de troca simples de 3,5 polegadas 8 unidades SAS/SATA de troca a quente de 3,5 polegadas 16 unidades SAS/SATA de troca a quente de 2,5 polegadas Híbrido 4 unidades de troca a quente de 3,5 polegadas + 8 unidades SAS/SATA troca a quente de 2,5 polegadas 2 compartimentos de mídia de 5,25 polegadas (para unidade óptica ou mídia de backup) Kit de espelhamento M.2 opcional (suporta 2 unidades SATA M.2; instala no slot PCIe)'
+                            },
+                            {
+                                id: 7,
+                                name: "SUPORTE A HBA/RAID",
+                                description: "Suporte a RAID de software Intel® VROC com configuração de troca simples e troca a quente; várias configurações de RAID de hardware suportadas"
+                            },
+                            {
+                                id: 8,
+                                name: "GERENCIAMENTO E SEGURANÇA DE SISTEMAS",
+                                description: "Lenovo XClarity Controller; TPM 2.0 incorporado; painel frontal bloqueável opcional, interruptor de violação do chassi"
+                            },
+                            {
+                                id: 8,
+                                name: "INTERFACE DE REDE",
+                                description: "2 portas integradas GbE (Broadcom BCM5720); 1 porta GbE dedicada para gerenciamento XCC"
+                            },
+                            {
+                                id: 8,
+                                name: "ENERGIA",
+                                description: "Suporta uma única fonte de alimentação fixa ou um par redundante de fontes de alimentação de troca a quente"
+                            },
+                            
+                        ]
+                    },
+                ],
+                infos: [
+                    {
+                        id: 1,
+                        src: "/assets/servidores/ThinkSystem ST250/lenovo-server-thinksystem-st250-01.webp",
+                        title: "Poder de um servidor empresarial",
+                        text: "O ThinkSystem ST250 V2 oferece às empresas poder de nível empresarial em uma torre autônoma projetada para pequenos espaços. Com a nova geração de processadores Intel® Xeon® E-2300, o ThinkSystem ST250 V2 é uma solução robusta para simplificar sua infraestrutura de TI corporativa, backup de dados near-side e computação de borda.< /p> Gerencie seus dados do seu jeito com uma ampla variedade de opções de armazenamento e integração perfeita por meio do sistema de gerenciamento XClarity da Lenovo. Este robusto servidor em torre inclui segurança de ponta a ponta fornecida pelo Lenovo ThinkShield. Protegendo seu dispositivo, dados, identidade e soluções online.",
+                        title2: "Flexibilidade empresarial",
+                        text2: "O ThinkSystem ST250 V2 foi projetado com flexibilidade para crescer com seus negócios. Ele usa configurações de armazenamento altamente expansíveis, suporte a GPU, vários slots de expansão PCIe para se adaptar facilmente à medida que seus requisitos mudam. O software Lenovo XClarity oferece gerenciamento de sistemas fácil de usar e reduz significativamente o tempo de provisionamento, enquanto uma série de integradores XClarity permite o uso do XClarity por meio de aplicativos de TI externos para agilizar o gerenciamento de TI e conter custos."
+                    },
+                    {
+                        id: 2,
+                        src: "/assets/servidores/ThinkSystem ST250/lenovo-server-thinksystem-st250-02.webp",
+                        title: "Projetado para uso remoto",
+                        text: "Fornecendo maior confiabilidade para um ambiente sem suporte de TI dedicado no local, o ThinkSystem ST250 V2 inclui componentes que aumentam o tempo de atividade do servidor e a produtividade no local de trabalho. É de fácil manutenção e confiável para operação remota do servidor. Para dar mais tranquilidade à operação remota, o ThinkSystem 250 V2 inclui fontes de alimentação redundantes duplas, um painel frontal bloqueável e o software Lenovo ThinkShield Security. O tamanho compacto e a operação silenciosa do ThinkSystem ST250 V2 foram pensados para instalação discreta em escritórios remotos/filiais ou locais de varejo.",
+                        title2: "",
+                        text2: ""
+                    },
+                ]
             },
 
         ],
