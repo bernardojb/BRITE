@@ -34,7 +34,7 @@ export async function POST(req) {
         html: message
     }
 
-    // sgMail.send(data);
+    sgMail.send(data);
 
     return NextResponse.json({ status: "ok" })
 }
