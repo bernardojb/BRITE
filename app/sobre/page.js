@@ -36,7 +36,7 @@ export default function page() {
                 <div className='container'>
                     <div className='mb-28'>
                         <h1 className='text-xl text-primary font-semibold mb-4'>Business Informática agora é Brite.</h1>
-                        <p className='text-secondary max-w-[812px] text-lg font-semibold'>Nosso novo nome simboliza uma nova era de inovação e crescimento, mas não se engane: continuaremos a fornecer o mesmo nível de experiência e seriedade que você já está acostumado.</p>
+                        <p className='text-secondary max-w-[812px] text-lg font-semibold'>Há mais de três décadas, a Brite Informática tem sido pioneira no mercado de locação de TI, estabelecendo padrões elevados de qualidade, confiabilidade e atendimento ao cliente.</p>
                     </div>
 
                     <div className='grid gap-4 grid-cols-12 mb-28'>
@@ -55,10 +55,10 @@ export default function page() {
                     </div>
 
                     <div className='mb-28'>
-                        <p className='text-secondary max-w-[812px] text-lg font-semibold'>Há mais de 30 anos no mercado corporativo, a Brite atua no segmento de TI, locando e vendendo notebooks, desktops e servidores para empresas.</p>
+                        <p className='text-secondary max-w-[812px] text-lg font-semibold'>Iniciamos nossa jornada como Business Informática em 1990, mas a evolução é uma constante em nosso DNA. Por isso, recentemente passamos por um empolgante processo de rebranding, emergindo como Brite Informática - um nome que reflete nossa visão moderna e compromisso renovado com a excelência.</p>
                     </div>
 
-                    <div className='grid gap-8 md:grid-cols-6 sm:grid-cols-3 grid-cols-2 pb-10 opacity-50'>
+                    <div className='grid gap-8 md:grid-cols-5 grid-cols-2 pb-10 opacity-50'>
                         <div className='w-full flex justify-center relative h-[75px]'>
                             <Image className='brightness-[80%] grayscale' src="/assets/icons/btg.svg" fill />
                         </div>
@@ -82,6 +82,22 @@ export default function page() {
                         <div className='w-full flex justify-center relative h-[75px]'>
                             <Image className='brightness-[80%] grayscale' src="/assets/icons/bunge.svg" fill />
                         </div>
+
+                        <div className='w-full flex justify-center relative h-[75px]'>
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/apodi.svg" fill />
+                        </div>
+
+                        <div className='w-full flex justify-center relative h-[75px]'>
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/lourençocastanho.svg" fill />
+                        </div>
+
+                        <div className='w-full flex justify-center relative h-[75px]'>
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/mdiasbranco.svg" fill />
+                        </div>
+
+                        <div className='w-full flex justify-center relative h-[75px]'>
+                            <Image className='brightness-[80%] grayscale' src="/assets/icons/usj.svg" fill />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -93,16 +109,10 @@ export default function page() {
                         <div className='lg:col-span-4 col-span-12 lg:mb-0 mb-12'>
                             <Image className='brightness-[80%] ' src="/assets/icons/certified-lenovo-partner-02.svg" height={14} width={164} />
                             <h1 className='text-white text-xl text-semibold mb-6'>Parceiro oficial Lenovo no Brasil.</h1>
-                            {/* <BtnChev
-                                href="/computadores"
-                                color="text-white"
-                                bg="bg-[transparent] pl-0 mr-6"
-                            /> */}
                             <Btn
                                 href="/computadores"
                                 color="text-white"
                                 bg="mb-12"
-                                // brightness="brightness-0"
                                 text="Nossos produtos"
                             />
                         </div>
@@ -111,7 +121,7 @@ export default function page() {
                                 <Image className='mb-6 rounded-2xl object-cover' src="/assets/about/lenovo-about.png" fill />
                             </div>
                             <p className='text-secondary text-base'>
-                                A Lenovo, uma potência multinacional de tecnologia com sede em Pequim, China, tem uma história fascinante que ressoa em suas conquistas atuais. Fundada em 1984, com uma equipe de 11 engenheiros que através de uma filosofia empresarial persistente e um espírito inovador, a Lenovo tornou-se a maior fabricante de computadores do mundo, presente em mais de 160 países.
+                                Hoje somos um parceiro oficial Lenovo, licenciados para prestar o serviço de locação para empresas. A Lenovo é a maior fabricante de computadores do mundo, e faz parte das 200 maiores empresas do planeta. Hoje está presente em mais de 160 paises, sendo um dos pricipais, o Brasil, onde já atuam há mais de 10 anos no nicho corporativo. A Brite possuí uma parceria exclusiva com a Lenovo, que garante os melhores serviços e atendimentos dentro da empresa.
                             </p>
                         </div>
                     </div>
@@ -198,17 +208,17 @@ export default function page() {
                     <div className='grid grid-cols-12 gap-x-4 md:gap-y-28 gap-y-16 '>
                         <AboutCard
                             title="ALUGUEL"
-                            text="Computadores, notebooks e servidores para demandas personalizadas."
+                            text="Desktops, notebooks e servidores."
                             icon={<SquaresPlusIcon color='#9A9AA0' />}
                         />
                         <AboutCard
                             title="VENDA"
-                            text="Aquisição de computadores para obtenção própria."
+                            text="Venda padrão de desktops, notebooks e servidores."
                             icon={<ArrowDownOnSquareIcon color='#9A9AA0' />}
                         />
                         <AboutCard
-                            title="ALUGUEL + VENDA"
-                            text="Modelo personalizável para empresas em expansão."
+                            title="VENDA SMART"
+                            text="Locação de curto prazo + venda do ativo no fim do contrato"
                             icon={<ArrowDownOnSquareStackIcon color='#9A9AA0' />}
                         />
                         <AboutCard
@@ -222,8 +232,8 @@ export default function page() {
                             icon={<Cog8ToothIcon color='#9A9AA0' />}
                         />
                         <AboutCard
-                            title="SUPORTE"
-                            text="Suporte técnico dos computadores e softwares."
+                            title="SUPORTE TÉCNICO"
+                            text="Suporte técnico de todos os equipamentos da Brite."
                             icon={<ComputerDesktopIcon color='#9A9AA0' />}
                         />
                         <AboutCard

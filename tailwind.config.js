@@ -32,6 +32,7 @@ module.exports = {
       'teste': '#ae0000',
       'placeholder': '#e9e9e9bb',
       'brite': '#432AF4',
+      'brite-light': '#6451f4',
       //hovers
       'primary-hover': '#373a42',
       'brite-hover': '#4233b5',

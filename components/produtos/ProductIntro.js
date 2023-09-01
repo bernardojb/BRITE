@@ -40,7 +40,7 @@ const ProductIntro = (props) => {
                                 width={1088}
                                 className='mb-12'
                             />
-                            <p className='text-primary text-baselg font-semibold max-w-[812px] whitespace-pre-wrap'>{info.text}</p>
+                            <p className='text-primary text-base font-semibold whitespace-pre-wrap'>{info.text}</p>
                         </div>
                     </>
             )}

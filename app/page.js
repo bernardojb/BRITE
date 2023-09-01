@@ -31,7 +31,13 @@ export default function home() {
       {/* INTRO */}
       <section className='bg-cream relative'>
         <div className='container'>
-          <div className='flex min-h-[812px] h-screen justify-center flex-col max-w-md relative'>
+          <div className='flex min-h-[812px] w-fit h-screen justify-center flex-col max-w-md relative'>
+            <Link href='/sobre' className='w-fit'>
+            <div className='bg-[#EDEDED] rounded-full flex flex-row items-center w-fit  mb-4 group ease-out transition duration-200 cursor-pointer hover:shadow-xl hover:ease-out hover:transition hover:duration-500 px-[10px]'>
+              <p className='mr-2 text-xs font-semibold text-secondary ease-out transition duration-200 group-hover:ease-out group-hover:transition group-hover:duration-500'>Business Info agora é Brite</p>
+              <Image className='brightness-[60%]' src='/assets/icons/chevron.svg' width={5} height={8} alt='Chevron icon' />
+            </div>
+            </Link>
             <h1 className='text-primary text-xl font-semibold mb-4'>Há mais de 30 anos simplificando o aluguel de notebooks.</h1>
             <p className='text-secondary text-base font-regular mb-16'>Aluguel inteligente de computadores, para você focar no que realmente importa: seus negócios.</p>
             <div className='flex sm:flex-row flex-wrap'>
@@ -87,8 +93,7 @@ export default function home() {
         }}
       >
         <div className='container mx-auto'>
-          <div className='grid gap-8 md:grid-cols-6 sm:grid-cols-3 grid-cols-2 pb-10'>
-
+          <div className='grid gap-8 md:grid-cols-5 grid-cols-2 pb-10'>
             <div className='w-full flex justify-center relative h-[75px]'>
               <Image className="" src="/assets/icons/btg.svg" width={174} height={74} />
             </div>
@@ -110,6 +115,22 @@ export default function home() {
 
             <div className='w-full flex justify-center relative h-[75px]'>
               <Image className="" src="/assets/icons/bunge.svg" width={174} height={74} />
+            </div>
+
+            <div className='w-full flex justify-center relative h-[75px]'>
+              <Image className="" src="/assets/icons/apodi.svg" width={174} height={74} />
+            </div>
+
+            <div className='w-full flex justify-center relative h-[75px]'>
+              <Image className="" src="/assets/icons/lourençocastanho.svg" width={174} height={74} />
+            </div>
+
+            <div className='w-full flex justify-center relative h-[75px]'>
+              <Image className="" src="/assets/icons/mdiasbranco.svg" width={174} height={74} />
+            </div>
+
+            <div className='w-full flex justify-center relative h-[75px]'>
+              <Image className="" src="/assets/icons/usj.svg" width={174} height={74} />
             </div>
           </div>
           <p className='text-center text-base text-white max-w-[425px] mx-auto'>
@@ -188,9 +209,13 @@ export default function home() {
                     <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
                     <p className='text-white text-md'>Técnicos licenciados Lenovo</p>
                   </div>
-                  <div className='flex flex-row'>
+                  <div className='flex flex-row mb-2'>
                     <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
                     <p className='text-white text-md'>Peças originais de fábrica</p>
+                  </div>
+                  <div className='flex flex-row'>
+                    <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                    <p className='text-white text-md'>Cobertura em todo território nacional</p>
                   </div>
                 </div>
               </div>
@@ -207,11 +232,11 @@ export default function home() {
           <div className='flex flex-col lg:flex-row justify-center items-center'>
             <p className='text-center text-base text-secondary mr-4 mb-4 lg:mb-0'>Fale sobre seu projeto com um de nossos especialistas.</p>
             <BtnChev
-                href="/contato"
-                color="text-cream hover:text-white"
-                bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg hover:bg-brite-hover"
-                text="Solicitar cotação"
-              />
+              href="/contato"
+              color="text-cream hover:text-white"
+              bg="bg-brite drop-shadow-2xl hover:drop-shadow-lg hover:bg-brite-hover"
+              text="Solicitar cotação"
+            />
           </div>
         </div>
 
@@ -249,9 +274,17 @@ export default function home() {
                       Dimensionamento estratégico do projeto através das necessidades e objetivos de cada cliente.
                     </p>
                     <div className='text-sm text-primary'>
-                      <div className='flex flex-row mb-6'>
+                      <div className='flex flex-row mb-2'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Entendimento do escopo</p>
+                      </div>
+                      <div className='flex flex-row mb-2'>
                         <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
                         <p className='font-semibold'>Escolha dos modelos</p>
+                      </div>
+                      <div className='flex flex-row'>
+                        <Image className='mr-4' src="/assets/icons/check.svg" width={16} height={16} />
+                        <p className='font-semibold'>Especificações dos computadores</p>
                       </div>
                     </div>
                   </div>

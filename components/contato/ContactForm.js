@@ -140,8 +140,8 @@ const ContactForm = () => {
                                             <option className='text-md text-secondary hover:text-primary' value="36 meses">Locação 36 meses</option>
                                             <option className='text-md text-secondary hover:text-primary' value="48 meses">Locação 48 meses</option>
                                             <option className='text-md text-secondary hover:text-primary' value="60 meses">Locação 60 meses</option>
-                                            <option className='text-md text-secondary hover:text-primary' value="compra">Compra de computadores</option>
-                                            <option className='text-md text-secondary hover:text-primary' value="locação + compra">Locação + Compra</option>
+                                            <option className='text-md text-secondary hover:text-primary' value="Venda de computadores">Venda de computadores</option>
+                                            <option className='text-md text-secondary hover:text-primary' value="Venda Smart">Venda Smart</option>
                                         </select>
                                     </div>
 

@@ -2078,7 +2078,7 @@ const productsList = [
                 tech: [
                     {
                         text: "O ThinkStation SR550 é indicado para empresas que precisem de um servidor em modelo rack para o dia a dia.",
-                        price: "",
+                        price: "A partir de R$460,00 por mês",
                         infos: [
                             {
                                 id: 1,
@@ -2185,7 +2185,7 @@ const productsList = [
                 tech: [
                     {
                         text: "O ThinkStation SR550 é indicado para empresas que precisem de um servidor em modelo rack para o dia a dia.",
-                        price: "",
+                        price: "A partir de R$530,00 por mês",
                         infos: [
                             {
                                 id: 1,
@@ -2292,7 +2292,7 @@ const productsList = [
                 tech: [
                     {
                         text: "O ThinkStation SR550 é indicado para empresas que precisem de um servidor em modelo rack para o dia a dia.",
-                        price: "",
+                        price: "A partir de R$720,00 por mês",
                         infos: [
                             {
                                 id: 1,
@@ -2399,7 +2399,7 @@ const productsList = [
                 tech: [
                     {
                         text: "O ThinkStation ST50 é indicado para pequenas empresas, escritórios remotos e filiais",
-                        price: "",
+                        price: "A partir de R$220,00 por mês",
                         infos: [
                             {
                                 id: 1,
@@ -2507,7 +2507,7 @@ const productsList = [
                 tech: [
                     {
                         text: "O ThinkStation ST250 é indicado para empresas pequenas que esperam um crescimento no curto prazo",
-                        price: "",
+                        price: "A partir de R$310,00 por mês",
                         infos: [
                             {
                                 id: 1,
