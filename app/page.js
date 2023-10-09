@@ -152,7 +152,7 @@ export default function home() {
             <div className='flex col-span-12 lg:col-span-5 mb-10 lg:mb-0 '>
               <div className='relative'>
                 <Image className='absolute left-4 top-4 sm:left-8 sm:top-8 brightness-0' alt='Brite Sobre' src='/assets/icons/certified-lenovo-partner-03.svg' height={84} width={84} />
-                <Image className='rounded-lg' alt='Brite Sobre' src='/assets/home/brite-about.png' height={545} width={444} />
+                <Image className='rounded-lg' alt='Brite Sobre' src='/assets/home/brite-about-3.png' height={545} width={444} />
                 <div className='absolute bottom-4 mx-4 grid grid-cols-2 gap-4 sm:mx-8 sm:bottom-8'>
                   <p className='text-xs text-secondary leading-3 break-words'>Business Informática LTDA 62.547.484/0001-40</p>
                   <p className='text-xs text-secondary leading-3 break-words'>Rua Doutor Luiz Migliano, 1986 05.711-001 São Paulo/SP</p>
@@ -174,7 +174,7 @@ export default function home() {
                 text="Nossa história"
               />
               <div className=''>
-                <p className='text-sm text-secondary py-2'><span className='text-white'>+15.000</span> computadores alugados nos últimos 12 meses</p>
+                <p className='text-sm text-secondary py-2'><span className='text-white'>+40.000</span> computadores alugados até hoje</p>
                 <p className='text-sm text-secondary py-2'><span className='text-white'>+100</span> empresas atendidas</p>
               </div>
             </div>

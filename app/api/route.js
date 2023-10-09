@@ -27,7 +27,7 @@ export async function POST(req) {
         </div>`;
 
     const data = {
-        to: 'bernardojbraga@gmail.com',
+        to: 'contato@briteinformatica.com',
         from: 'BRITE Mailer <mail@hokup.com.br>',
         subject: `BRITE - Contato de <${body.mail}>`,
         text: 'BRITE',
