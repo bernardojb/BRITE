@@ -12,30 +12,30 @@ const page = () => {
             <section className='bg-white py-28'>
                 <ProductIntro
                     list={0}
-                    product={7}
+                    product={6}
                 />
             </section>
             <section className='bg-cream py-28'>
                 <ProductRecomendation
                     list={0}
-                    product={7}
+                    product={6}
                 />
             </section>
             <section className='bg-white py-28'>
                 <ProductInfo
                     list={0}
-                    product={7}
+                    product={6}
                 />
             </section>
             <section className='bg-cream py-28'>
                 <ProductSpecification
                     list={0}
-                    product={7}
+                    product={6}
                 />
             </section>
             <section className='bg-white py-28'>
                 <MightIntrest
-                index={0}
+                    index={0}
                     i={0}
                 />
             </section>
