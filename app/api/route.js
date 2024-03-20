@@ -5,6 +5,7 @@ const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SG_API);
 
 export async function POST(req) {
+    let response = {}
     const body = await req.json() 
     const message = `<div style="max-width: 500px">
             <div style="padding: 25px; background: #F6F6F6; text-align: center; ">
@@ -27,14 +28,29 @@ export async function POST(req) {
         </div>`;
 
     const data = {
-        to: 'contato@briteinformatica.com.br',
+        // to: 'contato@briteinformatica.com.br',
+        to: 'bernardojbraga@gmail.com',
         from: 'BRITE Mailer <mail@hokup.com.br>',
         subject: `BRITE - Contato de <${body.mail}>`,
         text: 'BRITE',
         html: message
     }
 
-    sgMail.send(data);
+    // sgMail.send(data);
+    await sgMail
+        .send(data)
+        .then(() => {
+            response = {
+                status: 'success',
+                message: "Your message was sent. I'll be in contact shortly.",
+            };
+        })
+        .catch((error) => {
+            response = {
+                status: 'error',
+                message: `Message failed to send with error, ${error}`,
+            };
+        });
 
-    return NextResponse.json({ status: "ok" })
+    return NextResponse.json(response)
 }
